@@ -1,0 +1,144 @@
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  ul{
+    border-radius: 30px;
+    border: 2px rgba(205, 199, 199, 0.1) solid;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: left;
+    flex: 1;
+    width: 70%; // lo hice mas largo para que no se rompan las flechas
+
+  }
+  
+  ul li {
+      user-select: none;
+      // transition: all .3s ease;
+      display:flex; // display para poder alinear flechas 
+      justify-content:left; // alineo a izquierda
+      align-items: center; // centro verticalemente el elemento
+
+      span{
+      color: white; // color texto
+      font-size: 1.5rem; // tamano de texto
+        }
+
+  }
+
+  .IconArrow{ // icon arrow de bullets
+    color: rgb(214,178,106);// color icono
+    font-size: 2rem; // tamaño de icono
+    margin-right: .5rem; //margen derecho respecto al texto
+    // align-items: center; // centro verticalemente el elemento
+  }
+
+  // ul li:hover{
+  //   transform: scale(1.03);
+  // }
+
+  
+.titleWrapper{
+  color: rgb(214,178,106);
+  background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(87,55,13,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 4rem;
+  padding: 0 30px;}
+
+.column-list {
+  columns: 2;
+  list-style-type: none;
+  padding: 3rem;
+  margin: 0 auto;
+
+  // border: 2px yellow solid;
+
+}
+
+.column-list li {
+  margin-bottom: 10px;
+}
+
+.btnServices{
+  margin: 2rem 0; //margen de arriba y abajo del boton
+  justify-content: center; 
+  span a{
+    font-size: 1.5rem; // letra boton
+    font-weight: 700;
+  }
+
+}
+
+
+}
+
+
+@media (max-width: 900px) {
+
+  .wrapper{
+
+    ul{
+      border-radius: 30px;
+      border: 2px rgba(205, 199, 199, 0) solid;
+      border-radius: 20px;
+      flex-direction: column;
+      flex: 1;
+      width: 100%;
+    }
+
+    ul li {
+      padding: 0 1rem;
+      margin-top: 20px;
+    
+        span{
+        color: white;
+        font-size: 1rem;
+          }
+    }
+
+    .IconArrow{ // icon arrow de bullets
+      font-size: 2rem !important; // tamaño de icono
+      margin-right: 1rem !important; //margen derecho respecto al texto
+      align-items: center; // centro verticalemente el elemento
+    }
+    
+    .titleWrapper{
+     
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: .3rem;
+    }
+    
+    
+    
+    .column-list {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      padding: 10px 0;
+      margin: 0 auto;
+    
+      // border: 2px yellow solid;
+    
+    }
+    
+    
+
+
+    .btnServices{
+      height: 3.5rem;
+      margin-top: 2rem;
+      span a{
+        font-size: 1rem;
+      }
+  }
+    
+    
+  }
+}

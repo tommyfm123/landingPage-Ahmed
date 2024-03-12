@@ -1,0 +1,183 @@
+.vsl {
+    margin: 0 auto; //opcional
+    text-align: center;
+    padding: 0 5rem; //padding costados
+}
+
+.textVSL { // texto general
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    font-size: 2rem;
+
+
+      span{
+        color: rgb(214,178,106);
+        background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(213,189,117,1) 8%, rgb(133, 87, 27) 100%);        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
+
+    p{
+      color: rgb(214,178,106);
+      background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(213,189,117,1) 8%, rgb(133, 88, 28) 100%);      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 900;
+      font-size: 2rem;
+    }
+}
+
+.vslVideo {
+    width: 70%;
+    border-radius: 20px;
+    margin: 30px;
+    filter: drop-shadow(20px 10px 20px rgba(0, 0, 0, 0.5));
+    cursor: pointer;
+    transition: all .2s ease;
+
+}
+
+.vslVideo:hover{
+  transform: scale(1.01);
+}
+
+button {
+  
+    cursor: pointer; // pointer for btn
+    margin: 0 auto; // margin for centering btn
+    transition: all .2s; //transtion to move icon
+    padding: 20px 60px; // padding to give space to each element
+    border-radius: 50px; //border of btn
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px rgb(98, 95, 95) solid;
+    -webkit-box-shadow: 17px 24px 30px -2px #00000079;
+    -moz-box-shadow: 17px 24px 30px -2px rgba(0,0,0,0.4);
+    box-shadow: 17px 24px 30px -2px rgba(0,0,0,0.4);
+    
+    span a{
+      padding-right: 1rem; //padding to move the arrow
+      font-weight:800; //font weight of btn
+      font-size: 2rem; //font size of the button
+      text-decoration: none; // remove decoration from text
+      background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(213,189,117,1) 8%, rgba(87,55,13,1) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      svg{
+        color: rgb(140, 255, 0);
+      background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(87,55,13,1) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      }
+
+      
+    }
+  }
+  
+  // button:hover {  //boton hover color
+  //    background: #eee9e9;
+  // }
+  
+  button > svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+  }
+  
+  button:hover svg {
+    transform: translateX(5px);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+
+  button:hover{
+    background-color: #e8e3e3;
+  }
+  
+  
+
+.linea{
+    width: 70%;
+
+    color: #dcddd88e;
+
+}
+
+@media (max-width: 900px) {
+  .vsl {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 1rem; //padding costados
+
+      .textVSL{
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        margin-left: 5px;
+        margin-right: 5px;
+
+      }
+
+      .vslVideo{
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 10px;
+
+      }
+
+      button{
+        margin: 10px;
+        text-align: center;
+        padding: .5rem 2rem; // padding to give space to each element
+        border-radius: 50px; //border of btn
+        // height: 3.5rem;
+
+          span a{
+            padding-right: .2rem; //padding to move the arrow
+            font-weight:800; //font weight of btn
+        
+
+
+          }
+
+
+
+        span a{
+          font-size: .9rem;
+        }
+      }
+
+      .tituloIntroduction{
+          // border: 2px yellow solid;
+          width: 90%;
+          padding: 10%;
+
+          h1 {
+              // margin-top: 100px;
+              font-size: 150%;
+              color: rgb(255, 255, 255);
+          }
+      }
+      .parrafoIntro {
+          padding: 10px;
+          // border: 2px yellow solid;
+
+          p {
+              font-size: 1rem;
+              font-weight: 400;
+              padding: 10px;
+              color: rgb(226, 219, 219);
+          }
+      }
+      .BtnLearnMore {
+          margin-top: 20px;
+      }
+  }
+}

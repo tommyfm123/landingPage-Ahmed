@@ -1,0 +1,64 @@
+.Calendly{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    .TitleCalendly{
+        font-size: 3rem;
+        color: rgb(214, 178, 106);
+            background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(87,55,13,1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        text-align: center;
+    }
+
+    .btnCalendly{
+        background-color: white;
+        border-radius: 45px;
+        margin-top: 2rem;
+
+        span a{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+
+    }
+    
+}
+
+
+@media (max-width: 900px) {
+    .Calendly{
+        padding: 30px;
+        // border: 2px yellow solid; //opcional
+    
+        .TitleCalendly{
+            
+            font-size: 1.7rem; //titulo calendly section
+            text-align: center; //alineacion de texto
+
+            h2{
+                color: rgb(214,178,106);
+                background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(87,55,13,1) 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .btnCalendly{
+            background-color: white;
+            border-radius: 65px;
+            margin-top: 2rem;
+
+            span a{
+                font-size: 1.2rem;
+                text-align: center;
+            }
+
+
+        }
+
+}
+}
