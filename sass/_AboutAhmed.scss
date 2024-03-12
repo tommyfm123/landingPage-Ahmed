@@ -164,7 +164,7 @@
       flex-direction: column;
       justify-content: center;
 
-      border: 2px yellow solid;
+      // border: 2px yellow solid;
 
       
          .tituloAboutAhmed { // titulo About Ahmed odeh
@@ -184,17 +184,17 @@
        
          .ProfileContainer{
           align-items: center;
-          max-width: fit-content;
           justify-content: center;
           // border: 2px yellow solid;
+          width: 100%;
     
         }
       
           .profilePicture {
               filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
-              height: fit-content; // tamaño de img
+              margin: 0 auto;
               text-align: center;
-              align-items: center;
+              width: auto;              align-items: center;
         }
     
         .descriptionAhmed {

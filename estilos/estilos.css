@@ -934,7 +934,6 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px yellow solid;
   }
   .AboutAhmed .tituloAboutAhmed {
     text-align: center;
@@ -950,15 +949,14 @@ html {
   }
   .AboutAhmed .ProfileContainer {
     align-items: center;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
     justify-content: center;
+    width: 100%;
   }
   .AboutAhmed .profilePicture {
     filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
-    height: -moz-fit-content;
-    height: fit-content;
+    margin: 0 auto;
     text-align: center;
+    width: auto;
     align-items: center;
   }
   .AboutAhmed .descriptionAhmed {
