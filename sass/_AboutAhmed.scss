@@ -159,18 +159,14 @@
     .AboutAhmed { // estructura bloque ahmed odeh
       width: 90%; //opcional
       margin: 0 auto; //opcional
-      padding: 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
-
-      // border: 2px yellow solid;
 
       
          .tituloAboutAhmed { // titulo About Ahmed odeh
           text-align: center; //! si centra
           font-size: 1.3rem; // tamaño letra
-          padding: 0rem;
           color: white;
       
               .goldTitle { //! cambiar esto
@@ -182,25 +178,23 @@
         }
     
        
-         .ProfileContainer{
-          align-items: center;
-          justify-content: center;
-          // border: 2px yellow solid;
-          width: 100%;
-    
-        }
+        .ProfileContainer {
+          display: flex;
+      }
       
-          .profilePicture {
-              filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
-              margin: 0 auto;
-              text-align: center;
-              width: auto;              align-items: center;
-        }
+      .profilePicture {
+          filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
+          margin: 0 auto;
+          text-align: center;
+          height: 90vw; // esto funciono para cambiar el tamaño de la letra
+      }
+      
+      
     
         .descriptionAhmed {
 
           width: auto;
-          padding: 1rem 1rem;
+          padding: 1rem 2rem;
           // border: 2px yellow solid;
           text-align: left;
           color: white;
