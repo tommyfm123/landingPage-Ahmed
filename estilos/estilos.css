@@ -699,11 +699,6 @@ html {
   border-top: 1px rgb(124, 118, 118) solid;
 }
 
-.bodyForm {
-  width: 100%;
-  text-align: center;
-}
-
 .BenefitsSection {
   display: flex;
   padding: 0 9rem;
@@ -1102,5 +1097,403 @@ html {
   .descriptionAhmed .btnAhmed span a {
     font-weight: 700;
     font-size: 1rem;
+  }
+}
+.bodyForm {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  gap: 10px;
+  padding: 4rem;
+  border-radius: 20px;
+  position: relative;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+  transition: 0.6s ease-in-out all;
+}
+
+form:hover {
+  border-color: rgba(192, 153, 81, 0.4549019608);
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: #c09951;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #e3b764;
+}
+
+.message,
+.signin {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a:hover {
+  -webkit-text-decoration: underline royalblue;
+          text-decoration: underline royalblue;
+}
+
+.signin a {
+  color: #00bfff;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+}
+.flex label {
+  width: 50%;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 20px 5px 5px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:-moz-placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+  color: #00bfff;
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.input {
+  font-size: medium;
+}
+
+#AreaDropdown {
+  width: 50%;
+  background-color: #333;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  color: rgba(255, 255, 255, 0.5);
+}
+#AreaDropdown select {
+  width: 100%;
+}
+
+.btnForm {
+  font-family: inherit;
+  font-size: 1rem;
+  background: #c09951;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btnForm:hover {
+  background-color: #ceac6d;
+}
+
+.btnForm span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.btnForm svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btnForm:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.btnForm:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.btnForm:hover span {
+  transform: translateX(5em);
+}
+
+.btnForm:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+@media (max-width: 900px) {
+  .bodyForm {
+    display: flex;
+    padding: 0 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+    border-radius: 20px;
+    position: relative;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+    transition: 0.6s ease-in-out all;
+    padding: 3rem;
+  }
+  form:hover {
+    border-color: rgba(192, 153, 81, 0.4549019608);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  }
+  .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #c09951;
+  }
+  .title::before {
+    width: 18px;
+    height: 18px;
+  }
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  .title::before,
+  .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #e3b764;
+  }
+  .message,
+  .signin {
+    font-size: 12.5px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .signin {
+    text-align: center;
+  }
+  .signin a:hover {
+    -webkit-text-decoration: underline #c09951;
+            text-decoration: underline #c09951;
+  }
+  .signin a {
+    color: #00bfff;
+  }
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 1.5rem;
+    padding: 4px;
+  }
+  .flex label {
+    width: 50%;
+  }
+  .form label {
+    position: relative;
+  }
+  .form label .input {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 20px 5px 5px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  .form label .input + span {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 15px;
+    top: 0px;
+    font-size: 0.7em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  .form label .input:-moz-placeholder-shown + span {
+    top: 12.5px;
+    font-size: 0.8em;
+  }
+  .form label .input:placeholder-shown + span {
+    top: 12.5px;
+    font-size: 0.8em;
+  }
+  .form label .input:focus + span,
+  .form label .input:valid + span {
+    color: #00bfff;
+    top: 0px;
+    font-size: 0.5em;
+    font-weight: 600;
+  }
+  .input {
+    font-size: medium;
+  }
+  #AreaDropdown {
+    width: 100%;
+    background-color: #333;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #AreaDropdown select {
+    width: 100%;
+  }
+  .btnForm {
+    font-family: inherit;
+    font-size: 1rem;
+    background: #c09951;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .btnForm:hover {
+    background-color: #ceac6d;
+  }
+  .btnForm span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  .btnForm svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  .btnForm:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  .btnForm:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  .btnForm:hover span {
+    transform: translateX(5em);
+  }
+  .btnForm:active {
+    transform: scale(0.95);
+  }
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
   }
 }/*# sourceMappingURL=estilos.css.map */

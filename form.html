@@ -23,9 +23,106 @@
         </div>
 
     </header>
-    <iframe
+    <!-- <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLSeFQFKM6Nci5pff_nflxuI2TRXDoepy8mToxiQzlnhgNVBUig/viewform?embedded=true"
-        width="90%" height="1920" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        width="90%" height="1920" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+
+
+    <!-- form nuevo -->
+
+    <form class="form" action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key" value="10ea72f2-4dd9-45ac-888e-2e6b535e154e">
+
+        <p class="title">Book a consultation</p>
+        <p class="message">Legal advice when you need it the most.</p>
+        <div class="flex">
+            <label>
+                <input class="input" type="text" name="Firstname" placeholder="" required="" id="firstname">
+                <span>Firstname</span>
+            </label>
+            <label>
+                <input class="input" type="text" name="Lastname" placeholder="" required="" id="lastname">
+                <span>Lastname</span>
+            </label>
+
+        </div>
+        <label>
+            <input class="input" type="text" name="Number" placeholder="" required="" id="Number">
+            <span>Number</span>
+        </label>
+        <label>
+            <input class="input" name="Country" type="text" placeholder="" required="" id="Country">
+            <span>Country</span>
+        </label>
+        <label>
+            <input class="input" type="email" name="Email" placeholder="" required="" id="email">
+            <span>Email</span>
+        </label>
+
+        <label for="PracticeArea">Choose the area where you need help</label>
+
+        <select name="Area of practice" id="AreaDropdown">
+            <option value="Personal Status
+            ">Personal Status
+            </option>
+            <option value="Criminal Law
+            ">Criminal Law
+            </option>
+            <option value="Real Estate
+            ">Real Estate
+            </option>
+            <option value="Legal Opinion
+            ">Legal Opinion
+            </option>
+            <option value="Contract Drafting and Review
+            ">Contract Drafting and Review</option>
+            <option value="Incorporation Of Corporate Entities
+            ">Incorporation Of Corporate Entities
+            </option>
+            <option value="Attestation
+            ">Attestation
+            </option>
+            <option value="Commercial Law">Commercial Law </option>
+            <option value="Labour Law
+            ">Labour Law
+            </option>
+            <option value="Litigation
+            ">Litigation
+            </option>
+            <option value="Legal Notices
+            ">Legal Notices
+            </option>
+            <option value="Memorandum of Association
+            ">Memorandum of Association
+            </option>
+            <option value="Risk Assessment and Due Diligence
+            ">Risk Assessment and Due Diligence
+            </option>
+            <option value="Power of Attorneys
+            ">Power of Attorneys
+            </option>
+        </select>
+
+        <label>
+            <input class="input" name="Description" type="text" placeholder="" required="">
+            <span>Describe your problem</span>
+        </label>
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+        <button class="btnForm" type="submit">
+            <div class="svg-wrapper-1">
+                <div class="svg-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path fill="currentColor"
+                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <span>Send</span>
+        </button>
+    </form>
 
 </body>
 
