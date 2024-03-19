@@ -7,6 +7,7 @@
   color: white;
   width: auto; //opcional
   margin: 0 auto; //opcional
+
 }
 
 .titleQuestions{
@@ -83,7 +84,7 @@ svg{
 @media (max-width: 900px) {
   .questions{
     // min-height: 100vh;
-    padding: 0px 1rem;
+    padding: 0px 1.3rem;
     display: flex;
     flex-direction: column;
     text-align: left ;    width: auto; //opcional

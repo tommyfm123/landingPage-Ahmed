@@ -5,9 +5,9 @@ header {
   justify-content: center;
   align-items: center;
   width: auto;
+  max-width: 100%;
   height: 3rem;
-  padding: 20px;
-  padding: 30px;
+  padding: 2rem 0;
 }
 header .logo img {
   height: 4.5rem;
@@ -30,9 +30,14 @@ header .logo img {
   }
 }
 .vsl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   margin: 0 auto;
   text-align: center;
-  padding: 0 5rem;
+  padding: 0 3rem;
 }
 
 .textVSL {
@@ -63,7 +68,11 @@ header .logo img {
   transition: all 0.2s ease;
 }
 
-button {
+.BtnVSL {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   cursor: pointer;
   margin: 0 auto;
   transition: all 0.2s;
@@ -76,33 +85,32 @@ button {
   border: 1px rgb(98, 95, 95) solid;
   box-shadow: 17px 24px 30px -2px rgba(0, 0, 0, 0.4);
 }
-button span a {
-  padding-right: 1rem;
+.BtnVSL span a {
+  padding-right: 2rem;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: none;
   background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(213, 189, 117) 8%, rgb(87, 55, 13) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-button span a svg {
+.BtnVSL span a svg {
   color: rgb(140, 255, 0);
   background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(87, 55, 13) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-button > svg {
+.BtnVSL > svg {
   width: 34px;
-  margin-left: 10px;
   transition: transform 0.3s ease-in-out;
 }
 
-button:hover svg {
+.BtnVSL:hover svg {
   transform: translateX(5px);
 }
 
-button:active {
+.BtnVSL:active {
   transform: scale(0.95);
 }
 
@@ -130,22 +138,17 @@ button:active {
     margin: 0 auto;
     border-radius: 10px;
   }
-  .vsl button {
-    margin: 10px;
+  .vsl .BtnVSL {
     text-align: center;
     padding: 0.5rem 2rem;
     border-radius: 50px;
+    margin: 1rem 0;
   }
-  .vsl button span a {
-    padding-right: 2rem;
+  .vsl .BtnVSL span a {
+    padding-right: 3rem;
     font-weight: 800;
   }
-  .vsl button .SVGImage {
-    width: auto;
-    margin-left: 0;
-    transition: none;
-  }
-  .vsl button span a {
+  .vsl .BtnVSL span a {
     font-size: 0.9rem;
   }
   .vsl .tituloIntroduction {
@@ -168,13 +171,13 @@ button:active {
   .vsl .BtnLearnMore {
     margin-top: 20px;
   }
-  button:hover svg {
+  .BtnVSL:hover svg {
     transform: translateX(0);
   }
-  button:active {
+  .BtnVSL:active {
     transform: none;
   }
-  button:hover {
+  .BtnVSL:hover {
     background-color: #e0dede;
   }
   .vslVideo:hover {
@@ -238,7 +241,7 @@ button:active {
 .AboutContainer .bloque3 .bloque .tituloStats {
   font-size: 3.5rem;
   color: rgb(214, 178, 106);
-  background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(87, 55, 13) 100%);
+  background: -webkit-linear-gradient(10deg, rgb(255, 233, 152) 0%, rgb(213, 189, 117) 8%, rgb(113, 73, 20) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 5px; /* Separación entre el título y el párrafo */
@@ -332,6 +335,7 @@ button:active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 1rem;
 }
 .wrapper ul {
   border-radius: 30px;
@@ -376,12 +380,38 @@ button:active {
   margin-bottom: 10px;
 }
 .wrapper .btnServices {
-  margin: 2rem 0;
-  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 20px 60px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  background: #ffffff;
+  border: 1px rgb(98, 95, 95) solid;
+  box-shadow: 17px 24px 30px -2px rgba(0, 0, 0, 0.4);
 }
 .wrapper .btnServices span a {
-  font-size: 1.5rem;
+  padding-right: 2rem;
   font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(213, 189, 117) 8%, rgb(87, 55, 13) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wrapper .btnServices > svg {
+  width: 34px;
+  transition: transform 0.3s ease-in-out;
+}
+.wrapper .btnServices:hover svg {
+  transform: translateX(5px);
+}
+.wrapper .btnServices:active {
+  transform: scale(0.95);
 }
 
 @media (max-width: 900px) {
@@ -425,6 +455,15 @@ button:active {
   }
   .wrapper .btnServices span a {
     font-size: 1rem;
+  }
+  .wrapper .btnServices > svg {
+    transition: none;
+  }
+  .wrapper .btnServices:hover svg {
+    transform: translateX(0px);
+  }
+  .wrapper .btnServices:active {
+    transform: scale(0);
   }
 }
 .testimonials {
@@ -655,7 +694,7 @@ svg {
 }
 @media (max-width: 900px) {
   .questions {
-    padding: 0px 1rem;
+    padding: 0px 1.3rem;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -691,23 +730,53 @@ svg {
   color: white;
 }
 .Calendly .calendly-inline-widget {
-  width: auto;
+  min-width: 320px;
+  height: 700px;
   scroll-behavior: smooth;
 }
 .Calendly .btnCalendlySection {
-  background-color: white;
-  border-radius: 45px;
-  margin-top: 2rem;
-  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: all 0.2s;
+  padding: 20px 60px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px rgb(98, 95, 95) solid;
+  box-shadow: 17px 24px 30px -2px rgba(0, 0, 0, 0.4);
 }
 .Calendly .btnCalendlySection span a {
+  padding-right: 2rem;
+  font-weight: 700;
   font-size: 1.5rem;
-  text-align: center;
+  text-decoration: none;
+  background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(213, 189, 117) 8%, rgb(87, 55, 13) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Calendly .btnCalendlySection > svg {
+  width: 34px;
+  transition: transform 0.3s ease-in-out;
+}
+.Calendly .btnCalendlySection:hover svg {
+  transform: translateX(5px);
+}
+.Calendly .btnCalendlySection:active {
+  transform: scale(0.95);
 }
 
 @media (max-width: 900px) {
   .Calendly {
-    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 1rem;
   }
   .Calendly .TitleCalendly {
     margin: 0 10px;
@@ -718,22 +787,32 @@ svg {
     font-size: 2.1rem;
     color: white;
   }
-  .Calendly .calendly-inline-widget {
-    width: 350px;
-    scroll-behavior: smooth;
-  }
   .Calendly .btnCalendlySection {
-    background-color: white;
-    border-radius: 100px;
-    padding: 10px 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0 0 1rem;
+    align-items: center;
   }
   .Calendly .btnCalendlySection span a {
-    font-size: 1.2rem;
-    text-align: center;
-    width: 70%;
+    padding-right: 0;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(213, 189, 117) 8%, rgb(87, 55, 13) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-  .Calendly .btnCalendlySection .svgItemCalendly {
-    padding: 8px 20px;
+  .Calendly .btnCalendlySection > svg {
+    transition: none;
+  }
+  .Calendly .btnCalendlySection:hover svg {
+    transform: translateX(0px);
+  }
+  .Calendly .btnCalendlySection:active {
+    transform: scale(0);
   }
 }
 body {
@@ -764,7 +843,7 @@ html {
 @media (max-width: 900px) {
   .lineHorizontal {
     margin: 0 auto;
-    margin-top: 3rem;
+    margin-top: 1rem;
     width: 90%;
     border-top: 1px rgb(124, 118, 118) solid;
   }
@@ -992,9 +1071,9 @@ html {
 }
 @media (max-width: 900px) {
   .AboutAhmed {
-    width: 100%;
     margin: 0 auto;
     display: flex;
+    padding: 0rem;
     flex-direction: column;
     justify-content: center;
   }
@@ -1047,8 +1126,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
     padding-bottom: 1rem;
     gap: 20px;
     border-radius: 10px;

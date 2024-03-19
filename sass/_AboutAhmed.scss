@@ -151,9 +151,9 @@
   @media (max-width: 900px) {
 
     .AboutAhmed { // estructura bloque ahmed odeh
-      width: 100%; //opcional
       margin: 0 auto; //opcional
       display: flex;
+      padding: 0rem;
       flex-direction: column;
       justify-content: center;
       
@@ -220,8 +220,8 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          padding-right: 2rem;
-          padding-left: 2rem;
+          padding-right: 1rem;
+          padding-left: 1rem;
           padding-bottom: 1rem;
           gap: 20px;
           border-radius: 10px;

@@ -1,7 +1,12 @@
 .vsl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     margin: 0 auto; //opcional
     text-align: center;
-    padding: 0 5rem; //padding costados
+    padding: 0 3rem; //padding costados
 }
 
 .textVSL { // texto general
@@ -16,6 +21,7 @@
         color: rgb(214,178,106);
         background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(213,189,117,1) 8%, rgb(133, 87, 27) 100%);        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+      
       }
       
 
@@ -36,8 +42,11 @@
 
 }
 
-button {
-  
+.BtnVSL {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     cursor: pointer; // pointer for btn
     margin: 0 auto; // margin for centering btn
     transition: all .2s; //transtion to move icon
@@ -53,19 +62,20 @@ button {
     box-shadow: 17px 24px 30px -2px rgba(0,0,0,0.4);
     
     span a{
-      padding-right: 1rem; //padding to move the arrow
-      font-weight:700; //font weight of btn
-      font-size: 2rem; //font size of the button
+      padding-right: 2rem; //padding to move the arrow
+      font-weight: 700; //font weight of btn
+      font-size: 1.5rem; //font size of the button
       text-decoration: none; // remove decoration from text
+      
       background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(213,189,117,1) 8%, rgba(87,55,13,1) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
 
       svg{
         color: rgb(140, 255, 0);
-      background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(87,55,13,1) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+        background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(87,55,13,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
 
       
@@ -76,17 +86,17 @@ button {
   //    background: #eee9e9;
   // }
   
-  button > svg {
+  .BtnVSL > svg {
     width: 34px;
-    margin-left: 10px;
+    // margin-left: 10px;
     transition: transform .3s ease-in-out;
   }
   
-  button:hover svg {
+  .BtnVSL:hover svg {
     transform: translateX(5px);
   }
   
-  button:active {
+  .BtnVSL:active {
     transform: scale(0.95);
   }
   
@@ -121,28 +131,30 @@ button {
 
       }
 
-      button{
-        margin: 10px;
+      .BtnVSL{
+        // margin: 20px 0px;
         text-align: center;
         padding: .5rem 2rem; // padding to give space to each element
         border-radius: 50px; //border of btn
         // height: 3.5rem;
+        margin: 1rem 0;
+
 
           span a{
-            padding-right: 2rem; //padding to move the arrow
+            padding-right: 3rem; //padding to move the arrow
             font-weight:800; //font weight of btn
         
 
 
           }
 
-        .SVGImage {
-            width: auto;
-            // border: 2px red solid;
-            margin-left: 0;
-            transition:none;
+        // .SVGImage {
+        //     width: auto;
+        //     // border: 2px red solid;
+        //     margin-left: 0;
+        //     transition:none;
           
-          }
+        //   }
 
 
 
@@ -180,15 +192,15 @@ button {
   }
 
 
-     button:hover svg {
+     .BtnVSL:hover svg {
        transform: translateX(0);
      }
   
-     button:active {
+     .BtnVSL:active {
        transform: none;
      }
   
-     button:hover {
+     .BtnVSL:hover {
        background-color: #e0dede;
      }
 
