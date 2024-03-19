@@ -28,3 +28,21 @@ html{
     border-top: 1px rgb(124, 118, 118) solid;
 }
 
+@media (max-width: 900px){
+.lineHorizontal {
+        margin: 0 auto;
+        margin-top: 3rem;
+
+        width: 90%;
+        border-top: 1px rgb(124, 118, 118) solid;
+    }
+}
+
+
+
+.GoldSpan{
+    color: rgb(214, 178, 106);
+    background: -webkit-linear-gradient(146deg, rgba(255, 233, 152, 1) 0%, rgba(213, 189, 117, 1) 8%, rgb(133, 87, 27) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

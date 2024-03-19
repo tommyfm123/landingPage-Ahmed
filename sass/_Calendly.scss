@@ -5,19 +5,22 @@
     text-align: center;
 
     .TitleCalendly{
-        font-size: 3rem;
-        color: rgb(214, 178, 106);
-            background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(87,55,13,1) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        text-align: center;
+        font-size: 2.5rem;
+        color: white;
     }
 
-    .btnCalendly{
+    .calendly-inline-widget{
+        width: auto;
+        scroll-behavior: smooth;
+
+    }
+
+    .btnCalendlySection{
         background-color: white;
         border-radius: 45px;
         margin-top: 2rem;
-
+        font-family: "Poppins", sans-serif;
+        
         span a{
             font-size: 1.5rem;
             text-align: center;
@@ -31,30 +34,42 @@
 
 @media (max-width: 900px) {
     .Calendly{
-        padding: 30px;
+        padding: 40px;
         // border: 2px yellow solid; //opcional
     
         .TitleCalendly{
-            
+            margin: 0 10px;
             font-size: 1.7rem; //titulo calendly section
             text-align: center; //alineacion de texto
 
             h2{
-                color: rgb(214,178,106);
-                background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(87,55,13,1) 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                font-size: 2.1rem;
+                color: white;
             }
         }
 
-        .btnCalendly{
+                  .calendly-inline-widget {
+                      width: 350px;
+                      scroll-behavior: smooth;
+        
+                  }
+
+        .btnCalendlySection{
             background-color: white;
-            border-radius: 65px;
-            margin-top: 2rem;
+            border-radius: 100px;
+            // margin-top: 2rem;
+            padding: 10px 20px;
 
             span a{
                 font-size: 1.2rem;
                 text-align: center;
+                // border: 2px yellow solid;
+                width: 70%;
+            }
+
+            .svgItemCalendly{
+                // border: 2px yellow solid;
+                padding: 8px 20px;
             }
 
 

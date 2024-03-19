@@ -20,9 +20,7 @@
       
 
     p{
-      color: rgb(214,178,106);
-      background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(213,189,117,1) 8%, rgb(133, 88, 28) 100%);      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: white;
       font-weight: 900;
       font-size: 2rem;
     }
@@ -36,10 +34,6 @@
     cursor: pointer;
     transition: all .2s ease;
 
-}
-
-.vslVideo:hover{
-  transform: scale(1.01);
 }
 
 button {
@@ -60,7 +54,7 @@ button {
     
     span a{
       padding-right: 1rem; //padding to move the arrow
-      font-weight:800; //font weight of btn
+      font-weight:700; //font weight of btn
       font-size: 2rem; //font size of the button
       text-decoration: none; // remove decoration from text
       background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(213,189,117,1) 8%, rgba(87,55,13,1) 100%);
@@ -95,11 +89,6 @@ button {
   button:active {
     transform: scale(0.95);
   }
-
-  button:hover{
-    background-color: #e8e3e3;
-  }
-  
   
 
 .linea{
@@ -120,8 +109,8 @@ button {
       .textVSL{
         font-size: 1rem;
         color: rgb(255, 255, 255);
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 2px;
+        margin-right: 2px;
 
       }
 
@@ -140,12 +129,21 @@ button {
         // height: 3.5rem;
 
           span a{
-            padding-right: .2rem; //padding to move the arrow
+            padding-right: 2rem; //padding to move the arrow
             font-weight:800; //font weight of btn
         
 
 
           }
+
+        .SVGImage {
+            width: auto;
+            // border: 2px red solid;
+            margin-left: 0;
+            transition:none;
+          
+          }
+
 
 
 
@@ -157,7 +155,7 @@ button {
       .tituloIntroduction{
           // border: 2px yellow solid;
           width: 90%;
-          padding: 10%;
+          padding: 5%;
 
           h1 {
               // margin-top: 100px;
@@ -180,4 +178,22 @@ button {
           margin-top: 20px;
       }
   }
+
+
+     button:hover svg {
+       transform: translateX(0);
+     }
+  
+     button:active {
+       transform: none;
+     }
+  
+     button:hover {
+       background-color: #e0dede;
+     }
+
+
+      .vslVideo:hover {
+          transform: scale(1);
+         }
 }

@@ -14,6 +14,21 @@ header .logo img {
   text-align: center;
 }
 
+@media (max-width: 900px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 3rem;
+    padding: 20px;
+    padding: 30px;
+  }
+  header .logo img {
+    height: 3.5rem;
+    text-align: center;
+  }
+}
 .vsl {
   margin: 0 auto;
   text-align: center;
@@ -34,10 +49,7 @@ header .logo img {
   -webkit-text-fill-color: transparent;
 }
 .textVSL p {
-  color: rgb(214, 178, 106);
-  background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(213, 189, 117) 8%, rgb(133, 88, 28) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
   font-weight: 900;
   font-size: 2rem;
 }
@@ -49,10 +61,6 @@ header .logo img {
   filter: drop-shadow(20px 10px 20px rgba(0, 0, 0, 0.5));
   cursor: pointer;
   transition: all 0.2s ease;
-}
-
-.vslVideo:hover {
-  transform: scale(1.01);
 }
 
 button {
@@ -70,7 +78,7 @@ button {
 }
 button span a {
   padding-right: 1rem;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 2rem;
   text-decoration: none;
   background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(213, 189, 117) 8%, rgb(87, 55, 13) 100%);
@@ -98,10 +106,6 @@ button:active {
   transform: scale(0.95);
 }
 
-button:hover {
-  background-color: #e8e3e3;
-}
-
 .linea {
   width: 70%;
   color: rgba(220, 221, 216, 0.5568627451);
@@ -118,8 +122,8 @@ button:hover {
   .vsl .textVSL {
     font-size: 1rem;
     color: rgb(255, 255, 255);
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
   }
   .vsl .vslVideo {
     width: 90%;
@@ -133,15 +137,20 @@ button:hover {
     border-radius: 50px;
   }
   .vsl button span a {
-    padding-right: 0.2rem;
+    padding-right: 2rem;
     font-weight: 800;
+  }
+  .vsl button .SVGImage {
+    width: auto;
+    margin-left: 0;
+    transition: none;
   }
   .vsl button span a {
     font-size: 0.9rem;
   }
   .vsl .tituloIntroduction {
     width: 90%;
-    padding: 10%;
+    padding: 5%;
   }
   .vsl .tituloIntroduction h1 {
     font-size: 150%;
@@ -158,6 +167,18 @@ button:hover {
   }
   .vsl .BtnLearnMore {
     margin-top: 20px;
+  }
+  button:hover svg {
+    transform: translateX(0);
+  }
+  button:active {
+    transform: none;
+  }
+  button:hover {
+    background-color: #e0dede;
+  }
+  .vslVideo:hover {
+    transform: scale(1);
   }
 }
 .AboutContainer {
@@ -182,10 +203,6 @@ button:hover {
 }
 .AboutContainer .AboutUsTitle .TituloAbout {
   font-size: 4rem; /* Corregido */
-  color: rgb(214, 178, 106);
-  background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(87, 55, 13) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .AboutContainer .bloque2 {
   width: 80%;
@@ -258,13 +275,13 @@ button:hover {
     font-size: 2rem; /* tamano letra si funciona */
   }
   .AboutContainer .bloque2 {
-    width: 80%;
+    width: 90%;
     font-size: 1rem;
     text-align: center;
     font-weight: 300;
     margin-left: 0;
-    padding: 0;
     color: rgb(198, 194, 194);
+    padding: 5px 20px;
   }
   .AboutContainer .bloque3 {
     border: 2px rgba(205, 199, 199, 0.1) solid;
@@ -275,12 +292,13 @@ button:hover {
   }
   .AboutContainer .bloque3 .bloque {
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex: 1;
-    padding-right: 0px;
-    padding-left: 1.5rem; /* Ajusta el padding según sea necesario */
+    padding-right: 0;
+    padding-left: 0; /* Ajusta el padding según sea necesario */
     border-bottom: 2px rgba(205, 199, 199, 0.1) solid;
     justify-content: center;
   }
@@ -294,11 +312,13 @@ button:hover {
     border-right: none;
   }
   .AboutContainer .bloque3 .bloque .tituloStats {
+    width: 100%;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 5px; /* Separación entre el título y el párrafo */
   }
   .AboutContainer .bloque3 .bloque .DescriptionStats {
+    width: 100%;
     text-align: center;
     font-size: 1rem;
   }
@@ -340,10 +360,7 @@ button:hover {
   margin-right: 0.5rem;
 }
 .wrapper .titleWrapper {
-  color: rgb(214, 178, 106);
-  background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(87, 55, 13) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
   text-align: center;
   font-size: 4rem;
   padding: 0 30px;
@@ -390,6 +407,7 @@ button:hover {
     align-items: center;
   }
   .wrapper .titleWrapper {
+    color: white;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 0.3rem;
@@ -410,26 +428,23 @@ button:hover {
   }
 }
 .testimonials {
-  padding: 40px 0;
+  padding: 10px 0;
   color: #434343;
   text-align: center;
-  width: auto;
+  width: 100%;
   margin: 0 auto;
+  padding: 0;
 }
 
 .TitleTestimonial {
   font-size: 4rem;
-  color: rgb(214, 178, 106);
-  background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(87, 55, 13) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
 }
 
 .inner {
   max-width: 1200px;
   margin: auto;
   overflow: hidden;
-  padding: 0 20px;
 }
 
 .row {
@@ -446,7 +461,8 @@ button:hover {
 }
 
 .testimonial {
-  background: #fff;
+  color: white;
+  background-color: rgb(41, 42, 43);
   padding: 30px;
   border-radius: 25px;
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
@@ -465,12 +481,14 @@ button:hover {
 
 .name {
   font-size: 20px;
+  font-weight: 800;
   font-family: "Poppins", sans-serif;
   margin: 20px 0;
 }
 
 .descriptionTestimonial {
   font-family: "Poppins", sans-serif;
+  color: rgb(236, 232, 228);
 }
 
 .stars {
@@ -478,6 +496,50 @@ button:hover {
   margin-bottom: 20px;
 }
 
+@media (max-width: 900px) {
+  .testimonial:hover {
+    transform: translateY(0);
+  }
+  .testimonials {
+    padding: 5px 0;
+    color: #434343;
+    text-align: center;
+    width: auto;
+    margin: 0 auto;
+  }
+  .TitleTestimonial {
+    font-size: 2rem;
+    color: white;
+  }
+  .inner {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .col {
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+  .testimonial {
+    color: white;
+    background-color: rgb(41, 42, 43);
+    padding: 30px;
+    border-radius: 25px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+  }
+  .descriptionTestimonial {
+    font-family: "Poppins", sans-serif;
+    color: rgb(236, 232, 228);
+    text-align: center;
+  }
+}
 @media screen and (max-width: 960px) {
   .col {
     flex: 100%;
@@ -488,17 +550,6 @@ button:hover {
   .col {
     flex: 100%;
     max-width: 100%;
-  }
-}
-@media (max-width: 900px) {
-  .testimonials {
-    padding: 40px 0;
-    text-align: center;
-    width: auto;
-    margin: 0 auto;
-  }
-  .TitleTestimonial {
-    font-size: 2.5rem;
   }
 }
 footer {
@@ -516,6 +567,7 @@ footer p {
 @media (max-width: 900px) {
   footer {
     text-align: center;
+    padding: 2rem 0;
   }
   footer img {
     width: 30%;
@@ -561,6 +613,7 @@ footer p {
 
 .question h3 {
   font-size: 1.8rem;
+  font-weight: 500;
 }
 
 .answer {
@@ -570,6 +623,7 @@ footer p {
 }
 
 .answer p {
+  color: rgb(182, 176, 176);
   padding-top: 1rem;
   line-height: 1.6;
   text-align: left;
@@ -601,25 +655,25 @@ svg {
 }
 @media (max-width: 900px) {
   .questions {
-    padding: 10px 1rem;
+    padding: 0px 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: left;
     width: auto;
-    margin: 0 auto;
   }
   .questions .titleQuestions {
+    margin: 2rem 0rem;
     font-size: 2rem;
   }
   .faq {
     max-width: 100% !important;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid rgb(142, 138, 138);
     cursor: pointer;
   }
   .question h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     width: 90%;
   }
   .answer p {
@@ -633,45 +687,53 @@ svg {
   text-align: center;
 }
 .Calendly .TitleCalendly {
-  font-size: 3rem;
-  color: rgb(214, 178, 106);
-  background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(87, 55, 13) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
+  font-size: 2.5rem;
+  color: white;
 }
-.Calendly .btnCalendly {
+.Calendly .calendly-inline-widget {
+  width: auto;
+  scroll-behavior: smooth;
+}
+.Calendly .btnCalendlySection {
   background-color: white;
   border-radius: 45px;
   margin-top: 2rem;
+  font-family: "Poppins", sans-serif;
 }
-.Calendly .btnCalendly span a {
+.Calendly .btnCalendlySection span a {
   font-size: 1.5rem;
   text-align: center;
 }
 
 @media (max-width: 900px) {
   .Calendly {
-    padding: 30px;
+    padding: 40px;
   }
   .Calendly .TitleCalendly {
+    margin: 0 10px;
     font-size: 1.7rem;
     text-align: center;
   }
   .Calendly .TitleCalendly h2 {
-    color: rgb(214, 178, 106);
-    background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(87, 55, 13) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 2.1rem;
+    color: white;
   }
-  .Calendly .btnCalendly {
+  .Calendly .calendly-inline-widget {
+    width: 350px;
+    scroll-behavior: smooth;
+  }
+  .Calendly .btnCalendlySection {
     background-color: white;
-    border-radius: 65px;
-    margin-top: 2rem;
+    border-radius: 100px;
+    padding: 10px 20px;
   }
-  .Calendly .btnCalendly span a {
+  .Calendly .btnCalendlySection span a {
     font-size: 1.2rem;
     text-align: center;
+    width: 70%;
+  }
+  .Calendly .btnCalendlySection .svgItemCalendly {
+    padding: 8px 20px;
   }
 }
 body {
@@ -699,6 +761,21 @@ html {
   border-top: 1px rgb(124, 118, 118) solid;
 }
 
+@media (max-width: 900px) {
+  .lineHorizontal {
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 90%;
+    border-top: 1px rgb(124, 118, 118) solid;
+  }
+}
+.GoldSpan {
+  color: rgb(214, 178, 106);
+  background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(213, 189, 117) 8%, rgb(133, 87, 27) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .BenefitsSection {
   display: flex;
   padding: 0 9rem;
@@ -708,10 +785,7 @@ html {
 }
 .BenefitsSection .titleBenefit {
   font-size: 3rem;
-  color: rgb(214, 178, 106);
-  background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(213, 189, 117) 8%, rgb(133, 87, 27) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
 }
 .BenefitsSection .descriptionBenefit {
   font-size: 1.3rem;
@@ -724,8 +798,8 @@ html {
   gap: 2rem;
 }
 .BenefitsSection .containerBenefit .benefitBox {
-  color: rgb(27, 26, 26);
-  background-color: rgb(226, 230, 233);
+  color: white;
+  background-color: rgb(41, 42, 43);
   border-radius: 2rem;
   transition: all 0.2s ease;
   width: 290px;
@@ -753,10 +827,7 @@ html {
   .BenefitsSection .titleBenefit {
     width: 70%;
     font-size: 2rem;
-    color: rgb(214, 178, 106);
-    background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(213, 189, 117) 8%, rgb(133, 87, 27) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
   }
   .BenefitsSection .descriptionBenefit {
     width: 60%;
@@ -772,8 +843,8 @@ html {
   }
   .BenefitsSection .containerBenefit .benefitBox {
     color: white;
-    background-color: rgb(64, 67, 70);
-    border-radius: 1rem;
+    background-color: rgb(41, 42, 43);
+    border-radius: 2rem;
     transition: all 0.2s ease-in-out;
     width: 250px;
     height: 300px;
@@ -783,9 +854,13 @@ html {
   .BenefitsSection .containerBenefit .benefitBox img {
     width: 20%;
     padding: 0 2rem;
+    filter: drop-shadow(3px 3px 3px rgba(34, 34, 34, 0.4549019608));
+  }
+  .BenefitsSection .containerBenefit .benefitBox .DescriptionCardsBenefit {
+    color: rgb(184, 180, 180);
   }
   .BenefitsSection .containerBenefit .benefitBox:hover {
-    transform: translateY(-2px);
+    transform: none;
   }
 }
 .AboutAhmed {
@@ -799,12 +874,6 @@ html {
   text-align: center;
   font-size: 2.5rem;
   color: white;
-}
-.AboutAhmed .tituloAboutAhmed .goldTitle {
-  color: rgb(214, 178, 106);
-  background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(87, 55, 13) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .AboutAhmed .ProfileContainer {
   display: flex;
@@ -923,7 +992,7 @@ html {
 }
 @media (max-width: 900px) {
   .AboutAhmed {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -933,12 +1002,6 @@ html {
     text-align: center;
     font-size: 1.3rem;
     color: white;
-  }
-  .AboutAhmed .tituloAboutAhmed .goldTitle {
-    color: rgb(214, 178, 106);
-    background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(148, 99, 34) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
   .AboutAhmed .ProfileContainer {
     display: flex;
@@ -951,7 +1014,7 @@ html {
   }
   .AboutAhmed .descriptionAhmed {
     width: auto;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     text-align: left;
     color: white;
     font-size: 1rem;
@@ -1014,10 +1077,10 @@ html {
     height: 20px;
   }
   .AboutAhmed .card .socialContainer:hover {
-    transform: scale(1.1);
+    transform: none;
   }
   .AboutAhmed .card .socialContainer:active {
-    transform: scale(0.9);
+    transform: none;
   }
   .AboutAhmed .card .socialContainer .socialSvg {
     width: 17px;

@@ -43,10 +43,11 @@
 
   
 .titleWrapper{
-  color: rgb(214,178,106);
-  background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(87,55,13,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    color: white;
+  // color: rgb(214,178,106);
+  // background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(87,55,13,1) 100%);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
   text-align: center;
   font-size: 4rem;
   padding: 0 30px;}
@@ -109,7 +110,7 @@
     }
     
     .titleWrapper{
-     
+      color: white;
       text-align: center;
       font-size: 2rem;
       margin-bottom: .3rem;

@@ -7,9 +7,7 @@
 
         .titleBenefit{
             font-size: 3rem;
-            color: rgb(214,178,106);
-            background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(213,189,117,1) 8%, rgb(133, 87, 27) 100%);        -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: white;
             
         }
 
@@ -26,8 +24,8 @@
 
         .benefitBox{
          
-            color: rgb(27, 26, 26);
-            background-color: rgb(226, 230, 233);
+            color: white;
+            background-color: rgb(41, 42, 43);  
             border-radius: 2rem;
             transition: all .2s ease;
             width: 290px;
@@ -68,10 +66,7 @@
             .titleBenefit{
                 width: 70%;
                 font-size: 2rem;
-                color: rgb(214,178,106);
-                background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(213,189,117,1) 8%, rgb(133, 87, 27) 100%);        -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                
+                color: white              
             }
     
             .descriptionBenefit{
@@ -90,8 +85,8 @@
             .benefitBox{
              
                 color: white;
-                background-color: rgb(64, 67, 70);
-                border-radius: 1rem;
+                background-color: rgb(41, 42, 43);
+                border-radius: 2rem;
                 transition: all .2s ease-in-out;
                 width: 250px;
                 height: 300px;
@@ -104,11 +99,17 @@
                 img{
                     width: 20%;
                     padding: 0 2rem;
+                     -webkit-filter: drop-shadow(2px 2px 2px #222222);
+                filter: drop-shadow(3px 3px 3px #22222274);
+                }
+
+                .DescriptionCardsBenefit{
+                    color: rgb(184, 180, 180);
                 }
             }
     
             .benefitBox:hover{
-                transform: translateY(-2px);
+                transform: none;
             }
      
         }
