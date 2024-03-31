@@ -4,124 +4,155 @@
     justify-content: center;
     text-align: center;
 
+    
+
     .TitleCalendly{
+        // border: 2px yellow solid;
+        padding: 0;
+        margin: 0;
         font-size: 2.5rem;
         color: white;
     }
 
-    .calendly-inline-widget{
-        min-width:320px;
-        height:700px;
-        scroll-behavior: smooth;
-
-
-    }
-
-    .btnCalendlySection{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        cursor: pointer; // pointer for btn
-        margin: 0 auto; // margin for centering btn
-        transition: all .2s; //transtion to move icon
-        padding: 20px 60px; // padding to give space to each element
-        border-radius: 50px; //border of btn
-        border: 1px solid transparent;
-        display: flex;
-        align-items: center;
-        background: #ffffff;
-        border: 1px rgb(98, 95, 95) solid;
-        -webkit-box-shadow: 17px 24px 30px -2px #00000079;
-        -moz-box-shadow: 17px 24px 30px -2px rgba(0,0,0,0.4);
-        box-shadow: 17px 24px 30px -2px rgba(0,0,0,0.4);
-        
-        span a{
-            padding-right: 2rem; //padding to move the arrow
-            font-weight: 700; //font weight of btn
-            font-size: 1.5rem; //font size of the button
-            text-decoration: none; // remove decoration from text
-            
-            background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(213,189,117,1) 8%, rgba(87,55,13,1) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-
-    }
-
-    .btnCalendlySection > svg {
-        width: 34px;
-        // margin-left: 10px;
-        transition: transform .3s ease-in-out;
-      }
-      
-      .btnCalendlySection:hover svg {
-        transform: translateX(5px);
-      }
-      
-      .btnCalendlySection:active {
-        transform: scale(0.95);
-      }
     
-}
+    .cssbuttons-io-Calendly {
+      position: relative;
+      width: 30%;
+      margin: 0 auto;
+      font-family: inherit;
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing: 0.05em;
+      border-radius: 0.8em;
+      cursor: pointer;
+      filter: drop-shadow(20px 10px 20px rgba(0, 0, 0, 0.702));
+      border: none;
+      background: linear-gradient(146deg, rgba(255,233,152,1) 0%, rgb(228, 216, 181) 60%, rgb(177, 125, 57) 100%);
+      color: ghostwhite;
+      overflow: hidden;
+      transition: all ease-in-out .3s;
+      // margin-top: 2.5rem;
+      margin-bottom: 2rem;
+    
+      a{
+        text-decoration: none;
+        font-family: inherit;
+        color: black;
+        font-weight: 500;
+      }
+    }
+    
+    
+    .cssbuttons-io-Calendly:hover{
+      transform: translateY(-2px);
+    }
+    
+    .cssbuttons-io-Calendly svg {
+      color: black;
+      width: 1.2em;
+      height: 1.2em;
+      margin-right: 0.5em;
+    }
+    
+    .cssbuttons-io-Calendly span {
+      position: relative;
+      z-index: 10;
+      transition: color 0.4s;
+      display: inline-flex;
+      align-items: center;
+      padding: 0.8em 1.2em 0.8em 1.05em;
+    }
+    
+    .cssbuttons-io-Calendly::before,
+    .cssbuttons-io-Calendly::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+    
+    .cssbuttons-io-Calendly::before {
+      content: "";
+      background: white;
+      width: 120%;
+      left: -10%;
+      transform: skew(30deg);
+      transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    }
+    
+    .cssbuttons-io-Calendly:hover::before {
+      transform: translate3d(100%, 0, 0);
+    }
+    
+    .cssbuttons-io-Calendly:active {
+      transform: scale(0.95);
+    }
 
 
-@media (max-width: 900px) {
-    .Calendly{
+  }
+  @media (max-width: 900px) {
+    .Calendly {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 1rem 1rem ;
-
-    
-        .TitleCalendly{
+        padding: 1rem 1rem;
+        
+        .TitleCalendly {
             margin: 0 10px;
-            font-size: 1.7rem; //titulo calendly section
-            text-align: center; //alineacion de texto
-
-            h2{
+            font-size: 1.7rem; /* título calendly section */
+            text-align: center; /* alineación de texto */
+            
+            h2 {
                 font-size: 2.1rem;
                 color: white;
             }
-
-            }
-
-            .btnCalendlySection{
-                width: 90%;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                padding: .5rem 2rem;
-                margin: 1rem 0 0 1rem ;
-                align-items: center;
-
-
-                span a{
-                    padding-right:0; //padding to move the arrow
-                    font-weight: 700; //font weight of btn
-                    font-size: 1rem; //font size of the button
-                    text-decoration: none; // remove decoration from text
-                    
-                    background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(213,189,117,1) 8%, rgba(87,55,13,1) 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-            }
-        
-
-            .btnCalendlySection > svg {
-
-                transition: none;
-              }
-              
-              .btnCalendlySection:hover svg {
-                transform: translateX(0px);
-              }
-              
-              .btnCalendlySection:active {
-                transform: scale(0);
-              }
         }
-          
+
+        .cssbuttons-io-Calendly {
+            border: none;
+            background: white;
+            color: ghostwhite;
+            overflow: hidden;
+            margin-top: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .cssbuttons-io-Calendly,
+        .cssbuttons-io-Calendly::before,
+        .cssbuttons-io-Calendly::after {
+            transition: none; /* Eliminar la transición */
+            transform: none; /* Eliminar la transformación */
+        }
+
+        .cssbuttons-io-Calendly,
+        .cssbuttons-io-Calendly::before,
+        .cssbuttons-io-Calendly::after {
+            position: relative;
+            width: 95%;
+            height: 100%; /* Ajusta según sea necesario */
+            top: 0; /* Establecer un valor específico para la posición vertical */
+            left: 0; /* Establecer un valor específico para la posición horizontal */
+            z-index: 0;
+        }
+
+        .cssbuttons-io-Calendly::before {
+            content: "";
+            background: white;
+            width: 0;
+            transition: none; /* Eliminar la transición */
+        }
+
+        .cssbuttons-io-Calendly:hover{
+          transform: translateY(0);
+        }
+        .cssbuttons-io-Calendly:hover::before {
+            transform: none; /* Eliminar la transformación */
+        }
+
+        .cssbuttons-io-Calendly:active {
+            transform: none; /* Eliminar la transformación */
+        }
     }
+}

@@ -10,7 +10,7 @@
 
 }
 
-.titleQuestions{
+.titleQuestions{ // Title question
   font-size: 3rem;
   color: rgb(214, 178, 106);
         background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgb(123, 80, 24) 100%);
@@ -21,11 +21,11 @@
 }
 
 .faq{
-    max-width: 80%;
-    min-width: 80%;
+    max-width: 70%;
+    min-width: 70%;
     margin-top: 2rem ;
     padding-bottom: 1rem;
-    border-bottom: 1px solid rgb(142, 138, 138);
+    border-bottom: 1px solid rgb(176, 170, 170);
     cursor: pointer;
 }
 
@@ -35,8 +35,8 @@
   align-items: center;
 }
 
-.question h3{
-  font-size: 1.8rem;
+.question h3{ // question font 
+  font-size: 1.5rem;
   font-weight: 500;
 }
 

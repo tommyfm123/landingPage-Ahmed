@@ -53,58 +53,20 @@
   padding: 3rem;
   margin: 0 auto;
 
+
+}
+
+#BtnMargin{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .column-list li {
   margin-bottom: 10px;
 }
 
-.btnServices{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 1rem 0; //margen de arriba y abajo del boton
-  align-items: center;
-  cursor: pointer; // pointer for btn
-  transition: all .2s; //transtion to move icon
-  padding: 20px 60px; // padding to give space to each element
-  border-radius: 50px; //border of btn
-  border: 1px solid transparent;
-  background: #ffffff;
-  border: 1px rgb(98, 95, 95) solid;
-  -webkit-box-shadow: 17px 24px 30px -2px #00000079;
-  -moz-box-shadow: 17px 24px 30px -2px rgba(0,0,0,0.4);
-  box-shadow: 17px 24px 30px -2px rgba(0,0,0,0.4);  
-    
-
-  span a{
-    padding-right: 2rem; //padding to move the arrow
-      font-weight: 700; //font weight of btn
-      font-size: 1.5rem; //font size of the button
-      text-decoration: none; // remove decoration from text
-      background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(213,189,117,1) 8%, rgba(87,55,13,1) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-  }
-
 }
 
-.btnServices > svg {
-  width: 34px;
-  // margin-left: 10px;
-  transition: transform .3s ease-in-out;
-}
-
-.btnServices:hover svg {
-  transform: translateX(5px);
-}
-
-.btnServices:active {
-  transform: scale(0.95);
-}
-
-
-}
 
 
 @media (max-width: 900px) {
@@ -156,29 +118,7 @@
     
     }
     
-    
 
-
-    .btnServices{
-      height: 3.5rem;
-      margin-top: 2rem;
-      span a{
-        font-size: 1rem;
-      }
   }
 
-  .btnServices > svg {
-    transition: none;
-  }
-  
-  .btnServices:hover svg {
-    transform: translateX(0px);
-  }
-  
-  .btnServices:active {
-    transform: scale(0);
-  }
-    
-    
-  }
 }

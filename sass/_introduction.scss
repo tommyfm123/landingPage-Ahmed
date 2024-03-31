@@ -18,7 +18,7 @@
 
 
       span{
-        color: rgb(214,178,106);
+        color: #d6b26a;
         background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(213,189,117,1) 8%, rgb(133, 87, 27) 100%);        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       
@@ -35,71 +35,94 @@
 .vslVideo {
     width: 70%;
     border-radius: 20px;
-    margin: 30px;
     filter: drop-shadow(20px 10px 20px rgba(0, 0, 0, 0.5));
     cursor: pointer;
     transition: all .2s ease;
 
 }
-
-.BtnVSL {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    cursor: pointer; // pointer for btn
-    margin: 0 auto; // margin for centering btn
-    transition: all .2s; //transtion to move icon
-    padding: 20px 60px; // padding to give space to each element
-    border-radius: 50px; //border of btn
-    border: 1px solid transparent;
-    display: flex;
-    align-items: center;
-    background: #ffffff;
-    border: 1px rgb(98, 95, 95) solid;
-    -webkit-box-shadow: 17px 24px 30px -2px #00000079;
-    -moz-box-shadow: 17px 24px 30px -2px rgba(0,0,0,0.4);
-    box-shadow: 17px 24px 30px -2px rgba(0,0,0,0.4);
     
-    span a{
-      padding-right: 2rem; //padding to move the arrow
-      font-weight: 700; //font weight of btn
-      font-size: 1.5rem; //font size of the button
-      text-decoration: none; // remove decoration from text
-      
-      background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(213,189,117,1) 8%, rgba(87,55,13,1) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+ 
 
-      svg{
-        color: rgb(140, 255, 0);
-        background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(87,55,13,1) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
+.cssbuttons-io {
+  position: relative;
+  font-family: inherit;
+  filter: drop-shadow(20px 10px 20px rgba(0, 0, 0, 0.727));
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(146deg, rgba(255,233,152,1) 0%, rgb(228, 216, 181) 60%, rgb(177, 125, 57) 100%);
+  color: ghostwhite;
+  overflow: hidden;
+  transition: all ease-in-out .3s;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 
-      
-    }
+  a{
+    text-decoration: none;
+    font-family: inherit;
+    color: black;
+    font-weight: 500;
   }
-  
-  // button:hover {  //boton hover color
-  //    background: #eee9e9;
-  // }
-  
-  .BtnVSL > svg {
-    width: 34px;
-    // margin-left: 10px;
-    transition: transform .3s ease-in-out;
-  }
-  
-  .BtnVSL:hover svg {
-    transform: translateX(5px);
-  }
-  
-  .BtnVSL:active {
-    transform: scale(0.95);
-  }
-  
+}
+
+
+.cssbuttons-io:hover{
+  transform: translateY(-2px);
+}
+
+.cssbuttons-io svg {
+  color: black;
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
+.cssbuttons-io span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cssbuttons-io::before {
+  content: "";
+  background: white;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+  transform: scale(0.95);
+}
+
+#BtnServices{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+
+
 
 .linea{
     width: 70%;
@@ -131,34 +154,6 @@
 
       }
 
-      .BtnVSL{
-        // margin: 20px 0px;
-        text-align: center;
-        padding: .5rem 2rem; // padding to give space to each element
-        border-radius: 50px; //border of btn
-        // height: 3.5rem;
-        margin: 1rem 0;
-
-
-          span a{
-            padding-right: 3rem; //padding to move the arrow
-            font-weight:800; //font weight of btn
-        
-
-
-          }
-
-        // .SVGImage {
-        //     width: auto;
-        //     // border: 2px red solid;
-        //     margin-left: 0;
-        //     transition:none;
-          
-        //   }
-
-
-
-
         span a{
           font-size: .9rem;
         }
@@ -186,26 +181,79 @@
               color: rgb(226, 219, 219);
           }
       }
-      .BtnLearnMore {
-          margin-top: 20px;
+
+      .cssbuttons-io {
+        filter: drop-shadow(20px 10px 20px rgba(0, 0, 0, 0.727));
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        border-radius: 0.8em;
+        cursor: pointer;
+        border: none;
+        background: white;
+        color: ghostwhite;
+        overflow: hidden;
+        transition: none;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      
+        a{
+          text-decoration: none;
+          font-family: inherit;
+          color: black;
+          font-weight: 500;
+        }
       }
+      
+      
+      .cssbuttons-io:hover{
+        transform: translateY(0px);
+      }
+      
+      .cssbuttons-io svg {
+        color: black;
+        width: 1.2em;
+        height: 1.2em;
+        margin-right: 0.5em;
+      }
+      
+      .cssbuttons-io span {
+        position: relative;
+        z-index: 10;
+        transition: none;
+        padding: 0.8em 1.2em 0.8em 1.05em;
+      }
+      
+      .cssbuttons-io::before,
+      .cssbuttons-io::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
+      
+      .cssbuttons-io::before {
+        content: "";
+        background: white;
+        width: 120%;
+        left: -10%;
+        transform: skew(30deg);
+        transition: none;
+      }
+      
+      .cssbuttons-io:hover::before {
+        transform: none;
+      }
+      
+      .cssbuttons-io:active {
+        transform: none;
+      }
+    
   }
 
 
-     .BtnVSL:hover svg {
-       transform: translateX(0);
-     }
-  
-     .BtnVSL:active {
-       transform: none;
-     }
-  
-     .BtnVSL:hover {
-       background-color: #e0dede;
-     }
-
-
-      .vslVideo:hover {
-          transform: scale(1);
-         }
-}
+.vslVideo:hover {
+    transform: scale(1);
+  }

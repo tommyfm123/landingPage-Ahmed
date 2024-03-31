@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos/estilos.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -56,6 +58,10 @@
             <span>Country</span>
         </label>
         <label>
+            <input class="input" type="text" name="City" placeholder="" required="" id="City">
+            <span>City</span>
+        </label>
+        <label>
             <input class="input" type="email" name="Email" placeholder="" required="" id="email">
             <span>Email</span>
         </label>
@@ -63,44 +69,41 @@
         <label for="PracticeArea">Choose the area where you need help</label>
 
         <select name="Area of practice" id="AreaDropdown">
+            <option value="Banking and Financial
+            ">Banking and Financial
+            </option>
+            <option value="Construction
+            ">Construction
+            </option>
+            <option value="Insurance
+            ">Insurance
+            </option>
+            <option value="Commercial Claims
+            ">Commercial Claims
+            </option>
+            <option value="Personal Injury Claims
+            ">Personal Injury Claims</option>
+            <option value="Drug and Alcohol Crimes
+            ">Drug and Alcohol Crimes
+            </option>
             <option value="Personal Status
             ">Personal Status
             </option>
-            <option value="Criminal Law
-            ">Criminal Law
+            <option value="Rental Disputes Claims">Rental Disputes Claims </option>
+            <option value="Financial Crimes
+            ">Financial Crimes
             </option>
             <option value="Real Estate
             ">Real Estate
             </option>
-            <option value="Legal Opinion
-            ">Legal Opinion
+            <option value="Cybercrime Offenses
+            ">Cybercrime Offenses
             </option>
-            <option value="Contract Drafting and Review
-            ">Contract Drafting and Review</option>
-            <option value="Incorporation Of Corporate Entities
-            ">Incorporation Of Corporate Entities
+            <option value="Financial Claims
+            ">Financial Claims
             </option>
-            <option value="Attestation
-            ">Attestation
-            </option>
-            <option value="Commercial Law">Commercial Law </option>
-            <option value="Labour Law
-            ">Labour Law
-            </option>
-            <option value="Litigation
-            ">Litigation
-            </option>
-            <option value="Legal Notices
-            ">Legal Notices
-            </option>
-            <option value="Memorandum of Association
-            ">Memorandum of Association
-            </option>
-            <option value="Risk Assessment and Due Diligence
-            ">Risk Assessment and Due Diligence
-            </option>
-            <option value="Power of Attorneys
-            ">Power of Attorneys
+            <option value="Others
+            ">Others
             </option>
         </select>
 
@@ -109,6 +112,7 @@
             <span>Describe your problem</span>
         </label>
         <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
         <button class="btnForm" type="submit">
             <div class="svg-wrapper-1">
                 <div class="svg-wrapper">

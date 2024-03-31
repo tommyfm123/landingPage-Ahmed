@@ -135,7 +135,7 @@
 
 
   #AreaDropdown{
-    width: 50%;
+    width: 103%;
 
     select{
         width: 100%;
@@ -149,7 +149,9 @@
   }
   
   .btnForm {
+    width: 100px;
     font-family: inherit;
+    margin: 0 auto;
     font-size: 1rem;
     background: #c09951;
     color: white;
@@ -162,6 +164,7 @@
     overflow: hidden;
     transition: all 0.2s;
     cursor: pointer;
+    margin-top: 2rem ;
   }
   
   .btnForm:hover {
@@ -311,7 +314,7 @@
         // border: 2px yellow solid;
         width: 100%;
         gap: 1.5rem;
-        padding: 4px;
+        padding: 0px;
     
         label{
             // border: 2px yellow solid;
@@ -362,7 +365,7 @@
     
     
       #AreaDropdown{
-        width: 100%;
+        width: 107%;
     
         select{
             width: 100%;
@@ -388,6 +391,7 @@
         border-radius: 10px;
         overflow: hidden;
         transition: all 0.2s;
+        margin-top: 1rem ;
         cursor: pointer;
       }
       

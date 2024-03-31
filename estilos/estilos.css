@@ -48,7 +48,7 @@ header .logo img {
   font-size: 2rem;
 }
 .textVSL span {
-  color: rgb(214, 178, 106);
+  color: #d6b26a;
   background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(213, 189, 117) 8%, rgb(133, 87, 27) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -62,56 +62,85 @@ header .logo img {
 .vslVideo {
   width: 70%;
   border-radius: 20px;
-  margin: 30px;
   filter: drop-shadow(20px 10px 20px rgba(0, 0, 0, 0.5));
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-.BtnVSL {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+.cssbuttons-io {
+  position: relative;
+  font-family: inherit;
+  filter: drop-shadow(20px 10px 20px rgba(0, 0, 0, 0.727));
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
   cursor: pointer;
-  margin: 0 auto;
-  transition: all 0.2s;
-  padding: 20px 60px;
-  border-radius: 50px;
-  border: 1px solid transparent;
-  display: flex;
-  align-items: center;
-  background: #ffffff;
-  border: 1px rgb(98, 95, 95) solid;
-  box-shadow: 17px 24px 30px -2px rgba(0, 0, 0, 0.4);
+  border: none;
+  background: linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(228, 216, 181) 60%, rgb(177, 125, 57) 100%);
+  color: ghostwhite;
+  overflow: hidden;
+  transition: all ease-in-out 0.3s;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
-.BtnVSL span a {
-  padding-right: 2rem;
-  font-weight: 700;
-  font-size: 1.5rem;
+.cssbuttons-io a {
   text-decoration: none;
-  background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(213, 189, 117) 8%, rgb(87, 55, 13) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.BtnVSL span a svg {
-  color: rgb(140, 255, 0);
-  background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(87, 55, 13) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: inherit;
+  color: black;
+  font-weight: 500;
 }
 
-.BtnVSL > svg {
-  width: 34px;
-  transition: transform 0.3s ease-in-out;
+.cssbuttons-io:hover {
+  transform: translateY(-2px);
 }
 
-.BtnVSL:hover svg {
-  transform: translateX(5px);
+.cssbuttons-io svg {
+  color: black;
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
 }
 
-.BtnVSL:active {
+.cssbuttons-io span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cssbuttons-io::before {
+  content: "";
+  background: white;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
   transform: scale(0.95);
+}
+
+#BtnServices {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .linea {
@@ -138,52 +167,90 @@ header .logo img {
     margin: 0 auto;
     border-radius: 10px;
   }
-  .vsl .BtnVSL {
-    text-align: center;
-    padding: 0.5rem 2rem;
-    border-radius: 50px;
-    margin: 1rem 0;
-  }
-  .vsl .BtnVSL span a {
-    padding-right: 3rem;
-    font-weight: 800;
-  }
-  .vsl .BtnVSL span a {
+  .vsl span a {
     font-size: 0.9rem;
   }
-  .vsl .tituloIntroduction {
+  .tituloIntroduction {
     width: 90%;
     padding: 5%;
   }
-  .vsl .tituloIntroduction h1 {
+  .tituloIntroduction h1 {
     font-size: 150%;
     color: rgb(255, 255, 255);
   }
-  .vsl .parrafoIntro {
+  .parrafoIntro {
     padding: 10px;
   }
-  .vsl .parrafoIntro p {
+  .parrafoIntro p {
     font-size: 1rem;
     font-weight: 400;
     padding: 10px;
     color: rgb(226, 219, 219);
   }
-  .vsl .BtnLearnMore {
-    margin-top: 20px;
+  .cssbuttons-io {
+    filter: drop-shadow(20px 10px 20px rgba(0, 0, 0, 0.727));
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    border-radius: 0.8em;
+    cursor: pointer;
+    border: none;
+    background: white;
+    color: ghostwhite;
+    overflow: hidden;
+    transition: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
-  .BtnVSL:hover svg {
-    transform: translateX(0);
+  .cssbuttons-io a {
+    text-decoration: none;
+    font-family: inherit;
+    color: black;
+    font-weight: 500;
   }
-  .BtnVSL:active {
+  .cssbuttons-io:hover {
+    transform: translateY(0px);
+  }
+  .cssbuttons-io svg {
+    color: black;
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5em;
+  }
+  .cssbuttons-io span {
+    position: relative;
+    z-index: 10;
+    transition: none;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+  }
+  .cssbuttons-io::before,
+  .cssbuttons-io::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  .cssbuttons-io::before {
+    content: "";
+    background: white;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: none;
+  }
+  .cssbuttons-io:hover::before {
     transform: none;
   }
-  .BtnVSL:hover {
-    background-color: #e0dede;
-  }
-  .vslVideo:hover {
-    transform: scale(1);
+  .cssbuttons-io:active {
+    transform: none;
   }
 }
+.vslVideo:hover {
+  transform: scale(1);
+}
+
 .AboutContainer {
   width: auto;
   margin: 0 auto;
@@ -256,6 +323,13 @@ header .logo img {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+.lineHorizontalPractice {
+  margin: 0 auto;
+  margin-top: 3rem;
+  width: 80%;
+  border-top: 1px rgb(124, 118, 118) solid;
 }
 
 @media (max-width: 900px) {
@@ -376,42 +450,12 @@ header .logo img {
   padding: 3rem;
   margin: 0 auto;
 }
+.wrapper #BtnMargin {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
 .wrapper .column-list li {
   margin-bottom: 10px;
-}
-.wrapper .btnServices {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 1rem 0;
-  align-items: center;
-  cursor: pointer;
-  transition: all 0.2s;
-  padding: 20px 60px;
-  border-radius: 50px;
-  border: 1px solid transparent;
-  background: #ffffff;
-  border: 1px rgb(98, 95, 95) solid;
-  box-shadow: 17px 24px 30px -2px rgba(0, 0, 0, 0.4);
-}
-.wrapper .btnServices span a {
-  padding-right: 2rem;
-  font-weight: 700;
-  font-size: 1.5rem;
-  text-decoration: none;
-  background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(213, 189, 117) 8%, rgb(87, 55, 13) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.wrapper .btnServices > svg {
-  width: 34px;
-  transition: transform 0.3s ease-in-out;
-}
-.wrapper .btnServices:hover svg {
-  transform: translateX(5px);
-}
-.wrapper .btnServices:active {
-  transform: scale(0.95);
 }
 
 @media (max-width: 900px) {
@@ -448,22 +492,6 @@ header .logo img {
     list-style-type: none;
     padding: 10px 0;
     margin: 0 auto;
-  }
-  .wrapper .btnServices {
-    height: 3.5rem;
-    margin-top: 2rem;
-  }
-  .wrapper .btnServices span a {
-    font-size: 1rem;
-  }
-  .wrapper .btnServices > svg {
-    transition: none;
-  }
-  .wrapper .btnServices:hover svg {
-    transform: translateX(0px);
-  }
-  .wrapper .btnServices:active {
-    transform: scale(0);
   }
 }
 .testimonials {
@@ -535,6 +563,13 @@ header .logo img {
   margin-bottom: 20px;
 }
 
+.lineHorizontalTestimonies {
+  margin: 0 auto;
+  margin-top: 3rem;
+  width: 80%;
+  border-top: 1px rgb(124, 118, 118) solid;
+}
+
 @media (max-width: 900px) {
   .testimonial:hover {
     transform: translateY(0);
@@ -552,6 +587,8 @@ header .logo img {
   }
   .inner {
     max-width: 1200px;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
     margin: auto;
     overflow: hidden;
   }
@@ -585,10 +622,10 @@ header .logo img {
     max-width: 0%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .col {
     flex: 100%;
-    max-width: 100%;
+    max-width: 90%;
   }
 }
 footer {
@@ -636,11 +673,11 @@ footer p {
 }
 
 .faq {
-  max-width: 80%;
-  min-width: 80%;
+  max-width: 70%;
+  min-width: 70%;
   margin-top: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid rgb(142, 138, 138);
+  border-bottom: 1px solid rgb(176, 170, 170);
   cursor: pointer;
 }
 
@@ -651,7 +688,7 @@ footer p {
 }
 
 .question h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -726,48 +763,73 @@ svg {
   text-align: center;
 }
 .Calendly .TitleCalendly {
+  padding: 0;
+  margin: 0;
   font-size: 2.5rem;
   color: white;
 }
-.Calendly .calendly-inline-widget {
-  min-width: 320px;
-  height: 700px;
-  scroll-behavior: smooth;
-}
-.Calendly .btnCalendlySection {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  cursor: pointer;
+.Calendly .cssbuttons-io-Calendly {
+  position: relative;
+  width: 30%;
   margin: 0 auto;
-  transition: all 0.2s;
-  padding: 20px 60px;
-  border-radius: 50px;
-  border: 1px solid transparent;
-  display: flex;
-  align-items: center;
-  background: #ffffff;
-  border: 1px rgb(98, 95, 95) solid;
-  box-shadow: 17px 24px 30px -2px rgba(0, 0, 0, 0.4);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
+  cursor: pointer;
+  filter: drop-shadow(20px 10px 20px rgba(0, 0, 0, 0.702));
+  border: none;
+  background: linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(228, 216, 181) 60%, rgb(177, 125, 57) 100%);
+  color: ghostwhite;
+  overflow: hidden;
+  transition: all ease-in-out 0.3s;
+  margin-bottom: 2rem;
 }
-.Calendly .btnCalendlySection span a {
-  padding-right: 2rem;
-  font-weight: 700;
-  font-size: 1.5rem;
+.Calendly .cssbuttons-io-Calendly a {
   text-decoration: none;
-  background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(213, 189, 117) 8%, rgb(87, 55, 13) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: inherit;
+  color: black;
+  font-weight: 500;
 }
-.Calendly .btnCalendlySection > svg {
-  width: 34px;
-  transition: transform 0.3s ease-in-out;
+.Calendly .cssbuttons-io-Calendly:hover {
+  transform: translateY(-2px);
 }
-.Calendly .btnCalendlySection:hover svg {
-  transform: translateX(5px);
+.Calendly .cssbuttons-io-Calendly svg {
+  color: black;
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
 }
-.Calendly .btnCalendlySection:active {
+.Calendly .cssbuttons-io-Calendly span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+.Calendly .cssbuttons-io-Calendly::before,
+.Calendly .cssbuttons-io-Calendly::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.Calendly .cssbuttons-io-Calendly::before {
+  content: "";
+  background: white;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+.Calendly .cssbuttons-io-Calendly:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+.Calendly .cssbuttons-io-Calendly:active {
   transform: scale(0.95);
 }
 
@@ -780,39 +842,51 @@ svg {
   }
   .Calendly .TitleCalendly {
     margin: 0 10px;
-    font-size: 1.7rem;
-    text-align: center;
+    font-size: 1.7rem; /* título calendly section */
+    text-align: center; /* alineación de texto */
   }
   .Calendly .TitleCalendly h2 {
     font-size: 2.1rem;
     color: white;
   }
-  .Calendly .btnCalendlySection {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 0.5rem 2rem;
-    margin: 1rem 0 0 1rem;
-    align-items: center;
+  .Calendly .cssbuttons-io-Calendly {
+    border: none;
+    background: white;
+    color: ghostwhite;
+    overflow: hidden;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
   }
-  .Calendly .btnCalendlySection span a {
-    padding-right: 0;
-    font-weight: 700;
-    font-size: 1rem;
-    text-decoration: none;
-    background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(213, 189, 117) 8%, rgb(87, 55, 13) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  .Calendly .cssbuttons-io-Calendly,
+  .Calendly .cssbuttons-io-Calendly::before,
+  .Calendly .cssbuttons-io-Calendly::after {
+    transition: none; /* Eliminar la transición */
+    transform: none; /* Eliminar la transformación */
   }
-  .Calendly .btnCalendlySection > svg {
-    transition: none;
+  .Calendly .cssbuttons-io-Calendly,
+  .Calendly .cssbuttons-io-Calendly::before,
+  .Calendly .cssbuttons-io-Calendly::after {
+    position: relative;
+    width: 95%;
+    height: 100%; /* Ajusta según sea necesario */
+    top: 0; /* Establecer un valor específico para la posición vertical */
+    left: 0; /* Establecer un valor específico para la posición horizontal */
+    z-index: 0;
   }
-  .Calendly .btnCalendlySection:hover svg {
-    transform: translateX(0px);
+  .Calendly .cssbuttons-io-Calendly::before {
+    content: "";
+    background: white;
+    width: 0;
+    transition: none; /* Eliminar la transición */
   }
-  .Calendly .btnCalendlySection:active {
-    transform: scale(0);
+  .Calendly .cssbuttons-io-Calendly:hover {
+    transform: translateY(0);
+  }
+  .Calendly .cssbuttons-io-Calendly:hover::before {
+    transform: none; /* Eliminar la transformación */
+  }
+  .Calendly .cssbuttons-io-Calendly:active {
+    transform: none; /* Eliminar la transformación */
   }
 }
 body {
@@ -835,7 +909,6 @@ html {
 
 .lineHorizontal {
   margin: 0 auto;
-  margin-top: 3rem;
   width: 80%;
   border-top: 1px rgb(124, 118, 118) solid;
 }
@@ -895,10 +968,17 @@ html {
   transform: translateY(-3px);
 }
 
+.lineHorizontalNetwork {
+  margin: 0 auto;
+  margin-top: 3rem;
+  width: 80%;
+  border-top: 1px rgb(124, 118, 118) solid;
+}
+
 @media (max-width: 900px) {
   .BenefitsSection {
     display: flex;
-    padding: 0 2rem;
+    padding: 0px;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -909,14 +989,14 @@ html {
     color: white;
   }
   .BenefitsSection .descriptionBenefit {
-    width: 60%;
+    width: 70%;
     font-size: 1rem;
     color: rgb(203, 198, 198);
   }
   .BenefitsSection .containerBenefit {
     display: flex;
     flex-direction: column;
-    padding: 2rem 7rem;
+    padding: 2rem;
     color: white;
     gap: 2rem;
   }
@@ -925,9 +1005,9 @@ html {
     background-color: rgb(41, 42, 43);
     border-radius: 2rem;
     transition: all 0.2s ease-in-out;
-    width: 250px;
+    width: 90%;
     height: 300px;
-    padding: 2rem 2rem;
+    padding: 2rem 0rem;
     box-shadow: 10px 15px 21px 0px rgba(0, 0, 0, 0.511);
   }
   .BenefitsSection .containerBenefit .benefitBox img {
@@ -940,6 +1020,34 @@ html {
   }
   .BenefitsSection .containerBenefit .benefitBox:hover {
     transform: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .BenefitsSection {
+    display: flex;
+    padding: 0 2rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .BenefitsSection .titleBenefit {
+    width: 70%;
+  }
+  .BenefitsSection .descriptionBenefit {
+    width: 90%;
+  }
+  .BenefitsSection .containerBenefit {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .BenefitsSection .containerBenefit .benefitBox {
+    width: 80%;
+    height: 300px;
+    padding: 2rem 2rem;
   }
 }
 .AboutAhmed {
@@ -1057,6 +1165,13 @@ html {
 .AboutAhmed .viewsBloque .vl {
   border-left: 1.5px solid rgb(152, 149, 149);
   height: 3.5rem;
+}
+
+.lineHorizontalAhmed {
+  margin: 0 auto;
+  margin-top: 3rem;
+  width: 80%;
+  border-top: 1px rgb(124, 118, 118) solid;
 }
 
 @keyframes slide-in-top {
@@ -1376,7 +1491,7 @@ form:hover {
 }
 
 #AreaDropdown {
-  width: 50%;
+  width: 103%;
   background-color: #333;
   padding: 0.8rem 1rem;
   border-radius: 10px;
@@ -1388,7 +1503,9 @@ form:hover {
 }
 
 .btnForm {
+  width: 100px;
   font-family: inherit;
+  margin: 0 auto;
   font-size: 1rem;
   background: #c09951;
   color: white;
@@ -1401,6 +1518,7 @@ form:hover {
   overflow: hidden;
   transition: all 0.2s;
   cursor: pointer;
+  margin-top: 2rem;
 }
 
 .btnForm:hover {
@@ -1525,7 +1643,7 @@ form:hover {
     display: flex;
     width: 100%;
     gap: 1.5rem;
-    padding: 4px;
+    padding: 0px;
   }
   .flex label {
     width: 50%;
@@ -1570,7 +1688,7 @@ form:hover {
     font-size: medium;
   }
   #AreaDropdown {
-    width: 100%;
+    width: 107%;
     background-color: #333;
     padding: 0.8rem 1rem;
     border-radius: 10px;
@@ -1593,6 +1711,7 @@ form:hover {
     border-radius: 10px;
     overflow: hidden;
     transition: all 0.2s;
+    margin-top: 1rem;
     cursor: pointer;
   }
   .btnForm:hover {
