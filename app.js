@@ -55,19 +55,3 @@ window.addEventListener('load', observeSections);
 
 
 
-// function addAnimation() {
-//   scrollers.forEach((scroller) => {
-//     // Añadir data-animated="true" a cada `.scroller` en la página
-//     scroller.setAttribute("data-animated", true);
-
-//     // Obtener el elemento interno que contiene los elementos de la lista
-//     const scrollerInner = scroller.querySelector('.scroller__inner');
-//     // Obtener la anchura total de los elementos dentro del contenedor
-//     const totalWidth = scrollerInner.scrollWidth;
-
-//     // Definir la animación de desplazamiento
-//     scrollerInner.style.animation = `scroll ${totalWidth / 100}px linear infinite`;
-//   });
-// }
-
-// addAnimation();

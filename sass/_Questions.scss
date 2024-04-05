@@ -84,7 +84,7 @@ svg{
 @media (max-width: 900px) {
   .questions{
     // min-height: 100vh;
-    padding: 0px 1.3rem;
+    padding: 0px 3rem;
     display: flex;
     flex-direction: column;
     text-align: left ;    width: auto; //opcional
@@ -98,7 +98,7 @@ svg{
   .faq{
     max-width: 100% !important;
     margin-top: 1rem ;
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
     border-bottom: 1px solid rgb(142, 138, 138);
     cursor: pointer;
 }

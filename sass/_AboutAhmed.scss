@@ -1,13 +1,13 @@
 .AboutAhmed { // estructura bloque ahmed odeh
-  width: 80%; //opcional
-  margin: 0 auto; //opcional
+  width: 80%;  
+  margin: 0 auto; 
   display: grid;
     grid-template-areas: 
       "titulo titulo"
       "socials socials"
       "pictures textAhmed";
   
-     .tituloAboutAhmed { // titulo About Ahmed odeh
+     .tituloAboutAhmed { // Title About Ahmed odeh
       grid-area: titulo;
       text-align: center;
       font-size: 2.5rem;
@@ -18,13 +18,10 @@
 
     .ProfileContainer{
       display: flex;
-      // align-items: center;
-      // height: 100%;
-      // border: 2px yellow solid;
 
     }
   
-      .profilePicture {
+      .profilePicture { //Profile picture
           grid-area: picture;
           filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
           // height: 70%; // tamaño de img

@@ -65,28 +65,34 @@
 
 @media (max-width: 900px) {
     .BenefitsSection{
+
         display: flex;
-        padding: 0px;
+        padding: 1rem;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
         text-align: center;
     
             .titleBenefit{
-                width: 70%;
+                
+                align-items: center;
                 font-size: 2rem;
                 color: white              
             }
     
             .descriptionBenefit{
-                width: 70%;
+                width: auto;
                 font-size: 1rem;
                 color: rgb(203, 198, 198);
             }
     
         .containerBenefit{
             display: flex;
-            flex-direction: column;
-            padding: 2rem; //padding costados
+                   
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 0; //padding costados
             color: white;
             gap: 2rem;
     
@@ -96,9 +102,9 @@
                 background-color: rgb(41, 42, 43);
                 border-radius: 2rem;
                 transition: all .2s ease-in-out;
-                width: 90%;
+                width: 80%;
                 height: 300px;
-                padding: 2rem 0rem;
+                padding: 2rem 2rem;
                 -webkit-box-shadow: 10px 15px 21px 0px rgba(0,0,0,0.511);
                 -moz-box-shadow: 10px 15px 21px 0px rgba(0, 0, 0, 0.511);
                 box-shadow: 10px 15px 21px 0px rgba(0,0,0,0.511);
@@ -139,12 +145,14 @@
     
             .descriptionBenefit{
                 width: 90%;
+                padding: 1rem;
             }
     
         .containerBenefit{
+            // border: 2px yellow solid;
             display: flex;
             flex-direction: column;
-            padding: 2rem 2rem; //padding costados
+            // padding: 2rem 2rem; //padding costados
             justify-content: center;
             align-items: center;
             gap: 2rem;
