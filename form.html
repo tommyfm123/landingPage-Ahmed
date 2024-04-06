@@ -36,42 +36,42 @@
 
     <form class="form" action="https://api.web3forms.com/submit" method="POST">
 
-        <input type="hidden" name="access_key" value="10ea72f2-4dd9-45ac-888e-2e6b535e154e">
+        <input type="hidden" name="access_key" value="40c6f85c-2ded-4339-bbb6-23b58402d514">
 
         <p class="title">Book a consultation</p>
         <p class="message">Legal advice when you need it the most.</p>
 
         <div class="flex">
             <label>
-                <input class="input" type="text" name="Firstname" placeholder="" required="" id="firstname">
+                <input class="input" type="text" name="Firstname" placeholder="" required="required" id="firstname">
                 <span>Firstname</span>
             </label>
             <label>
-                <input class="input" type="text" name="Lastname" placeholder="" required="" id="lastname">
+                <input class="input" type="text" name="Lastname" placeholder="" required="required" id="lastname">
                 <span>Lastname</span>
             </label>
 
         </div>
         <label>
-            <input class="input" type="text" name="Number" placeholder="" required="" id="Number">
+            <input class="input" type="text" name="Number" placeholder="" required="required" id="Number">
             <span>Number</span>
         </label>
         <label>
-            <input class="input" name="Country" type="text" placeholder="" required="" id="Country">
+            <input class="input" name="Country" type="text" placeholder="" required="required" id="Country">
             <span>Country</span>
         </label>
         <label>
-            <input class="input" type="text" name="City" placeholder="" required="" id="City">
+            <input class="input" type="text" name="City" placeholder="" required="required" id="City">
             <span>City</span>
         </label>
         <label>
-            <input class="input" type="email" name="Email" placeholder="" required="" id="email">
+            <input class="input" type="email" name="Email" placeholder="" required="required" id="email">
             <span>Email</span>
         </label>
 
         <label for="PracticeArea">Choose the area where you need help</label>
 
-        <select name="Area of practice" id="AreaDropdown">
+        <select name="Area of practice" id="AreaDropdown" required="required">
             <option value="Banking and Financial
             ">Banking and Financial
             </option>
@@ -111,9 +111,29 @@
         </select>
 
         <label>
-            <input class="input" name="Description" type="text" placeholder="" required="">
-            <span>Describe your problem</span>
+            <input class="input" name="Description" type="text" placeholder="" required="required">
+            <span>Briefly describe your problem</span>
         </label>
+        <p>Do you have at least $200 to invest in a consultation?</p>
+        <label>
+            <div class="radio-button-container">
+                <div class="radio-button">
+                    <input type="radio" class="radio-button__input" id="radio1" name="moneyToInvest" value="Yes">
+                    <label class="radio-button__label" for="radio1">
+                        <span class="radio-button__custom"></span>
+                        Yes
+                    </label>
+                </div>
+                <div class="radio-button">
+                    <input type="radio" class="radio-button__input" id="radio2" name="moneyToInvest" value="No">
+                    <label class="radio-button__label" for="radio2">
+                        <span class="radio-button__custom"></span>
+                        No
+                    </label>
+                </div>
+            </div>
+        </label>
+
         <input type="hidden" name="redirect" value="https://web3forms.com/success">
 
         <button class="btnForm" type="submit">

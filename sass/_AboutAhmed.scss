@@ -195,6 +195,7 @@
     
         }
 
+
         .button3{
           display: flex;
           justify-content: center;
@@ -271,6 +272,7 @@
     
        .viewsBloque{ //bloque de views
             display: flex;
+
             justify-content: center;
             align-items: center;
     
@@ -291,8 +293,8 @@
             }
     
             .vl {
-                border-left: 1.5px solid rgb(152, 149, 149);
-                height: 3.5rem;
+                border-left:none;
+                height: 0px;
               }
         }
       
