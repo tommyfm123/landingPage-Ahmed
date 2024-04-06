@@ -1017,58 +1017,23 @@ html {
 }
 .AboutAhmed .card {
   grid-area: socials;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-right: 2rem;
   padding-left: 2rem;
-  padding-bottom: 1rem;
-  gap: 50px;
+  padding-bottom: 2rem;
+  gap: 10px;
   margin: auto;
   border-radius: 10px;
-  /* for all social containers */
 }
-.AboutAhmed .card .socialContainer {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
+.AboutAhmed .card .imgTikTok {
+  width: 50%;
   justify-content: center;
-  transition-duration: 0.3s;
-  /* individual styles for each social container */
+  transition: 0.3s ease all;
 }
-.AboutAhmed .card .socialContainer.containerOne {
-  border-radius: 30px;
-}
-.AboutAhmed .card .socialContainer.containerTwo {
-  border-radius: 30px;
-}
-.AboutAhmed .card .socialContainer.containerThree {
-  border-radius: 50px;
-}
-.AboutAhmed .card .socialContainer.containerFour {
-  border-radius: 90px;
-  height: 20px;
-}
-.AboutAhmed .card .socialContainer:hover {
-  transform: scale(1.1);
-  transform: translateY(-3px);
-}
-.AboutAhmed .card .socialContainer:active {
-  transform: scale(0.9);
-}
-.AboutAhmed .card .socialContainer .socialSvg {
-  width: 17px;
-}
-.AboutAhmed .card .socialContainer .socialSvg path {
-  fill: rgb(255, 255, 255);
-}
-.AboutAhmed .card .socialContainer:hover .socialSvg {
-  animation: slide-in-top 0.3s both;
+.AboutAhmed .card .imgTikTok:hover {
+  transform: translateY(-2px);
 }
 .AboutAhmed .viewsBloque {
   display: flex;
@@ -1169,49 +1134,20 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: none;
+    padding-left: none;
     padding-bottom: 1rem;
-    gap: 20px;
+    gap: 1px;
     border-radius: 10px;
-    /* for all social containers */
   }
-  .AboutAhmed .card .socialContainer {
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
+  .AboutAhmed .card .imgTikTok {
+    width: 40%;
+    margin-left: 2rem;
     justify-content: center;
-    transition-duration: 0.3s;
-    /* individual styles for each social container */
+    transition: 0.3s ease all;
   }
-  .AboutAhmed .card .socialContainer.containerOne {
-    border-radius: 30px;
-  }
-  .AboutAhmed .card .socialContainer.containerTwo {
-    border-radius: 30px;
-  }
-  .AboutAhmed .card .socialContainer.containerThree {
-    border-radius: 50px;
-  }
-  .AboutAhmed .card .socialContainer.containerFour {
-    border-radius: 90px;
-    height: 20px;
-  }
-  .AboutAhmed .card .socialContainer:hover {
+  .AboutAhmed .card .imgTikTok:hover {
     transform: none;
-  }
-  .AboutAhmed .card .socialContainer:active {
-    transform: none;
-  }
-  .AboutAhmed .card .socialContainer .socialSvg {
-    width: 17px;
-  }
-  .AboutAhmed .card .socialContainer .socialSvg path {
-    fill: rgb(255, 255, 255);
-  }
-  .AboutAhmed .card .socialContainer:hover .socialSvg {
-    animation: slide-in-top 0.3s both;
   }
   .AboutAhmed .viewsBloque {
     display: flex;
@@ -1235,8 +1171,8 @@ html {
     font-weight: 800;
   }
   .AboutAhmed .viewsBloque .vl {
-    border-left: none;
-    height: 0px;
+    border-left: 1.5px solid rgb(152, 149, 149);
+    height: 3.5rem;
   }
   @keyframes slide-in-top {
     0% {
@@ -1250,36 +1186,38 @@ html {
   }
 }
 @media only screen and (max-width: 900px) and (min-width: 1280px) and (max-width: 1440px) {
-  /* Estilos para el MacBook Air */
   .AboutAhmed {
+    /* Estilos para el MacBook Air */
+  }
+  .AboutAhmed .AboutAhmed {
     padding: 0 10rem;
     width: 80%;
     margin: 0 auto;
   }
-  .ProfileContainer {
+  .AboutAhmed .ProfileContainer {
     display: flex;
     align-items: center;
     height: 100%;
   }
-  .profilePicture {
+  .AboutAhmed .profilePicture {
     grid-area: picture;
     filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
     height: 85%;
     margin-right: 3rem;
     align-items: first baseline;
   }
-  .descriptionAhmed {
+  .AboutAhmed .descriptionAhmed {
     grid-area: textAhmed;
     color: white;
     font-size: 1px;
     padding: 1px;
     float: right;
   }
-  .descriptionAhmed .btnAhmed {
+  .AboutAhmed .descriptionAhmed .btnAhmed {
     margin-top: 2rem;
     height: 3.5rem;
   }
-  .descriptionAhmed .btnAhmed span a {
+  .AboutAhmed .descriptionAhmed .btnAhmed span a {
     font-weight: 700;
     font-size: 1rem;
   }

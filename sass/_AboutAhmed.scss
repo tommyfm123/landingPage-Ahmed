@@ -50,58 +50,34 @@
   
     .card {
       grid-area: socials;
-      width: fit-content;
-      height: fit-content;
+
       display: flex;
       align-items: center;
       justify-content: center;
       padding-right: 2rem;
       padding-left: 2rem;
-      padding-bottom: 1rem;
-      gap: 50px;
+      padding-bottom: 2rem;
+      gap: 10px;
       margin: auto;
       border-radius: 10px;
+      // border: 2px yellow solid;
     
-  
-      /* for all social containers */
-      .socialContainer {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        align-items: center;
+      .imgTikTok{
+        width: 50%;
         justify-content: center;
-        transition-duration: 0.3s;
-  
-        /* individual styles for each social container */
-        &.containerOne { border-radius: 30px; }
-        &.containerTwo { border-radius: 30px; }
-        &.containerThree { border-radius: 50px; }
-        &.containerFour { border-radius: 90px; height: 20px; }
-  
-        &:hover {
-          transform: scale(1.1);
-          transform: translateY(-3px);
+        transition: .3s ease all;
+      }
+
+      .imgTikTok:hover{
+        transform: translateY(-2px);
+      }
+      
 
         }
   
-        &:active {
-          transform: scale(0.9);
-        }
+      
   
-        .socialSvg {
-          width: 17px;
-          path {
-            fill: rgb(255, 255, 255);
-          }
-        }
-  
-        &:hover .socialSvg {
-          animation: slide-in-top 0.3s both;
-        }
-      }
-    }
-  
-  
+   
 
    .viewsBloque{ //bloque de views
         display: flex;
@@ -226,46 +202,24 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          padding-right: 1rem;
-          padding-left: 1rem;
+          padding-right: none;
+          padding-left: none;
           padding-bottom: 1rem;
-          gap: 20px;
+          gap: 1px;
           border-radius: 10px;
-      
-          /* for all social containers */
-          .socialContainer {
-            width: 32px;
-            height: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition-duration: 0.3s;
-      
-            /* individual styles for each social container */
-            &.containerOne { border-radius: 30px; }
-            &.containerTwo { border-radius: 30px; }
-            &.containerThree { border-radius: 50px; }
-            &.containerFour { border-radius: 90px; height: 20px; }
-      
-            &:hover {
+          
+            .imgTikTok{
+              width: 40%;
+              margin-left: 2rem;
+              justify-content: center;
+              transition: .3s ease all;
+            }
+
+            .imgTikTok:hover{
               transform: none;
             }
       
-            &:active {
-              transform: none;          
-              }
-      
-            .socialSvg {
-              width: 17px;
-              path {
-                fill: rgb(255, 255, 255);
-              }
-            }
-      
-            &:hover .socialSvg {
-              animation: slide-in-top 0.3s both;
-            }
-          }
+         
         }
       
       
@@ -291,12 +245,13 @@
                     font-weight: 800;
                 }
             }
+
+
     
             .vl {
-                border-left:none;
-                height: 0px;
-              }
-        }
+              border-left: 1.5px solid rgb(152, 149, 149);
+              height: 3.5rem;
+            }
       
        
       }
@@ -359,3 +314,4 @@
       
     
   }
+}
