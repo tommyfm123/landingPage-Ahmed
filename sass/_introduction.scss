@@ -59,18 +59,19 @@
   border-radius: 10px;
   cursor: pointer;
   border: none;
-  background: rgb(235, 235, 235);
+  background: rgb(231, 231, 231);
   color: ghostwhite;
   overflow: hidden;
   transition: all ease-in-out .3s;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 
-  a{
+  .textoBtn{
     text-decoration: none;
     font-family: inherit;
     color: black;
     font-weight: 500;
+    font-size: 1.2rem;
   }
 }
 
@@ -93,7 +94,7 @@
   transition: color 0.4s;
   display: inline-flex;
   align-items: center;
-  padding: 0.8em 1.2em 0.8em 1.05em;
+  padding: 0.5em 1.2em 0.5em 1.05em;
 }
 
 
@@ -176,21 +177,19 @@
         font-weight: 500;
         font-size: 20px;
         letter-spacing: 0.05em;
-        border-radius: 0.8em;
+        border-radius: 0.7em;
         cursor: pointer;
-        border: none;
-        background: white;
-        color: ghostwhite;
         overflow: hidden;
         transition: none;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
       
-        a{
+        .textoBtn{
           text-decoration: none;
           font-family: inherit;
           color: black;
           font-weight: 500;
+          font-size: .98rem;
         }
       }
       
@@ -210,7 +209,7 @@
         position: relative;
         z-index: 10;
         transition: none;
-        padding: 0.8em 1.2em 0.8em 1.05em;
+        padding: 0.4em 1em 0.4em 1em;
       }
       
       .cssbuttons-io::before,
