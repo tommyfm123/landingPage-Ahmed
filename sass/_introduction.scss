@@ -1,53 +1,62 @@
 .vsl {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin: 0 auto; //opcional
-    text-align: center;
-    padding: 0 3rem; //padding costados
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto; //opcional
+  text-align: center;
+  padding: 0 3rem; //padding costados
 }
 
-.textVSL { // texto general
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+.textVSL {
+  // texto general
+  padding: 0;
+  width: 70%;
+  // border: 2px yellow solid;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+
+  span {
+    color: #d6b26a;
+    background: -webkit-linear-gradient(146deg, rgba(255, 233, 152, 1) 0%, rgba(213, 189, 117, 1) 8%, rgb(133, 87, 27) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+
+
+  p {
     color: white;
+    font-weight: 900;
     font-size: 2rem;
+  }
 
-
-      span{
-        color: #d6b26a;
-        background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(213,189,117,1) 8%, rgb(133, 87, 27) 100%);        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      
-      }
-      
-
-    p{
-      color: white;
-      font-weight: 900;
-      font-size: 2rem;
-    }
+  .Subtitle {
+    font-size: 1.5rem;
+    color: #d6b26a;
+    background: -webkit-linear-gradient(146deg, rgba(255, 233, 152, 1) 0%, rgba(213, 189, 117, 1) 8%, rgb(133, 87, 27) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+  }
 }
 
-.responsive-iframe {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 40%; /* Ajusta este valor según tus necesidades */
+.VideoContainer {
+  width: 20%;
 }
 
-.responsive-iframe iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+
+.TextBelowVideo {
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-left: 10%;
+  margin-right: 10%;
 }
-    
- 
+
+
 
 .cssbuttons-io {
   position: relative;
@@ -56,7 +65,7 @@
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.05em;
-  border-radius: 10px;
+  border-radius: 18px;
   cursor: pointer;
   border: none;
   background: rgb(231, 231, 231);
@@ -66,7 +75,7 @@
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 
-  .textoBtn{
+  .textoBtn {
     text-decoration: none;
     font-family: inherit;
     color: black;
@@ -76,7 +85,7 @@
 }
 
 
-.cssbuttons-io:hover{
+.cssbuttons-io:hover {
   transform: translateY(-2px);
   background-color: rgb(230, 224, 224);
 }
@@ -98,7 +107,7 @@
 }
 
 
-#BtnServices{
+#BtnServices {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
@@ -106,142 +115,142 @@
 
 
 
-.linea{
-    width: 70%;
+.linea {
+  width: 70%;
 
-    color: #dcddd88e;
+  color: #dcddd88e;
 
 }
 
 @media (max-width: 900px) {
   .vsl {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 0 1rem; //padding costados
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem; //padding costados
+    height: auto;
+    // border: 3px yellow solid;
 
-      .textVSL{
-        font-size: 1rem;
-        color: rgb(255, 255, 255);
-        margin-left: 2px;
-        margin-right: 2px;
+    .textVSL {
+      padding: 0;
+      width: 100%;
+      font-size: .95rem;
+      color: rgb(255, 255, 255);
+    }
 
-      }
+    .Subtitle {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
 
-      .responsive-iframe {
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-bottom: 50%; /* Ajusta este valor según tus necesidades */
-      }
-      
-      .responsive-iframe iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
+    .TextBelowVideo {
+      color: white;
+      font-weight: 400;
+      font-size: 1rem;
+    }
 
-        span a{
-          font-size: .9rem;
-        }
-      }
+    .VideoContainer {
+      width: 70%;
+    }
 
-      .tituloIntroduction{
-          // border: 2px yellow solid;
-          width: 90%;
-          padding: 5%;
 
-          h1 {
-              // margin-top: 100px;
-              font-size: 150%;
-              color: rgb(255, 255, 255);
-          }
-      }
-      .parrafoIntro {
-          padding: 10px;
-          // border: 2px yellow solid;
-
-          p {
-              font-size: 1rem;
-              font-weight: 400;
-              padding: 10px;
-              color: rgb(226, 219, 219);
-          }
-      }
-
-      .cssbuttons-io {
-        filter: drop-shadow(20px 10px 20px rgba(0, 0, 0, 0.727));
-        font-weight: 500;
-        font-size: 20px;
-        letter-spacing: 0.05em;
-        border-radius: 0.7em;
-        cursor: pointer;
-        overflow: hidden;
-        transition: none;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-      
-        .textoBtn{
-          text-decoration: none;
-          font-family: inherit;
-          color: black;
-          font-weight: 500;
-          font-size: .98rem;
-        }
-      }
-      
-      
-      .cssbuttons-io:hover{
-        transform: translateY(0px);
-      }
-      
-      .cssbuttons-io svg {
-        color: black;
-        width: 1.2em;
-        height: 1.2em;
-        margin-right: 0.5em;
-      }
-      
-      .cssbuttons-io span {
-        position: relative;
-        z-index: 10;
-        transition: none;
-        padding: 0.4em 1em 0.4em 1em;
-      }
-      
-      .cssbuttons-io::before,
-      .cssbuttons-io::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
-      }
-      
-      .cssbuttons-io::before {
-        content: "";
-        background: white;
-        width: 120%;
-        left: -10%;
-        transform: skew(30deg);
-        transition: none;
-      }
-      
-      .cssbuttons-io:hover::before {
-        transform: none;
-      }
-      
-      .cssbuttons-io:active {
-        transform: none;
-      }
-    
+    span a {
+      font-size: .9rem;
+    }
   }
+
+  .tituloIntroduction {
+    width: 90%;
+    padding: 5%;
+
+    h1 {
+      font-size: 150%;
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  .parrafoIntro {
+    padding: 10px;
+
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      padding: 10px;
+      color: rgb(226, 219, 219);
+    }
+  }
+
+  .cssbuttons-io {
+    filter: drop-shadow(20px 10px 20px rgba(0, 0, 0, 0.727));
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    border-radius: 0.7em;
+    cursor: pointer;
+    overflow: hidden;
+    transition: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    .textoBtn {
+      text-decoration: none;
+      font-family: inherit;
+      color: black;
+      font-weight: 500;
+      font-size: .98rem;
+    }
+  }
+
+
+  .cssbuttons-io:hover {
+    transform: translateY(0px);
+  }
+
+  .cssbuttons-io svg {
+    color: black;
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5em;
+  }
+
+  .cssbuttons-io span {
+    position: relative;
+    z-index: 10;
+    transition: none;
+    padding: 0.4em .8em 0.4em .8em;
+  }
+
+  .cssbuttons-io::before,
+  .cssbuttons-io::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .cssbuttons-io::before {
+    content: "";
+    background: white;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: none;
+  }
+
+  .cssbuttons-io:hover::before {
+    transform: none;
+  }
+
+  .cssbuttons-io:active {
+    transform: none;
+  }
+
+}
 
 
 .vslVideo:hover {
-    transform: scale(1);
-  }
+  transform: scale(1);
+}
