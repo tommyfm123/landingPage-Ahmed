@@ -20,12 +20,12 @@ header .logo img {
     justify-content: center;
     align-items: center;
     width: auto;
-    height: 3rem;
-    padding: 20px;
+    height: 1rem;
+    padding: 10px;
     padding: 30px;
   }
   header .logo img {
-    height: 3.5rem;
+    height: 3rem;
     text-align: center;
   }
 }
@@ -141,7 +141,7 @@ header .logo img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 1rem;
     height: auto;
   }
   .vsl .textVSL {
@@ -399,38 +399,42 @@ header .logo img {
   display: grid;
   grid-template-areas: "titulo titulo" "socials socials" "pictures textAhmed";
 }
-.AboutAhmed .tituloAboutAhmed {
+
+.tituloAboutAhmed {
   grid-area: titulo;
   text-align: center;
   font-size: 2.5rem;
   color: white;
 }
-.AboutAhmed .ProfileContainer {
+
+.ProfileContainer {
   display: flex;
 }
-.AboutAhmed .profilePicture {
+
+.profilePicture {
   grid-area: picture;
   filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
   height: 35vw;
   margin-right: 3rem;
-  align-items: first baseline;
 }
-.AboutAhmed .descriptionAhmed {
+
+.descriptionAhmed {
   grid-area: textAhmed;
   color: white;
   display: flex;
   flex-direction: column;
   font-size: 1.4rem;
   padding: 0 3rem;
-  float: right;
   justify-content: center;
   text-align: left;
 }
-.AboutAhmed .descriptionAhmed .textDescription {
+
+.descriptionAhmed .textDescription {
   align-items: center;
   font-weight: 300;
 }
-.AboutAhmed .card {
+
+.card {
   grid-area: socials;
   width: -moz-fit-content;
   width: fit-content;
@@ -439,62 +443,48 @@ header .logo img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  padding-bottom: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
   gap: 50px;
   margin: auto;
   border-radius: 10px;
-  /* for all social containers */
 }
-.AboutAhmed .card .socialContainer {
+
+.card .socialContainer {
   width: 50px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition-duration: 0.3s;
-  /* individual styles for each social container */
 }
-.AboutAhmed .card .socialContainer.containerOne {
-  border-radius: 30px;
+
+.card .socialContainer:hover {
+  transform: scale(1.1) translateY(-3px);
 }
-.AboutAhmed .card .socialContainer.containerTwo {
-  border-radius: 30px;
-}
-.AboutAhmed .card .socialContainer.containerThree {
-  border-radius: 50px;
-}
-.AboutAhmed .card .socialContainer.containerFour {
-  border-radius: 90px;
-  height: 20px;
-}
-.AboutAhmed .card .socialContainer:hover {
-  transform: scale(1.1);
-  transform: translateY(-3px);
-}
-.AboutAhmed .card .socialContainer:active {
+
+.card .socialContainer:active {
   transform: scale(0.9);
 }
-.AboutAhmed .card .socialContainer .socialSvg {
+
+.card .socialContainer .socialSvg {
   width: 17px;
 }
-.AboutAhmed .card .socialContainer .socialSvg path {
+
+.card .socialContainer .socialSvg path {
   fill: rgb(255, 255, 255);
 }
-.AboutAhmed .card .socialContainer:hover .socialSvg {
+
+.card .socialContainer:hover .socialSvg {
   animation: slide-in-top 0.3s both;
 }
-.AboutAhmed .socialContainer svg {
-  width: 40px;
-  height: 40px;
-}
-.AboutAhmed .viewsBloque {
+
+.viewsBloque {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.AboutAhmed .viewsBloque .viewsText {
+
+.viewsBloque .viewsText {
   padding: 30px;
   color: #d6b26a;
   background: -webkit-linear-gradient(146deg, rgb(177, 148, 42) 0%, rgb(222, 196, 196) 100%);
@@ -506,10 +496,12 @@ header .logo img {
      -moz-user-select: none;
           user-select: none;
 }
-.AboutAhmed .viewsBloque .viewsText span {
+
+.viewsBloque .viewsText span {
   font-weight: 800;
 }
-.AboutAhmed .viewsBloque .vl {
+
+.viewsBloque .vl {
   border-left: 1.5px solid rgb(152, 149, 149);
   height: 3.5rem;
 }
@@ -524,145 +516,52 @@ header .logo img {
     opacity: 1;
   }
 }
+/* Responsive Design for screens <= 900px */
 @media (max-width: 900px) {
   .AboutAhmed {
-    margin: 0 auto;
     display: flex;
-    padding: 0rem;
     flex-direction: column;
+    padding: 0rem;
     justify-content: center;
+    width: 90%;
   }
-  .AboutAhmed .tituloAboutAhmed {
-    text-align: center;
+  .tituloAboutAhmed {
     font-size: 1.3rem;
-    color: white;
   }
-  .AboutAhmed .ProfileContainer {
+  .ProfileContainer {
     display: flex;
   }
-  .AboutAhmed .profilePicture {
-    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
+  .profilePicture {
+    height: 90vw;
     margin: 0 auto;
     text-align: center;
-    height: 90vw;
   }
-  .AboutAhmed .descriptionAhmed {
+  .descriptionAhmed {
     width: auto;
-    padding: 1rem 1rem;
-    text-align: left;
-    color: white;
+    padding: 1rem;
     font-size: 1rem;
     float: none;
   }
-  .AboutAhmed .button3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  .AboutAhmed .button3 .btnAhmed {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    border-radius: 10px;
-  }
-  .AboutAhmed .button3 .btnAhmed span a {
-    font-weight: 800;
-    font-size: 1.3rem;
-  }
-  .AboutAhmed .card {
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
+  .card {
+    padding: 1rem;
     gap: 20px;
-    border-radius: 10px;
-    /* for all social containers */
   }
-  .AboutAhmed .card .socialContainer {
+  .card .socialContainer {
     width: 32px;
     height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 0.3s;
-    /* individual styles for each social container */
   }
-  .AboutAhmed .card .socialContainer.containerOne {
-    border-radius: 30px;
-  }
-  .AboutAhmed .card .socialContainer.containerTwo {
-    border-radius: 30px;
-  }
-  .AboutAhmed .card .socialContainer.containerThree {
-    border-radius: 50px;
-  }
-  .AboutAhmed .card .socialContainer.containerFour {
-    border-radius: 90px;
-    height: 20px;
-  }
-  .AboutAhmed .card .socialContainer:hover {
+  .card .socialContainer:hover,
+  .card .socialContainer:active {
     transform: none;
   }
-  .AboutAhmed .card .socialContainer:active {
-    transform: none;
-  }
-  .AboutAhmed .card .socialContainer .socialSvg {
-    width: 17px;
-  }
-  .AboutAhmed .card .socialContainer .socialSvg path {
-    fill: rgb(255, 255, 255);
-  }
-  .AboutAhmed .card .socialContainer:hover .socialSvg {
-    animation: slide-in-top 0.3s both;
-  }
-  .AboutAhmed .viewsBloque {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .AboutAhmed .viewsBloque .viewsText {
+  .viewsBloque .viewsText {
     text-align: center;
     padding: 0 0.5rem;
-    color: #d6b26a;
-    background: -webkit-linear-gradient(146deg, rgb(177, 148, 42) 0%, rgb(222, 196, 196) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-size: 1rem;
-    font-weight: 800;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-            user-select: none;
-  }
-  .AboutAhmed .viewsBloque .viewsText span {
-    font-weight: 800;
-  }
-  .AboutAhmed .viewsBloque .vl {
-    border-left: 1.5px solid rgb(152, 149, 149);
-    height: 3.5rem;
-  }
-  @keyframes slide-in-top {
-    0% {
-      transform: translateY(-50px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
   }
 }
-@media only screen and (max-width: 900px) and (min-width: 1280px) and (max-width: 1440px) {
-  /* Estilos para el MacBook Air */
+/* Estilos para MacBook Air (screens between 1280px and 1440px) */
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
   .AboutAhmed {
     padding: 0 10rem;
     width: 80%;
@@ -674,18 +573,12 @@ header .logo img {
     height: 100%;
   }
   .profilePicture {
-    grid-area: picture;
-    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
     height: 85%;
     margin-right: 3rem;
-    align-items: first baseline;
   }
   .descriptionAhmed {
-    grid-area: textAhmed;
-    color: white;
-    font-size: 1px;
-    padding: 1px;
-    float: right;
+    font-size: 1rem;
+    padding: 1rem;
   }
   .descriptionAhmed .btnAhmed {
     margin-top: 2rem;
@@ -703,20 +596,24 @@ header .logo img {
   align-items: center;
   text-align: center;
 }
+
 .BenefitsSection .titleBenefit {
   font-size: 3rem;
   color: white;
 }
+
 .BenefitsSection .descriptionBenefit {
   font-size: 1.3rem;
   color: rgb(203, 198, 198);
 }
+
 .BenefitsSection .containerBenefit {
   display: flex;
   padding: 2rem 5rem;
   color: white;
   gap: 2rem;
 }
+
 .BenefitsSection .containerBenefit .benefitBox {
   color: white;
   background-color: rgb(41, 42, 43);
@@ -727,98 +624,73 @@ header .logo img {
   padding: 1rem 2rem;
   box-shadow: 10px 15px 21px 0px rgba(0, 0, 0, 0.369);
 }
+
 .BenefitsSection .containerBenefit .benefitBox img {
   width: 20%;
   padding-top: 1.5rem;
   filter: drop-shadow(3px 3px 3px rgba(34, 34, 34, 0.4549019608));
 }
+
 .BenefitsSection .containerBenefit .benefitBox:hover {
   transform: translateY(-3px);
 }
 
 .lineHorizontalNetwork {
-  margin: 0 auto;
-  margin-top: 3rem;
+  margin: 3rem auto 0;
   width: 80%;
-  border-top: 1px rgb(124, 118, 118) solid;
+  border-top: 1px solid rgb(124, 118, 118);
 }
 
+/* Responsive Design for screens <= 900px */
 @media (max-width: 900px) {
   .BenefitsSection {
-    display: flex;
-    padding: 1rem;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding: 0 1rem;
   }
   .BenefitsSection .titleBenefit {
-    align-items: center;
-    font-size: 2rem;
-    color: white;
+    font-size: 1.5rem;
   }
   .BenefitsSection .descriptionBenefit {
-    width: auto;
     font-size: 1rem;
-    color: rgb(203, 198, 198);
   }
   .BenefitsSection .containerBenefit {
-    display: flex;
-    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
-    color: white;
-    gap: 2rem;
   }
   .BenefitsSection .containerBenefit .benefitBox {
-    color: white;
-    background-color: rgb(41, 42, 43);
-    border-radius: 2rem;
-    transition: all 0.2s ease-in-out;
     width: 80%;
     height: 300px;
-    padding: 2rem 2rem;
-    box-shadow: 10px 15px 21px 0px rgba(0, 0, 0, 0.511);
+    padding: 2rem;
   }
   .BenefitsSection .containerBenefit .benefitBox img {
     width: 20%;
     padding: 0 2rem;
-    filter: drop-shadow(3px 3px 3px rgba(34, 34, 34, 0.4549019608));
-  }
-  .BenefitsSection .containerBenefit .benefitBox .DescriptionCardsBenefit {
-    color: rgb(184, 180, 180);
   }
   .BenefitsSection .containerBenefit .benefitBox:hover {
     transform: none;
   }
 }
+/* Responsive Design for screens <= 700px */
 @media screen and (max-width: 700px) {
   .BenefitsSection {
-    display: flex;
-    padding: 0 2rem;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding: 0 1.5rem;
   }
   .BenefitsSection .titleBenefit {
-    width: 70%;
+    width: 90%;
   }
   .BenefitsSection .descriptionBenefit {
     width: 90%;
     padding: 1rem;
   }
   .BenefitsSection .containerBenefit {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 2rem;
   }
   .BenefitsSection .containerBenefit .benefitBox {
     width: 80%;
     height: 300px;
-    padding: 2rem 2rem;
+    padding: 2rem;
   }
 }
 .questions {
@@ -899,20 +771,23 @@ svg {
 }
 @media (max-width: 900px) {
   .questions {
-    padding: 0px 3rem;
+    padding: 0px 1rem;
     display: flex;
     flex-direction: column;
     text-align: left;
     width: auto;
   }
   .questions .titleQuestions {
-    margin: 2rem 0rem;
+    width: 80%;
+    margin: 0rem 0rem;
+    padding: 1rem;
     font-size: 2rem;
   }
   .faq {
     max-width: 100% !important;
+    width: 90%;
     margin-top: 1rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
     border-bottom: 1px solid rgb(142, 138, 138);
     cursor: pointer;
   }
@@ -1087,6 +962,9 @@ svg {
 }
 
 @media screen and (max-width: 960px) {
+  .testimonials {
+    padding: 10px;
+  }
   .col {
     flex: 100%;
     max-width: 90%;

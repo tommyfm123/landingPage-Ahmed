@@ -1,169 +1,115 @@
-.BenefitsSection{
+.BenefitsSection {
     display: flex;
     padding: 0 9rem;
     flex-direction: column;
     align-items: center;
     text-align: center;
-
-        .titleBenefit{
-            font-size: 3rem;
-            color: white;
-            
-        }
-
-        .descriptionBenefit{
-            font-size: 1.3rem;
-            color: rgb(203, 198, 198);
-        }
-
-    .containerBenefit{
-        display: flex;
-        padding: 2rem 5rem; //padding costados
-        color: white;
-        gap: 2rem;
-
-        .benefitBox{
-         
-            color: white;
-            background-color: rgb(41, 42, 43);  
-            border-radius: 2rem;
-            transition: all .2s ease;
-            width: 290px;
-            height: 300px;
-            padding: 1rem 2rem;
-            -webkit-box-shadow: 10px 15px 21px 0px rgba(0,0,0,0.511);
-            -moz-box-shadow: 10px 15px 21px 0px rgba(0, 0, 0, 0.511);
-            box-shadow: 10px 15px 21px 0px rgba(0, 0, 0, 0.369);
-
-    
-    
-            img{
-                width: 20%;
-                padding-top: 1.5rem ;
-                -webkit-filter: drop-shadow(2px 2px 2px #222222);
-                filter: drop-shadow(3px 3px 3px #22222274);
-                
-            }
-        }
-
-        .benefitBox:hover{
-            transform: translateY(-3px);
-        }
- 
-    }
-
 }
 
-.lineHorizontalNetwork{
-    margin: 0 auto;
-    margin-top: 3rem;
-  
+.BenefitsSection .titleBenefit {
+    font-size: 3rem;
+    color: white;
+}
+
+.BenefitsSection .descriptionBenefit {
+    font-size: 1.3rem;
+    color: rgb(203, 198, 198);
+}
+
+.BenefitsSection .containerBenefit {
+    display: flex;
+    padding: 2rem 5rem;
+    color: white;
+    gap: 2rem;
+}
+
+.BenefitsSection .containerBenefit .benefitBox {
+    color: white;
+    background-color: rgb(41, 42, 43);
+    border-radius: 2rem;
+    transition: all 0.2s ease;
+    width: 290px;
+    height: 300px;
+    padding: 1rem 2rem;
+    box-shadow: 10px 15px 21px 0px rgba(0, 0, 0, 0.369);
+}
+
+.BenefitsSection .containerBenefit .benefitBox img {
+    width: 20%;
+    padding-top: 1.5rem;
+    filter: drop-shadow(3px 3px 3px #22222274);
+}
+
+.BenefitsSection .containerBenefit .benefitBox:hover {
+    transform: translateY(-3px);
+}
+
+.lineHorizontalNetwork {
+    margin: 3rem auto 0;
     width: 80%;
-    border-top: 1px rgb(124, 118, 118) solid;
+    border-top: 1px solid rgb(124, 118, 118);
 }
 
-
+/* Responsive Design for screens <= 900px */
 @media (max-width: 900px) {
-    .BenefitsSection{
-
-        display: flex;
-        padding: 1rem;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    
-            .titleBenefit{
-                
-                align-items: center;
-                font-size: 2rem;
-                color: white              
-            }
-    
-            .descriptionBenefit{
-                width: auto;
-                font-size: 1rem;
-                color: rgb(203, 198, 198);
-            }
-    
-        .containerBenefit{
-            display: flex;
-                   
-            justify-content: center;
-            flex-direction: row;
-            flex-wrap: wrap;
-            padding: 0; //padding costados
-            color: white;
-            gap: 2rem;
-    
-            .benefitBox{
-             
-                color: white;
-                background-color: rgb(41, 42, 43);
-                border-radius: 2rem;
-                transition: all .2s ease-in-out;
-                width: 80%;
-                height: 300px;
-                padding: 2rem 2rem;
-                -webkit-box-shadow: 10px 15px 21px 0px rgba(0,0,0,0.511);
-                -moz-box-shadow: 10px 15px 21px 0px rgba(0, 0, 0, 0.511);
-                box-shadow: 10px 15px 21px 0px rgba(0,0,0,0.511);
-        
-        
-                img{
-                    width: 20%;
-                    padding: 0 2rem;
-                     -webkit-filter: drop-shadow(2px 2px 2px #222222);
-                filter: drop-shadow(3px 3px 3px #22222274);
-                }
-
-                .DescriptionCardsBenefit{
-                    color: rgb(184, 180, 180);
-                }
-            }
-    
-            .benefitBox:hover{
-                transform: none;
-            }
-     
-        }
-    
+    .BenefitsSection {
+        padding: 0 1rem;
     }
-}
 
-@media screen and (max-width:700px) {
-    .BenefitsSection{
-        display: flex;
+    .BenefitsSection .titleBenefit {
+        font-size: 1.5rem;
+    }
+
+    .BenefitsSection .descriptionBenefit {
+        font-size: 1rem;
+    }
+
+    .BenefitsSection .containerBenefit {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .BenefitsSection .containerBenefit .benefitBox {
+        width: 80%;
+        height: 300px;
+        padding: 2rem;
+    }
+
+    .BenefitsSection .containerBenefit .benefitBox img {
+        width: 20%;
         padding: 0 2rem;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    
-            .titleBenefit{
-                width: 70%;            
-            }
-    
-            .descriptionBenefit{
-                width: 90%;
-                padding: 1rem;
-            }
-    
-        .containerBenefit{
-            // border: 2px yellow solid;
-            display: flex;
-            flex-direction: column;
-            // padding: 2rem 2rem; //padding costados
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-    
-            .benefitBox{   
-                width: 80%;
-                height: 300px;
-                padding: 2rem 2rem;
-     
-        }
-    
+    }
+
+    .BenefitsSection .containerBenefit .benefitBox:hover {
+        transform: none;
     }
 }
+
+/* Responsive Design for screens <= 700px */
+@media screen and (max-width: 700px) {
+    .BenefitsSection {
+        padding: 0 1.5rem;
+    }
+
+    .BenefitsSection .titleBenefit {
+        width: 90%;
+    }
+
+    .BenefitsSection .descriptionBenefit {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .BenefitsSection .containerBenefit {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .BenefitsSection .containerBenefit .benefitBox {
+        width: 80%;
+        height: 300px;
+        padding: 2rem;
+    }
 }
