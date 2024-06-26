@@ -506,6 +506,10 @@ header .logo img {
   height: 3.5rem;
 }
 
+.FotoTikTok {
+  width: 100%;
+}
+
 @keyframes slide-in-top {
   0% {
     transform: translateY(-50px);
@@ -541,6 +545,9 @@ header .logo img {
     padding: 1rem;
     font-size: 1rem;
     float: none;
+  }
+  .FotoTikTok {
+    width: 45%;
   }
   .card {
     padding: 1rem;

@@ -110,6 +110,10 @@
     height: 3.5rem;
 }
 
+.FotoTikTok{
+    width: 100%;
+}
+
 @keyframes slide-in-top {
     0% {
         transform: translateY(-50px);
@@ -150,6 +154,10 @@
         padding: 1rem;
         font-size: 1rem;
         float: none;
+    }
+
+    .FotoTikTok{
+        width: 45%;
     }
 
     .card {
