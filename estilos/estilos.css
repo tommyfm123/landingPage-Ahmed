@@ -485,6 +485,10 @@ header .logo img {
 .AboutAhmed .card .socialContainer:hover .socialSvg {
   animation: slide-in-top 0.3s both;
 }
+.AboutAhmed .socialContainer svg {
+  width: 40px;
+  height: 40px;
+}
 .AboutAhmed .viewsBloque {
   display: flex;
   justify-content: center;
