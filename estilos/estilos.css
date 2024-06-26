@@ -547,8 +547,8 @@ header .logo img {
     gap: 20px;
   }
   .card .socialContainer {
-    width: 32px;
-    height: 32px;
+    width: 30%;
+    height: auto;
   }
   .card .socialContainer:hover,
   .card .socialContainer:active {
