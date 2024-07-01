@@ -1,9 +1,10 @@
-
-.TitleTestimonial{
+.TitleTestimonial {
   font-size: 2rem;
+  padding: 0 10rem;
 }
+
 .testimonials {
-  padding: 30px ;
+  padding: 30px;
   color: #ebe8e8;
   border-radius: 10px;
   text-align: center;
@@ -19,7 +20,8 @@
 .border {
   width: 160px;
   height: 5px;
-  background: -webkit-linear-gradient(146deg, rgba(255, 233, 152, 1) 0%, rgba(213, 189, 117, 1) 8%, rgb(133, 87, 27) 100%);;
+  background: -webkit-linear-gradient(146deg, rgba(255, 233, 152, 1) 0%, rgba(213, 189, 117, 1) 8%, rgb(133, 87, 27) 100%);
+  ;
   margin: 26px auto;
 }
 
@@ -73,9 +75,15 @@
 
 @media screen and (max-width:960px) {
 
-  .testimonials {
-    padding: 10px ;
+  .TitleTestimonial {
+    font-size: 1rem;
+    padding: 0;
   }
+
+  .testimonials {
+    padding: 10px;
+  }
+
   .col {
     flex: 100%;
     max-width: 90%;
@@ -83,19 +91,19 @@
     gap: 10px;
   }
 
-    .testimonial {
-      background: #292A2B; // backgroun cards testimonial
-      padding: 30px;
-      border-radius: 20px; //border from cards
-      filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
-      transition: all .3s ease;
-    }
-  
-    .testimonial:hover {
-      // transform: scale(1.01);
-      transform: none;
-  
-    }
+  .testimonial {
+    background: #292A2B; // backgroun cards testimonial
+    padding: 30px;
+    border-radius: 20px; //border from cards
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    transition: all .3s ease;
+  }
+
+  .testimonial:hover {
+    // transform: scale(1.01);
+    transform: none;
+
+  }
 }
 
 @media screen and (max-width:600px) {
@@ -104,4 +112,3 @@
     max-width: 100%;
   }
 }
-

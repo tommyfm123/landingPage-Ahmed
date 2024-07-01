@@ -902,6 +902,7 @@ svg {
 }
 .TitleTestimonial {
   font-size: 2rem;
+  padding: 0 10rem;
 }
 
 .testimonials {
@@ -969,6 +970,10 @@ svg {
 }
 
 @media screen and (max-width: 960px) {
+  .TitleTestimonial {
+    font-size: 1rem;
+    padding: 0;
+  }
   .testimonials {
     padding: 10px;
   }
