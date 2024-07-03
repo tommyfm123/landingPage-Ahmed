@@ -1,13 +1,14 @@
-.AboutContainer { // general block
+.AboutContainer {
+  // general block
 
   // border: 2px yellow solid; //opcional
   width: auto; //opcional
   margin: 0 auto; //opcional
-  padding:  0 10rem;
+  padding: 0 10rem;
   display: grid;
   justify-content: center; //centrar textos
   margin: 0 auto; //centrar seccion
-  justify-items: center;  
+  justify-items: center;
   color: white;
   align-items: center;
   grid-template-areas:
@@ -15,81 +16,90 @@
     "stats stats stats";
 
 
-    .AboutUsTitle { // about us title
-      display: flex;
-      grid-area: about;
-      text-align: center;
-      justify-content: center;
-      align-items:center;
-      margin-left: 5rem; //mueve el texto mas al medio
-
-            .TituloAbout {
-              font-size: 4rem; /* Corregido */
-              // color: rgb(214,178,106);
-              // background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(87,55,13,1) 100%);
-              // -webkit-background-clip: text;
-              // -webkit-text-fill-color: transparent;
-              
-            }
-    }
-
-    .bloque2 { // description of about us
-      width: 80%;
-      font-size: 1.3rem; // cambie el tamano
-      text-align: left; // cambio esto
-      font-weight: 300;
-      margin-left: 30px;
-      grid-area: info;
-      padding: 40px;
-      color: rgb(198, 194, 194);
-      // border: 2px yellow solid;
-    }
-
-
-.bloque3 { //stats block 
-  border: 2px rgba(205, 199, 199, 0.1) solid;
-  border-radius: 20px;
-  display: flex;
-  grid-area: stats;
-  width: 90%;
-  .bloque {
+  .AboutUsTitle {
+    // about us title
     display: flex;
-    flex-direction: column;
+    grid-area: about;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    flex: 1;
-    padding-right: 0px;
-    padding-left: 1.5rem;  /* Ajusta el padding según sea necesario */
-    border-right: 2px rgba(205, 199, 199, 0.1) solid;
-    justify-content: center;
+    margin-left: 5rem; //mueve el texto mas al medio
 
-    &:last-child { /* Aplica estilos al último elemento .bloque dentro de .bloque3 */
-      border-right: none;
+    .TituloAbout {
+      font-size: 4rem;
+      /* Corregido */
+      // color: rgb(214,178,106);
+      // background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(87,55,13,1) 100%);
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+
     }
+  }
+
+  .bloque2 {
+    // description of about us
+    width: 80%;
+    font-size: 1.3rem; // cambie el tamano
+    text-align: left; // cambio esto
+    font-weight: 300;
+    margin-left: 30px;
+    grid-area: info;
+    padding: 40px;
+    color: rgb(198, 194, 194);
+    // border: 2px yellow solid;
+  }
+
+
+  .bloque3 {
+    //stats block 
+    border: 2px rgba(205, 199, 199, 0.1) solid;
+    border-radius: 20px;
+    display: flex;
+    grid-area: stats;
+    width: 90%;
+
+    .bloque {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      padding-right: 0px;
+      padding-left: 1.5rem;
+      /* Ajusta el padding según sea necesario */
+      border-right: 2px rgba(205, 199, 199, 0.1) solid;
+      justify-content: center;
+
+      &:last-child {
+        /* Aplica estilos al último elemento .bloque dentro de .bloque3 */
+        border-right: none;
+      }
 
       .tituloStats {
         font-size: 3.5rem;
-        color: rgb(214,178,106);
-        background: -webkit-linear-gradient(10deg, rgba(255,233,152,1) 0%, rgba(213,189,117,1) 8%, rgb(113, 73, 20) 100%);        -webkit-background-clip: text;
+        color: rgb(214, 178, 106);
+        background: -webkit-linear-gradient(10deg, rgba(255, 233, 152, 1) 0%, rgba(213, 189, 117, 1) 8%, rgb(113, 73, 20) 100%);
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         // padding-right: 8rem;
         // padding-left: 20px;
-        margin-bottom: 5px; /* Separación entre el título y el párrafo */
+        margin-bottom: 5px;
+        /* Separación entre el título y el párrafo */
         user-select: none;
       }
-    
+
       .DescriptionStats {
-          font-size: 1.3rem;
-          color: rgb(255, 255, 255);
-          padding-bottom: 40px;
-          user-select: none;
+        font-size: 1.3rem;
+        color: rgb(255, 255, 255);
+        padding-bottom: 40px;
+        user-select: none;
       }
     }
-  }  
+  }
 }
 
 
-.lineHorizontalPractice{
+.lineHorizontalPractice {
   margin: 0 auto;
   margin-top: 3rem;
 
@@ -100,84 +110,94 @@
 
 
 @media (max-width: 900px) {
-  .AboutContainer { // general block
+  .AboutContainer {
+    // general block
 
     width: auto; //opcional
-    margin: 0 ; //opcional
-    padding:  0 ;
+    margin: 0; //opcional
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center; //centrar textos
     color: white;
-  
-      .AboutUsTitle { // about us title
-        margin: 0 auto; //? alineo con esto
+
+    .AboutUsTitle {
+      // about us title
+      margin: 0 auto; //? alineo con esto
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      // border: 2px yellow solid;
+
+      .TituloAbout {
+        font-size: 1.7rem;
+        /* tamano letra si funciona */
+      }
+    }
+
+    .bloque2 {
+      // description of about us
+      // border: 2px yellow solid;
+      width: 90%;
+      font-size: 1rem;
+      text-align: center;
+      font-weight: 300;
+      margin-left: 0;
+      color: rgb(198, 194, 194);
+      padding: 5px 0px;
+    }
+
+
+    .bloque3 {
+      //stats block 
+      border: 2px rgba(205, 199, 199, 0.1) solid;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+
+      .bloque {
+
+        display: flex;
         text-align: center;
+        flex-direction: column;
         justify-content: center;
-        align-items:center;
-        // border: 2px yellow solid;
-  
-              .TituloAbout {
-                font-size: 2rem; /* tamano letra si funciona */
-              }
-      }
-  
-      .bloque2 { // description of about us
-        // border: 2px yellow solid;
-        width: 90%;
-        font-size: 1rem;
-        text-align: center;
-        font-weight: 300;
-        margin-left: 0;
-        color: rgb(198, 194, 194);      
-        padding: 5px 20px; 
-      }
-  
-  
-  .bloque3 { //stats block 
-    border: 2px rgba(205, 199, 199, 0.1) solid;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-        .bloque {
-          
-          display: flex;
+        align-items: center;
+        flex: 1;
+        padding-right: 0;
+        padding-left: 0;
+        /* Ajusta el padding según sea necesario */
+        border-bottom: 2px rgba(205, 199, 199, 0.1) solid;
+        justify-content: center;
+
+        &:first-child {
+          /* Aplica estilos al último elemento .bloque dentro de .bloque3 */
+          border-right: none;
+        }
+
+        &:last-child {
+          /* Aplica estilos al último elemento .bloque dentro de .bloque3 */
+          border-bottom: none;
+        }
+
+        &:nth-child(2) {
+          border-right: none;
+        }
+
+        .tituloStats {
+          width: 100%;
           text-align: center;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          flex: 1;
-          padding-right: 0;
-          padding-left: 0;  /* Ajusta el padding según sea necesario */
-          border-bottom: 2px rgba(205, 199, 199, 0.1) solid;
-          justify-content: center;
-      
-          &:first-child { /* Aplica estilos al último elemento .bloque dentro de .bloque3 */
-            border-right: none;
-          }
+          font-size: 2rem;
+          margin-bottom: 5px;
+          /* Separación entre el título y el párrafo */
+        }
 
-          &:last-child { /* Aplica estilos al último elemento .bloque dentro de .bloque3 */
-            border-bottom: none;
-          }
-
-          &:nth-child(2) {
-            border-right: none;
-          }
-      
-            .tituloStats {
-              width: 100%;
-              text-align:center ;
-              font-size: 2rem;
-              margin-bottom: 5px; /* Separación entre el título y el párrafo */
-            }
-          
-            .DescriptionStats {
-                width: 100%;
-                text-align: center;
-                font-size: 1rem;
-            }
+        .DescriptionStats {
+          width: 100%;
+          text-align: center;
+          font-size: 1rem;
+        }
       }
-    }  
+    }
   }
 }

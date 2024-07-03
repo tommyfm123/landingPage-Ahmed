@@ -1,6 +1,6 @@
-.questions{
+.questions {
   // min-height: 100vh;
-  padding-bottom: 5rem ;
+  padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,23 +10,24 @@
 
 }
 
-.titleQuestions{ // Title question
+.titleQuestions {
+  // Title question
   font-size: 3rem;
   color: rgb(214, 178, 106);
-        background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgb(123, 80, 24) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(146deg, rgba(255, 233, 152, 1) 0%, rgb(123, 80, 24) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 4rem 0rem;
 
 }
 
-.faq{
-    max-width: 70%;
-    min-width: 70%;
-    margin-top: 2rem ;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid rgb(176, 170, 170);
-    cursor: pointer;
+.faq {
+  max-width: 70%;
+  min-width: 70%;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(176, 170, 170);
+  cursor: pointer;
 }
 
 .question {
@@ -35,18 +36,19 @@
   align-items: center;
 }
 
-.question h3{ // question font 
+.question h3 {
+  // question font 
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-.answer{
+.answer {
   max-height: 0;
   overflow: hidden;
   transition: max-height .8s ease;
 }
 
-.answer p{
+.answer p {
   color: rgb(182, 176, 176);
   padding-top: 1rem;
   line-height: 1.6;
@@ -56,25 +58,26 @@
 
 }
 
-.faq.active .answer{
+.faq.active .answer {
   max-height: 300px;
   animation: fade .6s ease-in-out;
 }
 
-.faq.active svg{
+.faq.active svg {
   transform: rotate(180deg);
 }
 
-svg{
+svg {
   transition: transform .4s ease-in;
 }
 
 @keyframes fade {
-  from{
+  from {
     opacity: 0;
     transform: translateY(-10px);
   }
-  to{
+
+  to {
     opacity: 1;
     transform: translateY(0px);
   }
@@ -82,40 +85,42 @@ svg{
 
 
 @media (max-width: 900px) {
-  .questions{
+  .questions {
     // min-height: 100vh;
     padding: 0px 1rem;
     display: flex;
     flex-direction: column;
-    text-align: left ;    width: auto; //opcional
+    text-align: left;
+    width: auto; //opcional
 
-    .titleQuestions{
-      width: 80%;
+    .titleQuestions {
+      // width: 80%;
+      text-align: left;
       margin: 0rem 0rem;
       padding: 1rem;
-      font-size: 2rem;    
+      font-size: 1.4rem;
     }
   }
-  
-  .faq{
+
+  .faq {
     max-width: 100% !important;
     width: 90%;
-    margin-top: 1rem ;
+    margin-top: 1rem;
     padding-bottom: .3rem;
     border-bottom: 1px solid rgb(142, 138, 138);
     cursor: pointer;
-}
+  }
 
-  
-  
-  .question h3{
+
+
+  .question h3 {
     font-size: 1.1rem;
     width: 90%;
   }
-  
 
-  .answer p{
+
+  .answer p {
     font-size: 1rem;
   }
-  
+
 }

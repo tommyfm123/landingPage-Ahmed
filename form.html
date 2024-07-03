@@ -29,12 +29,11 @@
 
     <!-- form  -->
 
-    <form class="form" action="https://api.web3forms.com/submit" method="POST">
+    <!-- <form class="form" action="https://api.web3forms.com/submit" method="POST">
 
         <input type="hidden" name="access_key" value="45eb4074-ae06-4e53-bcc3-6929f9ae8eaf">
 
-        <p class="title">Book a consultation</p>
-        <p class="message">Legal advice when you need it the most.</p>
+       
 
         <div class="flex">
             <label>
@@ -144,7 +143,45 @@
             </div>
             <span>Send</span>
         </button>
-    </form>
+    </form> -->
+
+    <!-- Form with payment -->
+    <div class="form">
+
+        <div class="textForm">
+            <p class="title">Book a consultation</p>
+            <p class="message">Legal advice when you need it the most.</p>
+        </div>
+
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+        <script>
+            hbspt.forms.create({
+                region: "na1",
+                portalId: "46659217",
+                formId: "ad442db1-f22a-4a99-8bab-b6b23b8cd08a",
+                onFormReady: function ($form) {
+                    $form.find('.hs-input').css('color', 'white');
+                }
+            });
+        </script>
+
+
+        <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+        <script>
+            hbspt.forms.create({
+                region: "na1",
+                portalId: "46659217",
+                formId: "ad442db1-f22a-4a99-8bab-b6b23b8cd08a"
+                
+            });
+        </script> -->
+    </div>
+
+
+
+
+
+
 
 </body>
 

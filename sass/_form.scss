@@ -1,38 +1,44 @@
+// Container form
 
-.bodyForm{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+.bodyForm {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
-
-
 .form {
-    display: flex;
-    width: 40%;
-    flex-direction: column;
-    gap: 10px;
-    // max-width: 450px;
-    padding: 4rem;
-    border-radius: 20px;
-    position: relative;
-    background-color: #1a1a1a;
-    color: #fff;
-    border: 1px solid #333;
-    transition: .6s ease-in-out all;
-  }
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  gap: 10px;
+  // max-width: 450px;
+  padding: 4rem;
+  border-radius: 20px;
+  position: relative;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+  transition: .6s ease-in-out all;
+}
 
-  form:hover{
-        border-color: #c0995174;
+form:hover {
+  border-color: #c0995174;
 
-        box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-  }
-  
-  
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+// container texto
+.textForm {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+
   .title {
+    //title
     font-size: 28px;
     font-weight: 600;
     letter-spacing: -1px;
@@ -42,19 +48,22 @@
     padding-left: 30px;
     color: #c09951;
   }
-  
+
   .title::before {
+    //effect title
     width: 18px;
     height: 18px;
   }
-  
+
   .title::after {
+    //effect title
     width: 18px;
     height: 18px;
     animation: pulse 1s linear infinite;
   }
-  
+
   .title::before,
+  //effect title
   .title::after {
     position: absolute;
     content: "";
@@ -64,457 +73,471 @@
     left: 0px;
     background-color: #e3b764;
   }
-  
-  .message, 
+
+  .message,
+  //mensaje
   .signin {
     font-size: 14.5px;
     color: rgba(255, 255, 255, 0.7);
   }
-  
-  .signin {
-    text-align: center;
-  }
-  
-  .signin a:hover {
-    text-decoration: underline royalblue;
-  }
-  
-  .signin a {
-    color: #00bfff;
-  }
-  
-  .flex {
-    display: flex;
-    width: 100%;
-    gap: 1.5rem;
-
-    label{
-        width: 50%;
-    }
-  }
-  
-  .form label {
-    position: relative;
-  }
-  
-  .form label .input {
-    background-color: #333;
-    color: #fff;
-    width: 100%;
-    padding: 20px 05px 05px 10px;
-    outline: 0;
-    border: 1px solid rgba(105, 105, 105, 0.397);
-    border-radius: 10px;
-  }
-  
-  .form label .input + span {
-    color: rgba(255, 255, 255, 0.5);
-    position: absolute;
-    left: 10px;
-    top: 0px;
-    font-size: 0.9em;
-    cursor: text;
-    transition: 0.3s ease;
-  }
-  
-  .form label .input:placeholder-shown + span {
-    top: 12.5px;
-    font-size: 0.9em;
-  }
-  
-  .form label .input:focus + span,
-  .form label .input:valid + span {
-    color: #00bfff;
-    top: 0px;
-    font-size: 0.7em;
-    font-weight: 600;
-  }
-  
-  .input {
-    font-size: medium;
-  }
+}
 
 
-  #AreaDropdown{
-    width: 103%;
 
-    select{
-        width: 100%;
-       
-    }
-    background-color: #333;
-    padding: .8rem 1rem;
-    border-radius: 10px;
-    border: 1px solid rgba(105, 105, 105, 0.397);
-    color: rgba(255, 255, 255, 0.5);
-  }
-  
-  .btnForm {
-    width: 100px;
-    font-family: inherit;
-    margin: 0 auto;
-    font-size: 1rem;
-    background: #c09951;
-    color: white;
-    padding: 0.7em 1em;
-    padding-left: 0.9em;
-    display: flex;
-    align-items: center;
-    border: none;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 0.2s;
-    cursor: pointer;
-    margin-top: 2rem ;
-  }
-  
-  .btnForm:hover {
-    background-color: #ceac6d;
-  }
-  .btnForm span {
-    display: block;
-    margin-left: 0.3em;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .btnForm svg {
-    display: block;
-    transform-origin: center center;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .btnForm:hover .svg-wrapper {
-    animation: fly-1 0.6s ease-in-out infinite alternate;
-  }
-  
-  .btnForm:hover svg {
-    transform: translateX(1.2em) rotate(45deg) scale(1.1);
-  }
-  
-  .btnForm:hover span {
-    transform: translateX(5em);
-  }
-  
-  .btnForm:active {
-    transform: scale(0.95);
-  }
-  
-  @keyframes fly-1 {
-    from {
-      transform: translateY(0.1em);
-    }
-  
-    to {
-      transform: translateY(-0.1em);
-    }
-  }
-  
-  
-  @keyframes pulse {
-    from {
-      transform: scale(0.9);
-      opacity: 1;
-    }
-  
-    to {
-      transform: scale(1.8);
-      opacity: 0;
-    }
+// .signin {
+//   text-align: center;
+// }
+
+// .signin a:hover {
+//   text-decoration: underline royalblue;
+// }
+
+// .signin a {
+//   color: #00bfff;
+// }
+
+// .flex {
+//   display: flex;
+//   width: 100%;
+//   gap: 1.5rem;
+
+//   label {
+//     width: 50%;
+//   }
+// }
+
+// .form label {
+//   position: relative;
+// }
+
+// .form label .input {
+//   background-color: #333;
+//   color: #fff;
+//   width: 100%;
+//   padding: 20px 05px 05px 10px;
+//   outline: 0;
+//   border: 1px solid rgba(105, 105, 105, 0.397);
+//   border-radius: 10px;
+// }
+
+// .form label .input+span {
+//   color: rgba(255, 255, 255, 0.5);
+//   position: absolute;
+//   left: 10px;
+//   top: 0px;
+//   font-size: 0.9em;
+//   cursor: text;
+//   transition: 0.3s ease;
+// }
+
+// .form label .input:placeholder-shown+span {
+//   top: 12.5px;
+//   font-size: 0.9em;
+// }
+
+// .form label .input:focus+span,
+// .form label .input:valid+span {
+//   color: #00bfff;
+//   top: 0px;
+//   font-size: 0.7em;
+//   font-weight: 600;
+// }
+
+// .input {
+//   font-size: medium;
+// }
+
+
+// #AreaDropdown {
+//   width: 103%;
+
+//   select {
+//     width: 100%;
+
+//   }
+
+//   background-color: #333;
+//   padding: .8rem 1rem;
+//   border-radius: 10px;
+//   border: 1px solid rgba(105, 105, 105, 0.397);
+//   color: rgba(255, 255, 255, 0.5);
+// }
+
+// .btnForm {
+//   width: 100px;
+//   font-family: inherit;
+//   margin: 0 auto;
+//   font-size: 1rem;
+//   background: #c09951;
+//   color: white;
+//   padding: 0.7em 1em;
+//   padding-left: 0.9em;
+//   display: flex;
+//   align-items: center;
+//   border: none;
+//   border-radius: 10px;
+//   overflow: hidden;
+//   transition: all 0.2s;
+//   cursor: pointer;
+//   margin-top: 2rem;
+// }
+
+// .btnForm:hover {
+//   background-color: #ceac6d;
+// }
+
+// .btnForm span {
+//   display: block;
+//   margin-left: 0.3em;
+//   transition: all 0.3s ease-in-out;
+// }
+
+// .btnForm svg {
+//   display: block;
+//   transform-origin: center center;
+//   transition: transform 0.3s ease-in-out;
+// }
+
+// .btnForm:hover .svg-wrapper {
+//   animation: fly-1 0.6s ease-in-out infinite alternate;
+// }
+
+// .btnForm:hover svg {
+//   transform: translateX(1.2em) rotate(45deg) scale(1.1);
+// }
+
+// .btnForm:hover span {
+//   transform: translateX(5em);
+// }
+
+// .btnForm:active {
+//   transform: scale(0.95);
+// }
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
   }
 
-  .radio-button-container {
-    display: flex;
-    align-items: center;
-    gap: 24px;
+  to {
+    transform: translateY(-0.1em);
   }
-  
-  .radio-button {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
+}
+
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
   }
-  
-  .radio-button__input {
-    position: absolute;
+
+  to {
+    transform: scale(1.8);
     opacity: 0;
-    width: 0;
-    height: 0;
   }
-  
-  .radio-button__label {
-    display: inline-block;
-    padding-left: 30px;
-    margin-bottom: 10px;
+}
+
+// .radio-button-container {
+//   display: flex;
+//   align-items: center;
+//   gap: 24px;
+// }
+
+// .radio-button {
+//   display: inline-block;
+//   position: relative;
+//   cursor: pointer;
+// }
+
+// .radio-button__input {
+//   position: absolute;
+//   opacity: 0;
+//   width: 0;
+//   height: 0;
+// }
+
+// .radio-button__label {
+//   display: inline-block;
+//   padding-left: 30px;
+//   margin-bottom: 10px;
+//   position: relative;
+//   font-size: 15px;
+//   color: #f2f2f2;
+//   font-weight: 600;
+//   cursor: pointer;
+//   text-transform: uppercase;
+//   transition: all 0.3s ease;
+// }
+
+// .radio-button__custom {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 20px;
+//   height: 20px;
+//   border-radius: 50%;
+//   border: 2px solid #555;
+//   transition: all 0.3s ease;
+// }
+
+// .radio-button__input:checked+.radio-button__label .radio-button__custom {
+//   background-color: #C09951;
+//   border-color: transparent;
+//   transform: scale(0.8);
+//   box-shadow: 0 0 20px #996606;
+// }
+
+// .radio-button__input:checked+.radio-button__label {
+//   color: #82868d;
+// }
+
+// .radio-button__label:hover .radio-button__custom {
+//   transform: scale(1.2);
+//   border-color: #C09951;
+//   box-shadow: 0 0 20px #996606;
+// }
+
+
+
+
+
+
+
+// ---------------------------------------------------------------- //
+
+@media (max-width: 900px) {
+
+
+  .bodyForm {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 75%;
+    border-radius: 20px;
     position: relative;
-    font-size: 15px;
-    color: #f2f2f2;
-    font-weight: 600;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+    transition: .6s ease-in-out all;
+    padding: 2rem 3rem 3rem 2rem;
+    margin: 0;
   }
-  
-  .radio-button__custom {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 2px solid #555;
-    transition: all 0.3s ease;
-  }
-  
-  .radio-button__input:checked + .radio-button__label .radio-button__custom {
-    background-color: #C09951;
-    border-color: transparent;
-    transform: scale(0.8);
-    box-shadow: 0 0 20px #996606;
-  }
-  
-  .radio-button__input:checked + .radio-button__label {
-    color: #82868d;
-  }
-  
-  .radio-button__label:hover .radio-button__custom {
-    transform: scale(1.2);
-    border-color: #C09951;
-    box-shadow: 0 0 20px #996606;
-  }
-  
-  
-  
-  
-  
-  
 
-  // ---------------------------------------------------------------- //
+  form:hover {
+    border-color: #c0995174;
 
-  @media (max-width: 900px){
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  }
 
+  .textForm {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
 
-    .bodyForm{
-        display: flex;
-        padding: 0px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .title {
+      font-size: 1.3rem;
+      // border: 2px yellow solid;
+      font-weight: 600;
+      letter-spacing: -1px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      // padding-left: 30px;
+      color: #c09951;
     }
-    
-    
-    
-    
-    .form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
-        width: 75%;
-        border-radius: 20px;
-        position: relative;
-        background-color: #1a1a1a;
-        color: #fff;
-        border: 1px solid #333;
-        transition: .6s ease-in-out all;
-        padding: 2rem 3rem 2rem 2rem;
-        margin:0;
-      }
-    
-      form:hover{
-            border-color: #c0995174;
-    
-            box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-      }
-      
-      .title {
-        font-size: 1.2rem;
+
+    .title::before {
+      width: 18px;
+      height: 18px;
+    }
+
+    .title::after {
+      width: 18px;
+      height: 18px;
+      animation: pulse 1s linear infinite;
+    }
+
+    .title::before,
+    .title::after {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      left: 0px;
+      background-color: #e3b764;
+    }
+
+    .message,
+    .signin {
+      font-size: .8rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .signin {
+      text-align: center;
+    }
+
+    .signin a:hover {
+      text-decoration: underline #c09951;
+    }
+
+    .signin a {
+      color: #00bfff;
+    }
+
+    .flex {
+      display: flex;
+      // border: 2px yellow solid;
+      width: auto;
+      gap: 1.5rem;
+      padding: 0;
+
+      label {
         // border: 2px yellow solid;
-        font-weight: 600;
-        letter-spacing: -1px;
-        position: relative;
-        display: flex;
-        align-items:center;
-        // padding-left: 30px;
-        color: #c09951;
-      }
-      
-      .title::before {
-        width: 18px;
-        height: 18px;
-      }
-      
-      .title::after {
-        width: 18px;
-        height: 18px;
-        animation: pulse 1s linear infinite;
-      }
-      
-      .title::before,
-      .title::after {
-        position: absolute;
-        content: "";
-        height: 16px;
-        width: 16px;
-        border-radius: 50%;
-        left: 0px;
-        background-color: #e3b764;
-      }
-      
-      .message, 
-      .signin {
-        font-size: 12.5px;
-        color: rgba(255, 255, 255, 0.7);
-      }
-      
-      .signin {
-        text-align: center;
-      }
-      
-      .signin a:hover {
-        text-decoration: underline #c09951;
-      }
-      
-      .signin a {
-        color: #00bfff;
-      }
-      
-      .flex {
-        display: flex;
-        // border: 2px yellow solid;
-        width: auto;
-        gap: 1.5rem;
-        padding: 0;
-    
-        label{
-            // border: 2px yellow solid;
-            width: 100%;
-        }
-      }
-      
-      .form label {
-        position: relative;
-      }
-      
-      .form label .input {
-        background-color: #333;
-        color: #fff;
         width: 100%;
-        padding: 20px 05px 05px 10px;
-        outline: 0;
-        border: 1px solid rgba(105, 105, 105, 0.397);
-        border-radius: 10px;
       }
-      
-      .form label .input + span {
-        color: rgba(255, 255, 255, 0.5);
-        position: absolute;
-        left: 15px;
-        top: 0px;
-        font-size: 0.7em;
-        cursor: text;
-        transition: 0.3s ease;
+    }
+
+    .form label {
+      position: relative;
+    }
+
+    .form label .input {
+      background-color: #333;
+      color: #fff;
+      width: 100%;
+      padding: 20px 05px 05px 10px;
+      outline: 0;
+      border: 1px solid rgba(105, 105, 105, 0.397);
+      border-radius: 10px;
+    }
+
+    .form label .input+span {
+      color: rgba(255, 255, 255, 0.5);
+      position: absolute;
+      left: 15px;
+      top: 0px;
+      font-size: 0.7em;
+      cursor: text;
+      transition: 0.3s ease;
+    }
+
+    .form label .input:placeholder-shown+span {
+      top: 12.5px;
+      font-size: 0.8em;
+    }
+
+    .form label .input:focus+span,
+    .form label .input:valid+span {
+      color: #00bfff;
+      top: 0px;
+      font-size: 0.5em;
+      font-weight: 600;
+    }
+
+    .input {
+      font-size: medium;
+    }
+
+
+    #AreaDropdown {
+      width: 107%;
+
+      select {
+        width: 100%;
+
       }
-      
-      .form label .input:placeholder-shown + span {
-        top: 12.5px;
-        font-size: 0.8em;
+
+      background-color: #333;
+      padding: .8rem 1rem;
+      border-radius: 10px;
+      border: 1px solid rgba(105, 105, 105, 0.397);
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .btnForm {
+      font-family: inherit;
+      font-size: 1rem;
+      background: #c09951;
+      color: white;
+      padding: 0.7em 1em;
+      padding-left: 0.9em;
+      display: flex;
+      align-items: center;
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: all 0.2s;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+
+    .btnForm:hover {
+      background-color: #ceac6d;
+    }
+
+    .btnForm span {
+      display: block;
+      margin-left: 0.3em;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btnForm svg {
+      display: block;
+      transform-origin: center center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .btnForm:hover .svg-wrapper {
+      animation: fly-1 0.6s ease-in-out infinite alternate;
+    }
+
+    .btnForm:hover svg {
+      transform: translateX(1.2em) rotate(45deg) scale(1.1);
+    }
+
+    .btnForm:hover span {
+      transform: translateX(5em);
+    }
+
+    .btnForm:active {
+      transform: scale(0.95);
+    }
+
+    @keyframes fly-1 {
+      from {
+        transform: translateY(0.1em);
       }
-      
-      .form label .input:focus + span,
-      .form label .input:valid + span {
-        color: #00bfff;
-        top: 0px;
-        font-size: 0.5em;
-        font-weight: 600;
+
+      to {
+        transform: translateY(-0.1em);
       }
-      
-      .input {
-        font-size: medium;
+    }
+
+
+    @keyframes pulse {
+      from {
+        transform: scale(0.9);
+        opacity: 1;
       }
-    
-    
-      #AreaDropdown{
-        width: 107%;
-    
-        select{
-            width: 100%;
-           
-        }
-        background-color: #333;
-        padding: .8rem 1rem;
-        border-radius: 10px;
-        border: 1px solid rgba(105, 105, 105, 0.397);
-        color: rgba(255, 255, 255, 0.5);
+
+      to {
+        transform: scale(1.8);
+        opacity: 0;
       }
-      
-      .btnForm {
-        font-family: inherit;
-        font-size: 1rem;
-        background: #c09951;
-        color: white;
-        padding: 0.7em 1em;
-        padding-left: 0.9em;
-        display: flex;
-        align-items: center;
-        border: none;
-        border-radius: 10px;
-        overflow: hidden;
-        transition: all 0.2s;
-        margin-top: 1rem ;
-        cursor: pointer;
-      }
-      
-      .btnForm:hover {
-        background-color: #ceac6d;
-      }
-      .btnForm span {
-        display: block;
-        margin-left: 0.3em;
-        transition: all 0.3s ease-in-out;
-      }
-      
-      .btnForm svg {
-        display: block;
-        transform-origin: center center;
-        transition: transform 0.3s ease-in-out;
-      }
-      
-      .btnForm:hover .svg-wrapper {
-        animation: fly-1 0.6s ease-in-out infinite alternate;
-      }
-      
-      .btnForm:hover svg {
-        transform: translateX(1.2em) rotate(45deg) scale(1.1);
-      }
-      
-      .btnForm:hover span {
-        transform: translateX(5em);
-      }
-      
-      .btnForm:active {
-        transform: scale(0.95);
-      }
-      
-      @keyframes fly-1 {
-        from {
-          transform: translateY(0.1em);
-        }
-      
-        to {
-          transform: translateY(-0.1em);
-        }
-      }
-      
-      
-      @keyframes pulse {
-        from {
-          transform: scale(0.9);
-          opacity: 1;
-        }
-      
-        to {
-          transform: scale(1.8);
-          opacity: 0;
-        }
-      }
+    }
   }
+}
