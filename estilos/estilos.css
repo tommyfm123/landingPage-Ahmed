@@ -649,7 +649,6 @@ header .logo img {
 .BenefitsSection .containerBenefit .benefitBox img {
   width: 20%;
   padding-top: 1.5rem;
-  filter: drop-shadow(3px 3px 3px rgba(109, 109, 109, 0.4549019608));
 }
 
 .BenefitsSection .containerBenefit .benefitBox:hover {
@@ -741,8 +740,8 @@ header .logo img {
 .faq {
   max-width: 70%;
   min-width: 70%;
-  margin-top: 2rem;
-  padding-bottom: 1rem;
+  margin-top: 0rem;
+  padding-bottom: 0rem;
   border-bottom: 1px solid rgb(176, 170, 170);
   cursor: pointer;
 }
@@ -766,14 +765,14 @@ header .logo img {
 
 .answer p {
   color: rgb(182, 176, 176);
-  padding-top: 1rem;
+  padding-top: 0rem;
   line-height: 1.6;
   text-align: left;
   font-size: 1.4rem;
 }
 
 .faq.active .answer {
-  max-height: 300px;
+  max-height: 200px;
   animation: fade 0.6s ease-in-out;
 }
 
@@ -816,6 +815,10 @@ svg {
     padding-bottom: 0.3rem;
     border-bottom: 1px solid rgb(142, 138, 138);
     cursor: pointer;
+  }
+  .faq.active .answer {
+    max-height: 300px;
+    animation: fade 0.6s ease-in-out;
   }
   .question h3 {
     font-size: 1.1rem;
