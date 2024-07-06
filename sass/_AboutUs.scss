@@ -1,5 +1,4 @@
 .AboutContainer {
-  // general block
 
   // border: 2px yellow solid; //opcional
   width: auto; //opcional
@@ -26,12 +25,8 @@
     margin-left: 5rem; //mueve el texto mas al medio
 
     .TituloAbout {
-      font-size: 4rem;
-      /* Corregido */
-      // color: rgb(214,178,106);
-      // background: -webkit-linear-gradient(146deg, rgba(255,233,152,1) 0%, rgba(87,55,13,1) 100%);
-      // -webkit-background-clip: text;
-      // -webkit-text-fill-color: transparent;
+      font-size: 3rem;
+      font-weight: 600;
 
     }
   }
@@ -112,7 +107,7 @@
 @media (max-width: 900px) {
   .AboutContainer {
     // general block
-
+  gap: 0;
     width: auto; //opcional
     margin: 0; //opcional
     padding: 0;
@@ -127,11 +122,13 @@
       text-align: center;
       justify-content: center;
       align-items: center;
-      // border: 2px yellow solid;
+      padding: 1rem;
+      
 
       .TituloAbout {
-        font-size: 1.7rem;
-        /* tamano letra si funciona */
+        font-size: 30px;
+        padding: 0;
+        height: 0;
       }
     }
 
@@ -144,7 +141,7 @@
       font-weight: 300;
       margin-left: 0;
       color: rgb(198, 194, 194);
-      padding: 5px 0px;
+      padding: 1rem 0;
     }
 
 
