@@ -173,6 +173,28 @@
         margin-bottom: 2rem;
         text-align: center;
     }
+
+  
+}
+@media only screen and (max-width: 1000px) {
+    .innerdiv {
+        transform: scale(0.7);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .innerdiv {
+        transform: scale(0.6);
+    }
+
+    .TitleTestimonialContainer {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 0 4rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -195,5 +217,42 @@
 
     .attribution {
         position: relative;
+    }
+
+    .TitleTestimonialContainer {
+        font-size: 1.3rem;
+        padding: 0 5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .innerdiv {
+        display: flex;
+        flex-direction: column;
+        transform: scale(1);
+        margin: 0 3rem;
+        grid-template-columns: 1fr;
+    }
+
+    .btnContainer {
+        margin-top: 0rem; /* Reduce el margen superior del botón en móviles */
+    }
+
+    .attribution {
+        position: relative;
+    }
+
+    .TitleTestimonialContainer {
+        font-size: 2rem;
+        padding: 0 2rem;
+    }
+
+    .eachdiv {
+        padding: 2rem 3rem;
+    }
+
+    .btnTestimonio {
+        height: 4rem;
+        margin-bottom: 1rem;
     }
 }

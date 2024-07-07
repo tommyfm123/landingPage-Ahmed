@@ -4,49 +4,54 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin: 0 auto; //opcional
-  text-align: center;
-  padding: 0 3rem; //padding costados
+  margin: 0 auto; /* opcional */
+  padding: 0 3rem; /* padding costados */
 }
 
-// container texto VSL
+/* container texto VSL */
 .textVSL {
   padding: 0;
   width: 70%;
   text-align: center;
-  
-  // titulo VSL
+}
 
-  .TituloVSL{
-    color: white;
-    font-weight: 600;
-  }
+/* titulo VSL */
+.textVSL .TituloVSL {
+  color: white;
+  font-weight: 600;
+}
 
-  // Palabras Doradas
-  span {
-    color: #d6b26a;
-    background: -webkit-linear-gradient(146deg, rgba(255, 233, 152, 1) 0%, rgba(213, 189, 117, 1) 8%, rgb(133, 87, 27) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+/* Palabras Doradas */
+.textVSL span {
+  color: #d6b26a;
+  background: -webkit-linear-gradient(
+    146deg,
+    rgba(255, 233, 152, 1) 0%,
+    rgba(213, 189, 117, 1) 8%,
+    rgb(133, 87, 27) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  }
-
-  // Subtitulo
-
-  .Subtitle {
-    font-size: 1.3rem;
-    color: #d6b26a;
-    background: -webkit-linear-gradient(146deg, rgba(255, 233, 152, 1) 0%, rgba(213, 189, 117, 1) 8%, rgb(133, 87, 27) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 500;
-  }
+/* Subtitulo */
+.textVSL .Subtitle {
+  font-size: 1.3rem;
+  color: #d6b26a;
+  background: -webkit-linear-gradient(
+    146deg,
+    rgba(255, 233, 152, 1) 0%,
+    rgba(213, 189, 117, 1) 8%,
+    rgb(133, 87, 27) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
 }
 
 .VideoContainer {
   width: 20%;
 }
-
 
 .TextBelowVideo {
   color: white;
@@ -55,8 +60,6 @@
   margin-left: 10%;
   margin-right: 10%;
 }
-
-
 
 .cssbuttons-io {
   position: relative;
@@ -71,19 +74,18 @@
   background: rgb(231, 231, 231);
   color: ghostwhite;
   overflow: hidden;
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out 0.3s;
   margin-top: 2rem;
   margin-bottom: 2rem;
-
-  .textoBtn {
-    text-decoration: none;
-    font-family: inherit;
-    color: black;
-    font-weight: 500;
-    font-size: 1rem;
-  }
 }
 
+.cssbuttons-io .textoBtn {
+  text-decoration: none;
+  font-family: inherit;
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+}
 
 .cssbuttons-io:hover {
   transform: translateY(-2px);
@@ -106,158 +108,100 @@
   padding: 0.45em 1rem 0.45em 1.05em;
 }
 
-
 #BtnServices {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
 
-
-
-
 .linea {
   width: 70%;
-
   color: #dcddd88e;
-
 }
 
-@media (max-width: 900px) {
+/* Responsive styles for tablets */
+@media (max-width: 1024px) and (min-width: 768px) {
   .vsl {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0; //padding costados
-    height: auto;
-    // border: 3px yellow solid;
-
-    .textVSL {
-      padding: 0;
-      width: 100%;
-      text-align: center;
-    }
-
-    .TituloVSL{
-      color: white;
-      padding: 0 2rem;
-      font-size: 1.2rem;
-      font-weight: 600;
-    }
-
-    .Subtitle {
-      font-size: 1.05rem;
-      font-weight: 500;
-    }
-
-    .TextBelowVideo {
-      color: white;
-      font-weight: 400;
-      font-size: 1rem;
-    }
-
-    .VideoContainer {
-      width: 70%;
-    }
-
-
-    span a {
-      font-size: .9rem;
-    }
+    padding: 0 2rem; /* Adjust padding for tablets */
   }
 
-  .tituloIntroduction {
-    width: 90%;
-    padding: 5%;
-
-    h1 {
-      font-size: 150%;
-      color: rgb(255, 255, 255);
-    }
+  .textVSL {
+    width: 80%;
   }
 
-  .parrafoIntro {
-    padding: 10px;
+  .textVSL .TituloVSL {
+    font-size: 1.5rem;
+  }
 
-    p {
-      font-size: 1rem;
-      font-weight: 400;
-      padding: 10px;
-      color: rgb(226, 219, 219);
-    }
+  .textVSL .Subtitle {
+    font-size: 1.2rem;
+  }
+
+  .TextBelowVideo {
+    font-size: 1.5rem;
+  }
+
+  .VideoContainer {
+    width: 50%;
   }
 
   .cssbuttons-io {
-    filter: drop-shadow(20px 10px 20px rgba(0, 0, 0, 0.727));
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 0.05em;
-    border-radius: 0.5em;
-    cursor: pointer;
-    overflow: hidden;
-    transition: none;
+    font-size: 18px;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-
-    .textoBtn {
-      text-decoration: none;
-      font-family: inherit;
-      color: black;
-      font-weight: 500;
-      font-size: .98rem;
-    }
   }
 
-
-  .cssbuttons-io:hover {
-    transform: translateY(0px);
-  }
-
-  .cssbuttons-io svg {
-    color: black;
-    width: 1.2em;
-    height: 1.2em;
-    margin-right: 0.5em;
+  .cssbuttons-io .textoBtn {
+    font-size: 0.95rem;
   }
 
   .cssbuttons-io span {
-    position: relative;
-    z-index: 10;
-    transition: none;
-    padding: 0.4em .8em 0.4em .8em;
+    padding: 0.4em 0.9em 0.4em 0.9em;
   }
-
-  .cssbuttons-io::before,
-  .cssbuttons-io::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-  }
-
-  .cssbuttons-io::before {
-    content: "";
-    background: white;
-    width: 120%;
-    left: -10%;
-    transform: skew(30deg);
-    transition: none;
-  }
-
-  .cssbuttons-io:hover::before {
-    transform: none;
-  }
-
-  .cssbuttons-io:active {
-    transform: none;
-  }
-
 }
 
+/* Media Query para celulares móviles (hasta 600px) */
+@media (max-width: 600px) {
+  .vsl {
+    padding: 0 1rem; /* Ajuste del padding lateral para móviles */
+  }
 
-.vslVideo:hover {
-  transform: scale(1);
+  .textVSL {
+    width: 100%; /* Ancho completo para móviles */
+    text-align: center; /* Centrar texto para móviles */
+  }
+
+  .textVSL .TituloVSL {
+    font-size: 1.26rem; /* Texto Oferta */
+    font-weight: 600; // anchos de fuente
+    padding: 0; 
+  }
+
+  .textVSL .Subtitle {
+    font-size: 1rem; /* Texto debajo de oferta*/
+  }
+
+  .TextBelowVideo {
+    font-size: 1.2rem; /* Tamaño de fuente del texto debajo del video para móviles */
+    margin-left: 5%; /* Ajuste de margen izquierdo para móviles */
+    margin-right: 5%; /* Ajuste de margen derecho para móviles */
+  }
+
+  .VideoContainer {
+    width: 80%; /* Ancho completo para móviles */
+  }
+
+  .cssbuttons-io {
+    font-size: 16px; /* Tamaño de fuente de los botones para móviles */
+    margin-top: 1rem; /* Ajuste de margen superior para móviles */
+    margin-bottom: 1rem; /* Ajuste de margen inferior para móviles */
+  }
+
+  .cssbuttons-io .textoBtn {
+    font-size: 0.9rem; /* Tamaño de fuente del texto de los botones para móviles */
+  }
+
+  .cssbuttons-io span {
+    padding: 0.4em 0.8em; /* Ajuste de padding para móviles */
+  }
 }
 

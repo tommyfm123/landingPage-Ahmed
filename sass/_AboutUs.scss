@@ -1,6 +1,5 @@
 .AboutContainer {
 
-  // border: 2px yellow solid; //opcional
   width: auto; //opcional
   margin: 0 auto; //opcional
   padding: 0 10rem;
@@ -14,9 +13,9 @@
     "about info info"
     "stats stats stats";
 
+// Container de Titulo Principal - Seccion About us
 
   .AboutUsTitle {
-    // about us title
     display: flex;
     grid-area: about;
     text-align: center;
@@ -24,6 +23,7 @@
     align-items: center;
     margin-left: 5rem; //mueve el texto mas al medio
 
+    // Titulo Principal - Seccion About us
     .TituloAbout {
       font-size: 3rem;
       font-weight: 600;
@@ -31,8 +31,8 @@
     }
   }
 
+// Texto descripcion - Seccion About us
   .bloque2 {
-    // description of about us
     width: 80%;
     font-size: 1.3rem; // cambie el tamano
     text-align: left; // cambio esto
@@ -41,12 +41,10 @@
     grid-area: info;
     padding: 40px;
     color: rgb(198, 194, 194);
-    // border: 2px yellow solid;
   }
 
-
+// Estadisticas - Seccion About us
   .bloque3 {
-    //stats block 
     border: 2px rgba(205, 199, 199, 0.1) solid;
     border-radius: 20px;
     display: flex;
@@ -106,8 +104,7 @@
 
 @media (max-width: 900px) {
   .AboutContainer {
-    // general block
-  gap: 0;
+    gap: 0;
     width: auto; //opcional
     margin: 0; //opcional
     padding: 0;
@@ -117,31 +114,30 @@
     color: white;
 
     .AboutUsTitle {
-      // about us title
       margin: 0 auto; //? alineo con esto
       text-align: center;
       justify-content: center;
       align-items: center;
-      padding: 1rem;
+      padding: 0rem;
       
 
       .TituloAbout {
         font-size: 30px;
-        padding: 0;
+        padding: 1rem 0;
         height: 0;
       }
     }
 
     .bloque2 {
       // description of about us
-      // border: 2px yellow solid;
-      width: 90%;
+      width: auto;
       font-size: 1rem;
       text-align: center;
       font-weight: 300;
       margin-left: 0;
       color: rgb(198, 194, 194);
-      padding: 1rem 0;
+      padding: 0 2rem;
+      // border: 2px yellow solid;
     }
 
 
