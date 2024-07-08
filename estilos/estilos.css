@@ -1219,6 +1219,19 @@ footer p {
     padding: 10px;
   }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  footer img {
+    width: 20%;
+  }
+  footer p {
+    font-size: 0.7rem;
+    padding: 10px;
+  }
+}
 body {
   padding: 0;
   scroll-behavior: smooth;
