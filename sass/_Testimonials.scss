@@ -7,7 +7,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0; /* Ajustar el padding lateral */
+    padding: 0;
+    /* Ajustar el padding lateral */
 }
 
 .innerdiv {
@@ -21,9 +22,11 @@
 }
 
 .btnContainer {
-    grid-column: 1 / -1; /* Toma el ancho completo */
+    grid-column: 1 / -1;
+    /* Toma el ancho completo */
     display: flex;
-    justify-content: center; /* Centrar el botón */
+    justify-content: center;
+    /* Centrar el botón */
     margin-top: 0rem;
     margin-bottom: 0;
     height: auto;
@@ -174,8 +177,9 @@
         text-align: center;
     }
 
-  
+
 }
+
 @media only screen and (max-width: 1000px) {
     .innerdiv {
         transform: scale(0.7);
@@ -212,7 +216,8 @@
     }
 
     .btnContainer {
-        margin-top: 0rem; /* Reduce el margen superior del botón en móviles */
+        margin-top: 0rem;
+        /* Reduce el margen superior del botón en móviles */
     }
 
     .attribution {
@@ -235,7 +240,8 @@
     }
 
     .btnContainer {
-        margin-top: 0rem; /* Reduce el margen superior del botón en móviles */
+        margin-top: 0rem;
+        /* Reduce el margen superior del botón en móviles */
     }
 
     .attribution {

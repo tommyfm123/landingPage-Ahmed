@@ -34,8 +34,10 @@ header .logo img {
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin: 0 auto; /* opcional */
-  padding: 0 3rem; /* padding costados */
+  margin: 0 auto;
+  /* opcional */
+  padding: 0 3rem;
+  /* padding costados */
 }
 
 /* container texto VSL */
@@ -48,7 +50,7 @@ header .logo img {
 /* titulo VSL */
 .textVSL .TituloVSL {
   color: white;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* Palabras Doradas */
@@ -95,8 +97,6 @@ header .logo img {
   color: ghostwhite;
   overflow: hidden;
   transition: all ease-in-out 0.3s;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 .cssbuttons-io .textoBtn {
@@ -141,7 +141,8 @@ header .logo img {
 /* Responsive styles for tablets */
 @media (max-width: 1024px) and (min-width: 768px) {
   .vsl {
-    padding: 0 2rem; /* Adjust padding for tablets */
+    padding: 0 2rem;
+    /* Adjust padding for tablets */
   }
   .textVSL {
     width: 80%;
@@ -160,8 +161,6 @@ header .logo img {
   }
   .cssbuttons-io {
     font-size: 18px;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
   }
   .cssbuttons-io .textoBtn {
     font-size: 0.95rem;
@@ -173,38 +172,52 @@ header .logo img {
 /* Media Query para celulares móviles (hasta 600px) */
 @media (max-width: 600px) {
   .vsl {
-    padding: 0 1rem; /* Ajuste del padding lateral para móviles */
+    padding: 0 1rem;
+    /* Ajuste del padding lateral para móviles */
   }
   .textVSL {
-    width: 100%; /* Ancho completo para móviles */
-    text-align: center; /* Centrar texto para móviles */
+    width: 100%;
+    /* Ancho completo para móviles */
+    text-align: center;
+    /* Centrar texto para móviles */
   }
   .textVSL .TituloVSL {
-    font-size: 1.26rem; /* Texto Oferta */
-    font-weight: 600;
-    padding: 0;
+    font-size: 1.2rem;
+    /* Texto Oferta */
+    font-weight: 500;
+    padding: 0 1rem;
   }
   .textVSL .Subtitle {
-    font-size: 1rem; /* Texto debajo de oferta*/
+    font-size: 1rem;
+    /* Texto debajo de oferta*/
   }
   .TextBelowVideo {
-    font-size: 1.2rem; /* Tamaño de fuente del texto debajo del video para móviles */
-    margin-left: 5%; /* Ajuste de margen izquierdo para móviles */
-    margin-right: 5%; /* Ajuste de margen derecho para móviles */
+    font-size: 1.2rem;
+    /* Tamaño de fuente del texto debajo del video para móviles */
+    margin-left: 5%;
+    /* Ajuste de margen izquierdo para móviles */
+    margin-right: 5%;
+    /* Ajuste de margen derecho para móviles */
   }
   .VideoContainer {
-    width: 80%; /* Ancho completo para móviles */
+    width: 80%;
+    /* Ancho completo para móviles */
   }
   .cssbuttons-io {
-    font-size: 16px; /* Tamaño de fuente de los botones para móviles */
-    margin-top: 1rem; /* Ajuste de margen superior para móviles */
-    margin-bottom: 1rem; /* Ajuste de margen inferior para móviles */
+    font-size: 16px;
+    /* Tamaño de fuente de los botones para móviles */
+    margin-top: 1rem;
+    /* Ajuste de margen superior para móviles */
+    margin-bottom: 1rem;
+    /* Ajuste de margen inferior para móviles */
   }
   .cssbuttons-io .textoBtn {
-    font-size: 0.9rem; /* Tamaño de fuente del texto de los botones para móviles */
+    font-size: 0.9rem;
+    /* Tamaño de fuente del texto de los botones para móviles */
   }
   .cssbuttons-io span {
-    padding: 0.4em 0.8em; /* Ajuste de padding para móviles */
+    padding: 0.4em 0.8em;
+    /* Ajuste de padding para móviles */
   }
 }
 .AboutContainer {
@@ -297,23 +310,24 @@ header .logo img {
     gap: 0;
     width: auto;
     margin: 0;
-    padding: 0;
+    padding: 1rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
   }
   .AboutContainer .AboutUsTitle {
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 0rem;
+    padding: 0;
   }
   .AboutContainer .AboutUsTitle .TituloAbout {
-    font-size: 30px;
-    padding: 1rem 0;
-    height: 0;
+    font-size: 25px;
+    padding: 0;
+    height: auto;
+    margin: 0;
   }
   .AboutContainer .bloque2 {
     width: auto;
@@ -574,6 +588,7 @@ header .logo img {
 .BenefitsSection {
   display: flex;
   padding: 0 9rem;
+  margin-bottom: 1rem;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -581,7 +596,7 @@ header .logo img {
 
 .BenefitsSection .titleBenefit {
   font-size: 35px;
-  font-weight: 600;
+  font-weight: 500;
   color: white;
 }
 
@@ -674,8 +689,8 @@ header .logo img {
     gap: 1rem;
   }
   .BenefitsSection .containerBenefit .benefitBox {
-    width: 80%;
-    height: 300px;
+    width: 90%;
+    height: auto;
     padding: 1rem;
   }
 }
@@ -717,7 +732,7 @@ header .logo img {
 
 .titleQuestions {
   font-size: 35px;
-  font-weight: 600;
+  font-weight: 500;
   color: rgb(214, 178, 106);
   background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(123, 80, 24) 100%);
   -webkit-background-clip: text;
@@ -785,56 +800,77 @@ svg {
 /* Media Query para celulares móviles (hasta 600px) */
 @media (max-width: 600px) {
   .questions {
-    padding: 0 2rem; /* Reduzco el padding lateral para móviles */
+    padding: 1rem;
+    padding-top: 1rem;
+    /* Reduzco el padding lateral para móviles */
   }
   .titleQuestions {
-    font-size: 1.4rem; /* Reduzco el tamaño de la fuente del título para móviles */
-    margin: 1rem 0; /* Ajusto el margen del título para móviles */
-    text-align: center; /* Centro el texto del título */
+    font-size: 1.4rem;
+    /* Reduzco el tamaño de la fuente del título para móviles */
+    margin: 1rem 0;
+    /* Ajusto el margen del título para móviles */
+    text-align: center;
+    /* Centro el texto del título */
   }
   .faq {
-    max-width: 100%; /* Ancho máximo del 100% para ocupar todo el ancho del móvil */
-    margin-top: 1rem; /* Aumento el margen superior de cada pregunta */
+    max-width: 100%;
+    /* Ancho máximo del 100% para ocupar todo el ancho del móvil */
+    margin-top: 1rem;
+    /* Aumento el margen superior de cada pregunta */
     padding-bottom: 0.3rem;
     border-bottom: 1px solid rgb(142, 138, 138);
   }
   .faq.active .answer {
-    max-height: 300px; /* Aumento la altura máxima de la respuesta activa para móviles */
+    max-height: 300px;
+    /* Aumento la altura máxima de la respuesta activa para móviles */
   }
   .question h3 {
-    font-size: 1rem; /* Reduzco el tamaño de la fuente de las preguntas para móviles */
-    width: 90%; /* Ajusto el ancho del texto de las preguntas */
+    font-size: 1rem;
+    /* Reduzco el tamaño de la fuente de las preguntas para móviles */
+    width: 90%;
+    /* Ajusto el ancho del texto de las preguntas */
   }
   .answer p {
-    font-size: 1rem; /* Reduzco el tamaño de la fuente de las respuestas para móviles */
+    font-size: 1rem;
+    /* Reduzco el tamaño de la fuente de las respuestas para móviles */
   }
 }
 /* Media Query para iPads y tablets (768px - 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .questions {
-    padding: 0 2rem; /* Reduzco el padding lateral para iPads y tablets */
+    padding: 0 2rem;
+    /* Reduzco el padding lateral para iPads y tablets */
   }
   .titleQuestions {
-    font-size: 2rem; /* Tamaño de la fuente del título para iPads y tablets */
-    margin: 3rem 0; /* Ajusto el margen del título para iPads y tablets */
-    text-align: center; /* Centro el texto del título */
+    font-size: 2rem;
+    /* Tamaño de la fuente del título para iPads y tablets */
+    margin: 3rem 0;
+    /* Ajusto el margen del título para iPads y tablets */
+    text-align: center;
+    /* Centro el texto del título */
   }
   .faq {
-    max-width: 90%; /* Limito el ancho máximo al 70% para iPads y tablets */
+    max-width: 90%;
+    /* Limito el ancho máximo al 70% para iPads y tablets */
     min-width: 70%;
-    margin-top: 1rem; /* Aumento el margen superior de cada pregunta */
+    margin-top: 1rem;
+    /* Aumento el margen superior de cada pregunta */
     padding-bottom: 0.3rem;
     border-bottom: 1px solid rgb(142, 138, 138);
   }
   .faq.active .answer {
-    max-height: 300px; /* Aumento la altura máxima de la respuesta activa para iPads y tablets */
+    max-height: 300px;
+    /* Aumento la altura máxima de la respuesta activa para iPads y tablets */
   }
   .question h3 {
-    font-size: 1.2rem; /* Tamaño de la fuente de las preguntas para iPads y tablets */
-    width: 90%; /* Ajusto el ancho del texto de las preguntas */
+    font-size: 1.2rem;
+    /* Tamaño de la fuente de las preguntas para iPads y tablets */
+    width: 90%;
+    /* Ajusto el ancho del texto de las preguntas */
   }
   .answer p {
-    font-size: 1.2rem; /* Tamaño de la fuente de las respuestas para iPads y tablets */
+    font-size: 1.2rem;
+    /* Tamaño de la fuente de las respuestas para iPads y tablets */
   }
 }
 @keyframes scroll {
@@ -847,6 +883,7 @@ svg {
   flex-direction: column;
   align-items: center;
   padding: 0 1rem;
+  margin-bottom: 3rem;
 }
 
 .wrapper ul {
@@ -928,7 +965,7 @@ svg {
   .wrapper .titleWrapper {
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 0.3rem;
   }
   .wrapper .column-list {
@@ -961,7 +998,8 @@ svg {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0; /* Ajustar el padding lateral */
+  padding: 0;
+  /* Ajustar el padding lateral */
 }
 
 .innerdiv {
@@ -975,9 +1013,11 @@ svg {
 }
 
 .btnContainer {
-  grid-column: 1/-1; /* Toma el ancho completo */
+  grid-column: 1/-1;
+  /* Toma el ancho completo */
   display: flex;
-  justify-content: center; /* Centrar el botón */
+  justify-content: center;
+  /* Centrar el botón */
   margin-top: 0rem;
   margin-bottom: 0;
   height: auto;
@@ -1157,7 +1197,8 @@ svg {
     padding: 0;
   }
   .btnContainer {
-    margin-top: 0rem; /* Reduce el margen superior del botón en móviles */
+    margin-top: 0rem;
+    /* Reduce el margen superior del botón en móviles */
   }
   .attribution {
     position: relative;
@@ -1176,7 +1217,8 @@ svg {
     grid-template-columns: 1fr;
   }
   .btnContainer {
-    margin-top: 0rem; /* Reduce el margen superior del botón en móviles */
+    margin-top: 0rem;
+    /* Reduce el margen superior del botón en móviles */
   }
   .attribution {
     position: relative;
@@ -1191,6 +1233,129 @@ svg {
   .btnTestimonio {
     height: 4rem;
     margin-bottom: 1rem;
+  }
+}
+.HowitWorksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0 5rem 0rem;
+}
+
+.TitleHowitWorks {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.DescriptionWork {
+  color: rgb(211, 211, 211);
+  font-size: 1.3rem;
+  padding: 1rem 20rem;
+  text-align: center;
+}
+
+.CardsContainer {
+  display: flex;
+  color: white;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardWork {
+  border: 2px #af8f4e solid;
+  padding: 2rem;
+  border-radius: 10px;
+  height: 250px;
+  width: 400px;
+}
+
+.TitleCardSteps {
+  font-weight: 400;
+}
+
+.StepTitle {
+  font-weight: 500;
+}
+
+.StepsDescription {
+  color: #adadad;
+}
+
+.lineaWork {
+  border: 2px #af8f4e solid;
+  width: 50px;
+  height: 0px;
+}
+
+@media (max-width: 900px) {
+  .HowitWorksContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .TitleHowitWorks {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+  }
+  .StepTitle {
+    font-size: 1.3rem;
+  }
+  .StepsDescription {
+    font-size: 1rem;
+  }
+  .DescriptionWork {
+    font-size: 1rem;
+    color: rgb(228, 228, 228);
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .CardsContainer {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    width: 100%;
+  }
+  .cardWork {
+    border: 2px #af8f4e solid;
+    padding: 1.5rem 1.5rem;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+  }
+  .lineaWork {
+    border: 2px #af8f4e solid;
+    width: 0;
+    height: 50px;
+  }
+}
+/* Media Query para iPads y tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .HowitWorksContainer {
+    padding: 1rem 8rem 3rem 8rem;
+  }
+  .cardWork {
+    border: 2px #af8f4e solid;
+    padding: 2rem;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+  }
+  .lineaWork {
+    border: 2px #af8f4e solid;
+    width: 0;
+    height: 50px;
   }
 }
 footer {
@@ -1252,26 +1417,28 @@ html {
 
 .lineHorizontal {
   margin: 0 auto;
-  margin-top: 3rem;
+  padding: 0;
   width: 80%;
   border-top: 1px rgb(124, 118, 118) solid;
 }
 
 .title {
-  font-size: 2rem; /* Ajustar el tamaño según tus necesidades */
+  font-size: 2rem;
+  /* Ajustar el tamaño según tus necesidades */
   font-weight: bold;
 }
 
 /* Tamaño de fuente para descripciones */
 .description {
-  font-size: 1.2rem; /* Ajustar el tamaño según tus necesidades */
+  font-size: 1.2rem;
+  /* Ajustar el tamaño según tus necesidades */
   font-weight: normal;
 }
 
 @media (max-width: 900px) {
   .lineHorizontal {
     margin: 0 auto;
-    margin-top: 1rem;
+    padding: 0;
     width: 90%;
     border-top: 1px rgb(124, 118, 118) solid;
   }

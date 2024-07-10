@@ -1,6 +1,6 @@
 // @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
+body {
     padding: 0;
     scroll-behavior: smooth;
     margin: 0;
@@ -10,7 +10,7 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
-html{
+html {
 
     overflow-x: hidden;
     scroll-behavior: smooth !important;
@@ -20,29 +20,37 @@ html{
 }
 
 
-.lineHorizontal{
+.lineHorizontal {
     margin: 0 auto;
-    margin-top:3rem;
+    // margin-top: 0;
+    padding: 0;
     width: 80%;
     border-top: 1px rgb(124, 118, 118) solid;
 }
 
 .title {
-    font-size: 2rem; /* Ajustar el tamaño según tus necesidades */
+    font-size: 2rem;
+    /* Ajustar el tamaño según tus necesidades */
     font-weight: bold;
 }
 
 /* Tamaño de fuente para descripciones */
 .description {
-    font-size: 1.2rem; /* Ajustar el tamaño según tus necesidades */
+    font-size: 1.2rem;
+    /* Ajustar el tamaño según tus necesidades */
     font-weight: normal;
 }
 
-@media (max-width: 900px){
-.lineHorizontal {
-        margin: 0 auto;
-        margin-top: 1rem;
 
+
+
+
+
+@media (max-width: 900px) {
+    .lineHorizontal {
+        margin: 0 auto;
+        // margin-top: 0;
+        padding: 0;
         width: 90%;
         border-top: 1px rgb(124, 118, 118) solid;
     }
@@ -50,7 +58,7 @@ html{
 
 
 
-.GoldSpan{
+.GoldSpan {
     color: rgb(214, 178, 106);
     background: -webkit-linear-gradient(146deg, rgba(255, 233, 152, 1) 0%, rgba(213, 189, 117, 1) 8%, rgb(133, 87, 27) 100%);
     -webkit-background-clip: text;

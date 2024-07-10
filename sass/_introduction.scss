@@ -4,8 +4,10 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin: 0 auto; /* opcional */
-  padding: 0 3rem; /* padding costados */
+  margin: 0 auto;
+  /* opcional */
+  padding: 0 3rem;
+  /* padding costados */
 }
 
 /* container texto VSL */
@@ -18,18 +20,16 @@
 /* titulo VSL */
 .textVSL .TituloVSL {
   color: white;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* Palabras Doradas */
 .textVSL span {
   color: #d6b26a;
-  background: -webkit-linear-gradient(
-    146deg,
-    rgba(255, 233, 152, 1) 0%,
-    rgba(213, 189, 117, 1) 8%,
-    rgb(133, 87, 27) 100%
-  );
+  background: -webkit-linear-gradient(146deg,
+      rgba(255, 233, 152, 1) 0%,
+      rgba(213, 189, 117, 1) 8%,
+      rgb(133, 87, 27) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -38,12 +38,10 @@
 .textVSL .Subtitle {
   font-size: 1.3rem;
   color: #d6b26a;
-  background: -webkit-linear-gradient(
-    146deg,
-    rgba(255, 233, 152, 1) 0%,
-    rgba(213, 189, 117, 1) 8%,
-    rgb(133, 87, 27) 100%
-  );
+  background: -webkit-linear-gradient(146deg,
+      rgba(255, 233, 152, 1) 0%,
+      rgba(213, 189, 117, 1) 8%,
+      rgb(133, 87, 27) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 500;
@@ -75,8 +73,8 @@
   color: ghostwhite;
   overflow: hidden;
   transition: all ease-in-out 0.3s;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  // margin-top: 2rem;
+  // margin-bottom: 2rem;
 }
 
 .cssbuttons-io .textoBtn {
@@ -121,7 +119,8 @@
 /* Responsive styles for tablets */
 @media (max-width: 1024px) and (min-width: 768px) {
   .vsl {
-    padding: 0 2rem; /* Adjust padding for tablets */
+    padding: 0 2rem;
+    /* Adjust padding for tablets */
   }
 
   .textVSL {
@@ -146,8 +145,8 @@
 
   .cssbuttons-io {
     font-size: 18px;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    // margin-top: 1.5rem;
+    // margin-bottom: 1.5rem;
   }
 
   .cssbuttons-io .textoBtn {
@@ -162,46 +161,59 @@
 /* Media Query para celulares móviles (hasta 600px) */
 @media (max-width: 600px) {
   .vsl {
-    padding: 0 1rem; /* Ajuste del padding lateral para móviles */
+    padding: 0 1rem;
+    /* Ajuste del padding lateral para móviles */
   }
 
   .textVSL {
-    width: 100%; /* Ancho completo para móviles */
-    text-align: center; /* Centrar texto para móviles */
+    width: 100%;
+    /* Ancho completo para móviles */
+    text-align: center;
+    /* Centrar texto para móviles */
   }
 
   .textVSL .TituloVSL {
-    font-size: 1.26rem; /* Texto Oferta */
-    font-weight: 600; // anchos de fuente
-    padding: 0; 
+    font-size: 1.2rem;
+    /* Texto Oferta */
+    font-weight: 500; // anchos de fuente
+    padding: 0 1rem;
   }
 
   .textVSL .Subtitle {
-    font-size: 1rem; /* Texto debajo de oferta*/
+    font-size: 1rem;
+    /* Texto debajo de oferta*/
   }
 
   .TextBelowVideo {
-    font-size: 1.2rem; /* Tamaño de fuente del texto debajo del video para móviles */
-    margin-left: 5%; /* Ajuste de margen izquierdo para móviles */
-    margin-right: 5%; /* Ajuste de margen derecho para móviles */
+    font-size: 1.2rem;
+    /* Tamaño de fuente del texto debajo del video para móviles */
+    margin-left: 5%;
+    /* Ajuste de margen izquierdo para móviles */
+    margin-right: 5%;
+    /* Ajuste de margen derecho para móviles */
   }
 
   .VideoContainer {
-    width: 80%; /* Ancho completo para móviles */
+    width: 80%;
+    /* Ancho completo para móviles */
   }
 
   .cssbuttons-io {
-    font-size: 16px; /* Tamaño de fuente de los botones para móviles */
-    margin-top: 1rem; /* Ajuste de margen superior para móviles */
-    margin-bottom: 1rem; /* Ajuste de margen inferior para móviles */
+    font-size: 16px;
+    /* Tamaño de fuente de los botones para móviles */
+    margin-top: 1rem;
+    /* Ajuste de margen superior para móviles */
+    margin-bottom: 1rem;
+    /* Ajuste de margen inferior para móviles */
   }
 
   .cssbuttons-io .textoBtn {
-    font-size: 0.9rem; /* Tamaño de fuente del texto de los botones para móviles */
+    font-size: 0.9rem;
+    /* Tamaño de fuente del texto de los botones para móviles */
   }
 
   .cssbuttons-io span {
-    padding: 0.4em 0.8em; /* Ajuste de padding para móviles */
+    padding: 0.4em 0.8em;
+    /* Ajuste de padding para móviles */
   }
 }
-
