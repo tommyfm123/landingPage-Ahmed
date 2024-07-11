@@ -68,7 +68,7 @@ header .logo img {
   background: -webkit-linear-gradient(146deg, rgb(255, 233, 152) 0%, rgb(213, 189, 117) 8%, rgb(133, 87, 27) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .VideoContainer {

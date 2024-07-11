@@ -8,6 +8,31 @@
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/Favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/Favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/Favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/Favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/Favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/Favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/Favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/Favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/Favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/Favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicons/favicon-16x16.png">
+
+    <link rel="manifest" href="/images/Favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/Favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -17,172 +42,8 @@
 
 <body class="bodyForm">
 
-    <!-- Section Header -->
-    <header>
-        <div class="logo">
-            <a href="/index.html">
-                <img src="/images/Logo.png" alt="Logo">
-            </a>
-        </div>
-
-    </header>
-
-    <!-- form  -->
-
-    <!-- <form class="form" action="https://api.web3forms.com/submit" method="POST">
-
-        <input type="hidden" name="access_key" value="45eb4074-ae06-4e53-bcc3-6929f9ae8eaf">
-
-       
-
-        <div class="flex">
-            <label>
-                <input class="input" type="text" name="Firstname" placeholder="" required="required" id="firstname">
-                <span>Firstname</span>
-            </label>
-            <label>
-                <input class="input" type="text" name="Lastname" placeholder="" required="required" id="lastname">
-                <span>Lastname</span>
-            </label>
-
-        </div>
-        <label>
-            <input class="input" type="text" name="Number" placeholder="" required="required" id="Number">
-            <span>Number</span>
-        </label>
-        <label>
-            <input class="input" name="Country" type="text" placeholder="" required="required" id="Country">
-            <span>Country</span>
-        </label>
-        <label>
-            <input class="input" type="text" name="City" placeholder="" required="required" id="City">
-            <span>City</span>
-        </label>
-        <label>
-            <input class="input" type="email" name="Email" placeholder="" required="required" id="email">
-            <span>Email</span>
-        </label>
-
-        <label for="PracticeArea">Choose the area where you need help</label>
-
-        <select name="Area of practice" id="AreaDropdown" required="required">
-            <option value="Banking and Financial
-            ">Banking and Financial
-            </option>
-            <option value="Construction
-            ">Construction
-            </option>
-            <option value="Insurance
-            ">Insurance
-            </option>
-            <option value="Commercial Claims
-            ">Commercial Claims
-            </option>
-            <option value="Personal Injury Claims
-            ">Personal Injury Claims</option>
-            <option value="Drug and Alcohol Crimes
-            ">Drug and Alcohol Crimes
-            </option>
-            <option value="Personal Status
-            ">Personal Status
-            </option>
-            <option value="Rental Disputes Claims">Rental Disputes Claims </option>
-            <option value="Financial Crimes
-            ">Financial Crimes
-            </option>
-            <option value="Real Estate
-            ">Real Estate
-            </option>
-            <option value="Cybercrime Offenses
-            ">Cybercrime Offenses
-            </option>
-            <option value="Financial Claims
-            ">Financial Claims
-            </option>
-            <option value="Others
-            ">Others
-            </option>
-        </select>
-
-        <label>
-            <input class="input" name="Description" type="text" placeholder="" required="required">
-            <span>Briefly describe your problem</span>
-        </label>
-        <p>Do you have at least $200 to invest in a consultation?</p>
-        <label>
-            <div class="radio-button-container">
-                <div class="radio-button">
-                    <input type="radio" class="radio-button__input" id="radio1" name="moneyToInvest" value="Yes">
-                    <label class="radio-button__label" for="radio1">
-                        <span class="radio-button__custom"></span>
-                        Yes
-                    </label>
-                </div>
-                <div class="radio-button">
-                    <input type="radio" class="radio-button__input" id="radio2" name="moneyToInvest" value="No">
-                    <label class="radio-button__label" for="radio2">
-                        <span class="radio-button__custom"></span>
-                        No
-                    </label>
-                </div>
-            </div>
-        </label>
-
-        <input type="hidden" name="redirect" value="https://web3forms.com/success">
-
-        <button class="btnForm" type="submit">
-            <div class="svg-wrapper-1">
-                <div class="svg-wrapper">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                        <path fill="none" d="M0 0h24v24H0z"></path>
-                        <path fill="currentColor"
-                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
-                        </path>
-                    </svg>
-                </div>
-            </div>
-            <span>Send</span>
-        </button>
-    </form> -->
-
-    <!-- Form with payment -->
-    <div class="form">
-
-        <div class="textForm">
-            <p class="title">Book a consultation</p>
-            <p class="message">Legal advice when you need it the most.</p>
-        </div>
-
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-        <script>
-            hbspt.forms.create({
-                region: "na1",
-                portalId: "46659217",
-                formId: "ad442db1-f22a-4a99-8bab-b6b23b8cd08a",
-                onFormReady: function ($form) {
-                    $form.find('.hs-input').css('color', 'white');
-                }
-            });
-        </script>
-
-
-        <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-        <script>
-            hbspt.forms.create({
-                region: "na1",
-                portalId: "46659217",
-                formId: "ad442db1-f22a-4a99-8bab-b6b23b8cd08a"
-                
-            });
-        </script> -->
-    </div>
-
-
-
-
-
-
-
+    <div data-paperform-id="brxqwhdb" data-takeover="1"></div>
+    <script>(function () { var script = document.createElement('script'); script.src = "https://paperform.co/__embed.min.js"; document.body.appendChild(script); })()</script>
 </body>
 
 </html>
