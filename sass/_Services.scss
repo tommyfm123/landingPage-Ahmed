@@ -25,6 +25,14 @@
 .wrapper ul li span {
   color: white; // color texto
   font-size: 1.5rem; // tamaño de texto
+  font-weight: 500;
+}
+
+.TextAreasDescription {
+  color: white;
+  font-size: 1rem;
+  font-weight: 200;
+
 }
 
 .wrapper .IconArrow {
@@ -68,8 +76,9 @@
   }
 
   .wrapper ul li {
-    padding: 0 1rem;
-    margin-top: 20px;
+    padding: 0;
+    margin-top: 0px;
+    // border: 2px yellow solid;
   }
 
   .wrapper ul li span {
@@ -78,9 +87,11 @@
   }
 
   .wrapper .IconArrow {
-    font-size: 2rem !important;
-    margin-right: 1rem !important;
-    align-items: center;
+    font-size: 30px !important;
+    margin-right: .8rem !important;
+    align-items: baseline;
+    // border: 2px yellow solid;
+    min-width: 30px;
   }
 
   .wrapper .titleWrapper {
@@ -88,14 +99,16 @@
     text-align: center;
     font-size: 25px;
     margin-bottom: .3rem;
+
   }
 
   .wrapper .column-list {
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    padding: 10px 0;
+    padding: 0;
     margin: 0 auto;
+
   }
 }
 

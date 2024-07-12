@@ -903,6 +903,13 @@ svg {
 .wrapper ul li span {
   color: white;
   font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.TextAreasDescription {
+  color: white;
+  font-size: 1rem;
+  font-weight: 200;
 }
 
 .wrapper .IconArrow {
@@ -946,17 +953,18 @@ svg {
     width: 100%;
   }
   .wrapper ul li {
-    padding: 0 1rem;
-    margin-top: 20px;
+    padding: 0;
+    margin-top: 0px;
   }
   .wrapper ul li span {
     color: white;
     font-size: 1rem;
   }
   .wrapper .IconArrow {
-    font-size: 2rem !important;
-    margin-right: 1rem !important;
-    align-items: center;
+    font-size: 30px !important;
+    margin-right: 0.8rem !important;
+    align-items: baseline;
+    min-width: 30px;
   }
   .wrapper .titleWrapper {
     color: white;
@@ -968,7 +976,7 @@ svg {
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    padding: 10px 0;
+    padding: 0;
     margin: 0 auto;
   }
 }
