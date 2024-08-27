@@ -30,7 +30,7 @@
     display: flex;
     justify-content: center;
     /* Centrar el botón */
-    margin-top: 0rem;
+    margin-top: 1rem;
     margin-bottom: 0;
     height: auto;
 }
@@ -42,12 +42,13 @@
 
 .TitleTestimonialContainer {
     color: white;
-    font-size: 35px;
+    font-size: 4rem;
     font-weight: 500;
     padding: 0 4rem;
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 .eachdiv {
@@ -219,7 +220,7 @@
     }
 
     .btnContainer {
-        margin-top: 0rem;
+        // margin-top: 0rem;
         /* Reduce el margen superior del botón en móviles */
     }
 
@@ -228,8 +229,8 @@
     }
 
     .TitleTestimonialContainer {
-        font-size: 1.3rem;
-        padding: 0 5rem;
+        font-size: 2.4rem;
+        padding: 0 4.7rem;
     }
 }
 

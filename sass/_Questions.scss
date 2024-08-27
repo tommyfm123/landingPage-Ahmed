@@ -9,13 +9,14 @@
 }
 
 .titleQuestions {
-  font-size: 35px;
+  font-size: 4rem;
   font-weight: 500;
   color: rgb(214, 178, 106);
   background: -webkit-linear-gradient(146deg, rgba(255, 233, 152, 1) 0%, rgb(123, 80, 24) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 4rem 0rem;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .faq {
@@ -86,7 +87,7 @@ svg {
   }
 
   .titleQuestions {
-    font-size: 1.4rem;
+    font-size: 2rem;
     /* Reduzco el tamaño de la fuente del título para móviles */
     margin: 1rem 0;
     /* Ajusto el margen del título para móviles */
