@@ -1958,10 +1958,10 @@ form:hover {
   color: #555;
 }
 
-.reviews a {
-  color: #4285F4;
+.reviews p {
   text-decoration: none;
   font-weight: bold;
+  margin: 0;
 }
 
 .reviews a:hover {
