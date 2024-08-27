@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
 header {
   position: absolute; /* Posiciona el header en la parte superior de la página */
   top: 0; /* Alinea al borde superior */
@@ -1193,7 +1194,165 @@ svg {
   margin: 2rem 0;
 }
 
-/* Media Queries */
+.outerdiv {
+  width: auto;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  /* Ajustar el padding lateral */
+  padding-top: 2rem;
+}
+
+.innerdiv {
+  justify-content: center;
+  transform: scale(0.9);
+  margin: 0 5rem;
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+.btnContainer {
+  grid-column: 1/-1;
+  /* Toma el ancho completo */
+  display: flex;
+  justify-content: center;
+  /* Centrar el botón */
+  margin-top: 1rem;
+  margin-bottom: 0;
+  height: auto;
+}
+
+.btnTestimonio {
+  height: 5rem;
+  text-align: center;
+}
+
+.TitleTestimonialContainer {
+  color: white;
+  font-size: 4rem;
+  font-weight: 500;
+  padding: 0 4rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.eachdiv {
+  padding: 1.5rem 2.5rem;
+  border-radius: 0.8rem;
+  box-shadow: 5px 5px 20px rgba(109, 107, 107, 0.4196078431);
+  color: black;
+  background: #dcdcdc;
+}
+
+.div1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.div2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.div3 {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+.userdetails {
+  display: flex;
+}
+
+.imgbox {
+  margin-right: 1rem;
+}
+
+.imgbox img {
+  border-radius: 50%;
+  width: 2rem;
+  border: 2px solid #cec5c5;
+}
+
+.detbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detbox p {
+  margin: 0;
+}
+
+.detbox .name {
+  color: #49505A;
+  font-size: 1rem;
+  margin-bottom: 0.1rem;
+  font-weight: 600;
+}
+
+.detbox .name.dark {
+  color: #49505A;
+}
+
+.detbox .designation {
+  color: #49505A;
+  opacity: 50%;
+  font-size: 0.9rem;
+}
+
+.detbox .designation.dark {
+  color: #49505A;
+}
+
+.review h4 {
+  font-size: 1.4rem;
+  color: #000000;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.review.dark h4 {
+  color: #4B5258;
+}
+
+.review p {
+  font-size: 1.1rem;
+  color: #000000;
+  font-weight: 500;
+  opacity: 50%;
+  line-height: 1.5;
+}
+
+.review.dark p {
+  color: #0e0e0e;
+}
+
+.attribution {
+  font-size: 1rem;
+  line-height: 1.5;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  text-align: right;
+}
+
+.attribution a {
+  text-decoration: none;
+}
+
+.cssbuttons-io {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 @media only screen and (max-width: 1000px) {
   .innerdiv {
     transform: scale(0.7);
@@ -1204,31 +1363,56 @@ svg {
     transform: scale(0.6);
   }
   .TitleTestimonialContainer {
+    color: white;
     font-size: 1rem;
+    font-weight: 600;
+    padding: 0 4rem;
+    margin-bottom: 0rem;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 600px) {
+  .div1 {
+    background-position-x: 10rem;
+  }
   .innerdiv {
     display: flex;
     flex-direction: column;
     transform: scale(1);
     margin: 0 2rem;
+    margin-bottom: 0rem;
     padding: 0;
   }
   .TitleTestimonialContainer {
-    font-size: 2.3rem;
+    font-size: 2rem;
     padding: 0 2rem;
   }
   .attribution {
     position: relative;
   }
+  .TitleTestimonialContainer {
+    font-size: 2.2rem;
+    padding: 0 4.7rem;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .innerdiv {
+    display: flex;
     flex-direction: column;
     transform: scale(1);
     margin: 0 3rem;
     grid-template-columns: 1fr;
+  }
+  .btnContainer {
+    margin-top: 0rem;
+    /* Reduce el margen superior del botón en móviles */
+  }
+  .attribution {
+    position: relative;
+  }
+  .TitleTestimonialContainer {
+    font-size: 2rem;
+    padding: 0 2rem;
   }
   .eachdiv {
     padding: 2rem 3rem;
@@ -1731,5 +1915,99 @@ form:hover {
       transform: scale(1.8);
       opacity: 0;
     }
+  }
+}
+.review-box {
+  display: flex;
+  align-items: center;
+  padding: 0rem 2rem;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 300px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.review-box img {
+  width: 90px;
+  height: 90px;
+  margin-right: 3rem;
+}
+
+.review-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.rating .stars {
+  color: #FFD700;
+  margin-left: 5px;
+}
+
+.reviews {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.reviews a {
+  color: #4285F4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.reviews a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .review-box {
+    display: flex;
+    align-items: center;
+    padding: 0rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    max-width: 300px;
+    font-family: Arial, sans-serif;
+  }
+  .review-box img {
+    width: 90px;
+    height: 90px;
+    margin-right: 3rem;
+  }
+  .review-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .rating {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  .rating .stars {
+    color: #FFD700;
+    margin-left: 5px;
+  }
+  .reviews {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  .reviews a {
+    color: #4285F4;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .reviews a:hover {
+    text-decoration: underline;
   }
 }/*# sourceMappingURL=estilos.css.map */

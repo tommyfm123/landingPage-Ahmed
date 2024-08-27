@@ -1,0 +1,49 @@
+.review-box {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 300px;
+  font-family: Arial, sans-serif;
+}
+
+.review-box img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.review-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.rating .stars {
+  color: #FFD700;
+  margin-left: 5px;
+}
+
+.reviews {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.reviews a {
+  color: #4285F4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.reviews a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=googleRating.css.map */
