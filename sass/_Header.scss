@@ -1,28 +1,31 @@
 header {
+  position: absolute; /* Posiciona el header en la parte superior de la página */
+  top: 0; /* Alinea al borde superior */
+  left: 0; /* Alinea al borde izquierdo */
+  width: 100%; /* Hace que el header abarque todo el ancho */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  max-width: 100%;
-  height: 2rem;
-  padding: 2rem 0;  
+  justify-content: center; /* Alinea el contenido a la izquierda */
+  align-items: center; /* Alinea verticalmente en el centro */
+  padding: 1rem 0rem; /* Ajusta el padding según necesites */
+  z-index: 10; /* Asegura que el header esté por encima del contenido */
+}
 
-
-  .logo img{
-    height: 3rem;
-    text-align: center;
-  }
+.logo img {
+  height: 3rem;
+  margin: 0; /* Elimina cualquier margen adicional */
 }
 
 
 @media (max-width: 900px) {
 header {
     display: flex;
+    left: 0;
+    right: 0;
     justify-content: center;
     align-items: center;
     width: auto;
     height: 1rem;
-    padding: 2rem;
+    padding: 2rem 0;
     // background-color: rgb(91, 35, 35);
 
     .logo img {

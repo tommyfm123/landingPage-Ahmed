@@ -1,219 +1,316 @@
+/* Estilos generales para la sección VSL */
 .vsl {
   display: flex;
-  flex-direction: column;
+  // justify-content: space-between;
   justify-content: center;
-  text-align: center;
   align-items: center;
-  margin: 0 auto;
-  /* opcional */
-  padding: 0 3rem;
-  /* padding costados */
+  padding: 0rem 10rem; /* Aleja los textos */
+  background-image: url(../images/MIOlaw1.webp);
+  // height: 65vh;
+  height: 100vh;
+  // position: relative;
 }
 
-/* container texto VSL */
+/* Estilos para el contenedor de texto VSL */
 .textVSL {
-  padding: 0;
-  width: 70%;
+  // width: 60%;
+  // text-align: left;
+  width: 100%;
   text-align: center;
+  font-family: "Bebas Neue", sans-serif;
 }
 
-/* titulo VSL */
-.textVSL .TituloVSL {
+/* Estilos para los títulos */
+.TituloVSL {
   color: white;
-  font-weight: 500;
+  font-weight: 600;
+  // font-size: 4rem !important;
+  font-size: 5rem !important;
+  filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.803));
 }
 
-/* Palabras Doradas */
+/* Estilos para las palabras destacadas en dorado */
 .textVSL span {
   color: #d6b26a;
   background: -webkit-linear-gradient(146deg,
-      rgba(255, 233, 152, 1) 0%,
-      rgba(213, 189, 117, 1) 8%,
-      rgb(133, 87, 27) 100%);
+      rgb(255, 255, 255) 0%,
+      rgb(255, 255, 255) 20%,
+      rgb(255, 255, 255) 120%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Subtitulo */
-.textVSL .Subtitle {
-  font-size: 1.3rem;
+/* Estilos para el subtítulo */
+.Subtitle {
+  font-size: 2rem;
   color: #d6b26a;
   background: -webkit-linear-gradient(146deg,
-      rgba(255, 233, 152, 1) 0%,
-      rgba(213, 189, 117, 1) 8%,
-      rgb(133, 87, 27) 100%);
+  rgba(255, 233, 152, 1) 0%,
+  rgba(213, 189, 117, 1) 8%,
+  rgb(217, 152, 67) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.803));
   font-weight: 600;
 }
 
-.VideoContainer {
-  width: 20%;
-}
-
-.TextBelowVideo {
-  color: white;
-  font-weight: 400;
+#MobileOut {
+  padding: 0;
   font-size: 2rem;
-  margin-left: 10%;
-  margin-right: 10%;
+  // text-align: left;
+  text-align: center;
+  color: white;
 }
 
-.cssbuttons-io {
-  position: relative;
-  font-family: inherit;
-  filter: drop-shadow(20px 10px 20px rgba(0, 0, 0, 0.727));
-  font-weight: 500;
-  font-size: 20px;
-  letter-spacing: 0.05em;
-  border-radius: 10px;
-  cursor: pointer;
+/* Contenedor de los botones */
+#BotonContainer {
+  margin: 0.5rem 0;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Estilos de los botones */
+.button {
+
+  padding: 18px 40px;
   border: none;
-  background: rgb(231, 231, 231);
-  color: ghostwhite;
-  overflow: hidden;
-  transition: all ease-in-out 0.3s;
-  // margin-top: 2rem;
-  // margin-bottom: 2rem;
-}
-
-.cssbuttons-io .textoBtn {
-  text-decoration: none;
-  font-family: inherit;
+  margin-top: 2rem;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  background-color: #ededed;
   color: black;
-  font-weight: 500;
+  border-radius: 9px;
+  font-weight: 600;
   font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
 }
 
-.cssbuttons-io:hover {
-  transform: translateY(-2px);
-  background-color: rgb(230, 224, 224);
+.button:hover {
+  transform: translateY(-3px);
 }
 
-.cssbuttons-io svg {
-  color: black;
-  width: 1.2em;
-  height: 1.2em;
-  margin-right: 0.5em;
+.button-span {
+  color: #5c5a5a;
 }
 
-.cssbuttons-io span {
-  position: relative;
-  z-index: 10;
-  transition: color 0.4s;
-  display: inline-flex;
-  align-items: center;
-  padding: 0.45em 1rem 0.45em 1.05em;
+/* Contenedor de la imagen de Ahmed y su hermano */
+.ahmedYhermano {
+  display: none;
+  // position: absolute; /* Asegura que esté posicionado correctamente */
+  // top: 314px; /* Ajusta la posición desde la parte superior del contenedor */
+  // right: 100px; /* Ajusta la posición desde la derecha del contenedor */
+  // max-width: 100%;
+  // height: 900px;
+  // z-index: 10; /* Asegura que esté encima de otros elementos */
 }
 
-#BtnServices {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
+/* Imagen dentro del contenedor */
+// .ahmedYhermano img {
+//   width: 100%;
+//   image-rendering: optimizeQuality;
+//   height: 470px; /* Ajusta la altura de la imagen */
+//   object-fit: cover;
+//   filter: sepia(0%) hue-rotate(90deg) saturate(0%);}
 
-.linea {
-  width: 70%;
-  color: #dcddd88e;
-}
-
-/* Responsive styles for tablets */
-@media (max-width: 1024px) and (min-width: 768px) {
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 1000px) {
+  /* Estilos generales para la sección VSL */
   .vsl {
-    padding: 0 2rem;
-    /* Adjust padding for tablets */
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    align-items: center;
+    padding: 0rem 0rem; /* Aleja los textos */
+    background-image: url(../images/MIOlaw1.webp);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
   }
 
-  .textVSL {
-    width: 80%;
-  }
-
-  .textVSL .TituloVSL {
-    font-size: 1.5rem;
-  }
-
-  .textVSL .Subtitle {
-    font-size: 1.2rem;
-  }
-
-  .TextBelowVideo {
-    font-size: 1.5rem;
-  }
-
-  .VideoContainer {
-    width: 50%;
-  }
-
-  .cssbuttons-io {
-    font-size: 18px;
-    // margin-top: 1.5rem;
-    // margin-bottom: 1.5rem;
-  }
-
-  .cssbuttons-io .textoBtn {
-    font-size: 0.95rem;
-  }
-
-  .cssbuttons-io span {
-    padding: 0.4em 0.9em 0.4em 0.9em;
-  }
-}
-
-/* Media Query para celulares móviles (hasta 600px) */
-@media (max-width: 600px) {
-  .vsl {
-    padding: 0 1rem;
-    /* Ajuste del padding lateral para móviles */
-  }
-
+  /* Estilos para el contenedor de texto VSL */
   .textVSL {
     width: 100%;
-    /* Ancho completo para móviles */
-    text-align: center;
-    /* Centrar texto para móviles */
+    text-align: center; /* Centra el texto */
+    padding-top: 0; /* Asegura que el texto esté debajo de la imagen */
   }
 
-  .textVSL .TituloVSL {
-    font-size: 1.2rem;
-    /* Texto Oferta */
-    font-weight: 500; // anchos de fuente
+  /* Estilos para los títulos */
+  .TituloVSL {
     padding: 0 1rem;
+    padding-top:3.5rem ;
+    font-size: 2.5rem !important;
   }
 
-  .textVSL .Subtitle {
-    font-size: 1rem;
-    /* Texto debajo de oferta*/
+  .textVSL span {
+    color: white;
+    background: -webkit-linear-gradient(146deg,
+        rgb(255, 255, 255) 0%,
+        rgb(255, 255, 255) 20%,
+        rgb(254, 254, 254) 120%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  .TextBelowVideo {
-    font-size: 1.2rem;
-    /* Tamaño de fuente del texto debajo del video para móviles */
-    margin-left: 5%;
-    /* Ajuste de margen izquierdo para móviles */
-    margin-right: 5%;
-    /* Ajuste de margen derecho para móviles */
+  /* Estilos para el subtítulo */
+  .Subtitle {
+    font-size: 2rem;
+    display: none;
   }
 
-  .VideoContainer {
-    width: 80%;
-    /* Ancho completo para móviles */
+  #MobileOut {
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
   }
 
-  .cssbuttons-io {
-    font-size: 16px;
-    /* Tamaño de fuente de los botones para móviles */
+  /* Contenedor de los botones */
+  #BotonContainer {
+    margin: 0.5rem 0;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+
+  /* Estilos de los botones */
+  .button {
+    padding: 15px 30px;
+    border: none;
     margin-top: 1rem;
-    /* Ajuste de margen superior para móviles */
-    margin-bottom: 1rem;
-    /* Ajuste de margen inferior para móviles */
+    border-radius: 9px;
+    font-weight: 600;
+    font-size: .9rem;
+    transition: all 0.25s ease-out;
   }
 
-  .cssbuttons-io .textoBtn {
-    font-size: 0.9rem;
-    /* Tamaño de fuente del texto de los botones para móviles */
+  .button:hover {
+    transform: translateY(-3px);
   }
 
-  .cssbuttons-io span {
-    padding: 0.4em 0.8em;
-    /* Ajuste de padding para móviles */
+  .button-span {
+    color: #5c5a5a;
+  }
+
+  /* Contenedor de la imagen de Ahmed y su hermano */
+  .ahmedYhermano {
+    position: absolute;
+    top: 90px; /* Ajusta la posición para que esté arriba del texto */
+    right: 35px; /* Ajusta la posición desde la derecha en pantallas pequeñas */
+    width: 80%; /* Ajusta el ancho de la imagen para que ocupe todo el contenedor */
+    
+  }
+
+  .ahmedYhermano img {
+    height: 180px; /* Ajusta la altura de la imagen en pantallas pequeñas */
+    width: 98%; /* Asegura que la imagen ocupe el ancho completo */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    border-bottom: 7px #d6b26a solid;
+    
+  }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (min-width: 1100px) and (max-width: 1450px) {
+  /* Estilos generales para la sección VSL */
+  .vsl {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    align-items: center;
+    padding: 0rem 0rem; /* Aleja los textos */
+    background-image: url(../images/MIOlaw1.webp);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  }
+
+  /* Estilos para el contenedor de texto VSL */
+  .textVSL {
+    width: 100%;
+    text-align: center; /* Centra el texto */
+    padding-top: 0; /* Asegura que el texto esté debajo de la imagen */
+  }
+
+  /* Estilos para los títulos */
+  .TituloVSL {
+    padding: 0 1rem;
+    padding-top:3.5rem ;
+    font-size: 3.5rem !important;
+  }
+
+  .textVSL span {
+    color: white;
+    background: -webkit-linear-gradient(146deg,
+        rgb(255, 255, 255) 0%,
+        rgb(255, 255, 255) 20%,
+        rgb(254, 254, 254) 120%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Estilos para el subtítulo */
+  .Subtitle {
+    font-size: 2rem;
+    display: none;
+  }
+
+  #MobileOut {
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  /* Contenedor de los botones */
+  #BotonContainer {
+    margin: 0.5rem 0;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+
+  /* Estilos de los botones */
+  .button {
+    padding: 15px 30px;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 9px;
+    font-weight: 600;
+    font-size: .9rem;
+    transition: all 0.25s ease-out;
+  }
+
+  .button:hover {
+    transform: translateY(-3px);
+  }
+
+  .button-span {
+    color: #5c5a5a;
+  }
+
+  /* Contenedor de la imagen de Ahmed y su hermano */
+  .ahmedYhermano {
+    position: absolute;
+    top: 90px; /* Ajusta la posición para que esté arriba del texto */
+    right: 35px; /* Ajusta la posición desde la derecha en pantallas pequeñas */
+    width: 80%; /* Ajusta el ancho de la imagen para que ocupe todo el contenedor */
+    
+  }
+
+  .ahmedYhermano img {
+    height: 180px; /* Ajusta la altura de la imagen en pantallas pequeñas */
+    width: 98%; /* Asegura que la imagen ocupe el ancho completo */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    border-bottom: 7px #d6b26a solid;
+    
   }
 }
